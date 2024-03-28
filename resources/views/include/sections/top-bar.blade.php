@@ -1,17 +1,17 @@
 <div id="top-bar" class="top-bar">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-md-8">
+            {{-- <div class="col-lg-8 col-md-8">
                 <ul class="top-info text-center text-md-left">
                     <li>
                         <i class="fas fa-map-marker-alt"></i>
                         <p class="info-text">9051 Constra Incorporate, USA</p>
                     </li>
                 </ul>
-            </div>
+            </div> --}}
             <!--/ Top info end -->
 
-            <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
+            {{-- <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
                 <ul class="list-unstyled">
                     <li>
                         <a title="Facebook" href="https://facebbok.com/themefisher.com">
@@ -28,7 +28,7 @@
                         </a>
                     </li>
                 </ul>
-            </div>
+            </div> --}}
             <!--/ Top social end -->
         </div>
         <!--/ Content row end -->

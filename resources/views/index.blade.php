@@ -24,6 +24,7 @@
 
 <body>
     <div class="body-inner">
+        @include('include.sections.top-bar')
         <!-- Header start -->
         @include('include.layouts.header')
         <!-- Header end -->
