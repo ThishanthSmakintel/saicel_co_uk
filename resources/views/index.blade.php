@@ -5,7 +5,7 @@
     <!-- Basic Page Needs
     ================================================== -->
     <meta charset="utf-8" />
-    <title>Constra - Construction Html5 Template</title>
+    <title>saicel.co.uk-Home</title>
 
     <!-- Mobile Specific Metas
     ================================================== -->
@@ -15,7 +15,7 @@
 
     <!-- Favicon
     ================================================== -->
-    <link rel="icon" type="image/png" href="{{ url('images/favicon.png') }}" />
+    <link rel="icon" type="image/png" href="{{ url('images/logo.png') }}" />
 
     {{-- <!-- CSS files inclusion --}}
     @include('include.layouts.css-paths')

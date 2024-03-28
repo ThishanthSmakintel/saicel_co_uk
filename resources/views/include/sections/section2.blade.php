@@ -5,16 +5,11 @@
                 <div class="ts-intro">
                     <h2 class="into-title">About Us</h2>
                     <h3 class="into-sub-title">
-                        We deliver landmark projects
+                        Empowering Through Education
                     </h3>
                     <p>
-                        We are rethoric question ran over her cheek
-                        When she reached the first hills of the
-                        Italic Mountains, she had a last view back
-                        on the skyline of her hometown
-                        Bookmarksgrove, the headline of Alphabet
-                        Village and the subline of her own road, the
-                        Line Lane.
+                        SAICEL UK is dedicated to advancing education through innovation and sustainability. Our mission
+                        is to provide quality educational solutions that empower individuals and communities.
                     </p>
                 </div>
                 <!-- Intro box end -->
@@ -29,7 +24,7 @@
                             </span>
                             <div class="ts-service-box-content">
                                 <h3 class="service-box-title">
-                                    We've Repution for Excellence
+                                    Excellence in Education
                                 </h3>
                             </div>
                         </div>
@@ -44,7 +39,7 @@
                             </span>
                             <div class="ts-service-box-content">
                                 <h3 class="service-box-title">
-                                    We Build Partnerships
+                                    Tailored Learning Solutions
                                 </h3>
                             </div>
                         </div>
@@ -62,7 +57,7 @@
                             </span>
                             <div class="ts-service-box-content">
                                 <h3 class="service-box-title">
-                                    Guided by Commitment
+                                    Commitment to Education
                                 </h3>
                             </div>
                         </div>
@@ -77,7 +72,7 @@
                             </span>
                             <div class="ts-service-box-content">
                                 <h3 class="service-box-title">
-                                    A Team of Professionals
+                                    Professional Educators
                                 </h3>
                             </div>
                         </div>
@@ -92,9 +87,7 @@
             <div class="col-lg-6 mt-4 mt-lg-0">
                 <h3 class="into-sub-title">Our Values</h3>
                 <p>
-                    Minim Austin 3 wolf moon scenester aesthetic,
-                    umami odio pariatur bitters. Pop-up occaecat
-                    taxidermy street art, tattooed beard literally.
+                    At SAICEL UK, we believe in fostering a culture of continuous learning and trust.
                 </p>
 
                 <div class="accordion accordion-group" id="our-values-accordion">
@@ -103,7 +96,7 @@
                             <h2 class="mb-0">
                                 <button class="btn btn-block text-left" type="button" data-toggle="collapse"
                                     data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Safety
+                                    Lifelong Learning
                                 </button>
                             </h2>
                         </div>
@@ -111,10 +104,7 @@
                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                             data-parent="#our-values-accordion">
                             <div class="card-body">
-                                Anim pariatur cliche reprehenderit,
-                                enim eiusmod high life accusamus
-                                terry richardson ad squid. 3 wolf
-                                moon officia aute, non cupidata
+                                We promote continuous learning to empower individuals and drive societal progress.
                             </div>
                         </div>
                     </div>
@@ -123,17 +113,14 @@
                             <h2 class="mb-0">
                                 <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse"
                                     data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Customer Service
+                                    Innovation
                                 </button>
                             </h2>
                         </div>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                             data-parent="#our-values-accordion">
                             <div class="card-body">
-                                Anim pariatur cliche reprehenderit,
-                                enim eiusmod high life accusamus
-                                terry richardson ad squid. 3 wolf
-                                moon officia aute, non cupidata
+                                We embrace innovation to enhance the learning experience and foster creativity.
                             </div>
                         </div>
                     </div>
@@ -142,17 +129,15 @@
                             <h2 class="mb-0">
                                 <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse"
                                     data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Integrity
+                                    Sustainability
                                 </button>
                             </h2>
                         </div>
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                             data-parent="#our-values-accordion">
                             <div class="card-body">
-                                Anim pariatur cliche reprehenderit,
-                                enim eiusmod high life accusamus
-                                terry richardson ad squid. 3 wolf
-                                moon officia aute, non cupidata
+                                We are committed to sustainable practices to ensure a better future for generations to
+                                come.
                             </div>
                         </div>
                     </div>
