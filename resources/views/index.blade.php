@@ -2,24 +2,21 @@
 <html lang="en">
 
 <head>
-    <!-- Basic Page Needs
-    ================================================== -->
-    <meta charset="utf-8" />
-    <title>saicel.co.uk-Home</title>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <title>saicel.co.uk - Home</title>
 
-    <!-- Mobile Specific Metas
-    ================================================== -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Construction Html5 Template" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <!-- Mobile Specific Metas -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Construction Html5 Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
 
-    <!-- Favicon
-    ================================================== -->
-    <link rel="icon" type="image/png" href="{{ url('images/logo.png') }}" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ asset('public/images/logo.png') }}">
 
-    {{-- <!-- CSS files inclusion --}}
+    <!-- CSS files inclusion -->
     @include('include.layouts.css-paths')
-    {{-- <!-- End of CSS files inclusion --}}
+    <!-- End of CSS files inclusion -->
 </head>
 
 <body>
@@ -49,9 +46,15 @@
         @include('include.sections.section4')
         <!-- Section 4 end -->
 
-        <!-- Section 5 -->
+        <!-- Section 5 course deatils wtih alsion -->
         @include('include.sections.section5')
-        <!-- Section 5 end -->
+        <!-- Section 5 end  deatils wtih alsion -->
+
+        <!-- Section 8 (News) -->
+        @include('include.sections.section8-news')
+        <!-- Section 8 end -->
+
+
 
         <!-- Section 6 -->
         @include('include.sections.section6')
@@ -61,17 +64,15 @@
         @include('include.sections.section7-subscribe')
         <!-- Section 7 end -->
 
-        <!-- Section 8 (News) -->
-        @include('include.sections.section8-news')
-        <!-- Section 8 end -->
+
 
         <!-- Footer -->
         @include('include.layouts.footer')
         <!-- Footer end -->
 
-        {{-- <!-- Javascript Files inclusion --}}
+        <!-- JavaScript Files inclusion -->
         @include('include.layouts.js-paths')
-        {{-- <!-- End of Javascript Files inclusion --}}
+        <!-- End of JavaScript Files inclusion -->
     </div>
     <!-- Body inner end -->
 </body>
