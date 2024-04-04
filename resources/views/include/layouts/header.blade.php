@@ -62,11 +62,26 @@
 
                                                 <li class="nav-item dropdown">
                                                     <a href="#" class="nav-link dropdown-toggle"
-                                                        data-toggle="dropdown">civil Engineering Service <i
+                                                        data-toggle="dropdown"> Engineering Services <i
                                                             class="fa fa-angle-down"></i></a>
                                                     <ul class="dropdown-menu" role="menu">
                                                         <li><a href="{{ route('engineering-services') }}">Civil
                                                                 Engineering Courses</a></li>
+                                                        <li><a href="{{ route('chemical-engineering') }}">
+                                                                Chemical Engineering</a></li>
+
+                                                        <li><a href="{{ route('management-planning') }}">
+                                                                Management Planning</a></li>
+
+
+                                                        <li><a href="{{ route('skilled-labour-supply') }}">Skilled
+                                                                Labour Supply
+                                                            </a></li>
+
+                                                        <li><a href="{{ route('setting-out-levelling') }}">Skilled
+                                                                setting out levelling
+                                                            </a></li>
+
 
                                                         {{-- <li><a href="path-to-your-page.html">Chemical Engineering</a>
                                                         </li>
