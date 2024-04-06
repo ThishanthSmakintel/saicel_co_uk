@@ -82,13 +82,32 @@
                                 </li>
 
                                 <li class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Procedures
-                                        & Templates <i class="fa fa-angle-down"></i></a>
+                                    <a href="{{ route('procedures-and-templates') }}"
+                                        class="nav-link dropdown-toggle mainLink" data-toggle="dropdown">Procedures &
+                                        Templates <i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="projects.html">Projects All</a></li>
-                                        <li><a href="projects-single.html">Projects Single</a></li>
+                                        <li><a class="dropdown-item" href="https://amzn.to/3RA1KRW"
+                                                target="_blank">Construction Products</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="https://www.amazon.co.uk/s?k=safety+signs&language=en_GB&crid=2DAR5B78PEKEK&linkCode=sl2&linkId=69a88cdf9ab3dae8c122d8781e46a13d&sprefix=safety+si%2Caps%2C69&tag=saicel-21&ref=as_li_ss_tl"
+                                                target="_blank">Safety Signs</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="https://www.safetytalkideas.com/safety-talks/"
+                                                target="_blank">Toolbox Talks</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="https://www.amazon.co.uk/s?k=safety+procedures&language=en_GB&crid=2DYL76B83DN8V&linkCode=sl2&linkId=2b2882a96870b80bdc527a081ce2f5a0&sprefix=safety+procedures%2Caps%2C62&tag=saicel-21&ref=as_li_ss_tl"
+                                                target="_blank">Safety Procedures</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="https://safetyculture.com/checklists/coshh-assessment/"
+                                                target="_blank">COSHH Assessments</a></li>
+                                        <li><a class="dropdown-item" href="https://safetydocs.safetyculture.com/swms"
+                                                target="_blank">Method Statements</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="https://safetydocs.safetyculture.com/search.php?search_query=risk&section=product"
+                                                target="_blank">Risk Assessments</a></li>
                                     </ul>
                                 </li>
+
 
                                 {{-- <li class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Workshops
@@ -100,11 +119,13 @@
                                 </li> --}}
 
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">Property Investments in UK</a>
+                                    <a href="{{ route('property-investments') }}" class="nav-link">Property
+                                        Investments in UK</a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">Free Online Businesses</a>
+                                    <a href="{{ route('free-online-businesses') }}" class="nav-link">Free Online
+                                        Businesses</a>
                                 </li>
                             </ul>
                         </div>

@@ -277,3 +277,20 @@ jQuery(function ($) {
         mediaPopup();
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Get the dropdown toggle element
+    var dropdownToggle = document.querySelector(".mainLink");
+    console.log(": document trigered");
+    // Add a click event listener to the dropdown toggle
+    dropdownToggle.addEventListener("click", function (event) {
+        // Prevent the default action of the link
+        event.preventDefault();
+
+        // Get the URL from the href attribute of the dropdown toggle
+        var redirectUrl = dropdownToggle.getAttribute("href");
+
+        // Redirect to the desired URL
+        window.location.href = redirectUrl;
+    });
+});
