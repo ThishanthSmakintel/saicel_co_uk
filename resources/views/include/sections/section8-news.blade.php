@@ -72,7 +72,7 @@
             <div class="col-12">
                 <span class="section-title">As an </span>
                 <div class="">
-                    <img loading="lazy" class="img-fluid" src="{{ asset('public/images/logos/amazonAsscoi.png') }}"
+                    <img loading="lazy" class="img-fluid" src="{{ asset('images/logos/amazonAsscoi.png') }}"
                         alt="Subtitle Image" style="max-width: 300px; height: auto;">
                 </div>
                 <span class="section-title pb-2">we earn from qualifying purchases</span>
@@ -88,7 +88,7 @@
                     <div class="latest-post-media">
                         <a href="news-single.html" class="latest-post-img">
                             <img loading="lazy" class="img-fluid"
-                                src="{{ asset('public/images/news/enginerrin-support') }}" alt="img" />
+                                src="{{ asset('images/news/enginerrin-support.jpg') }}" alt="img" />
                         </a>
                     </div>
                     <div class="post-body">
@@ -112,7 +112,7 @@
                     <div class="latest-post-media">
                         <a href="news-single.html" class="latest-post-img">
                             <img loading="lazy" class="img-fluid"
-                                src="{{ asset('public/images/news/enginerrin-support') }}" alt="img" />
+                                src="{{ asset('images/news/enginerrin-support.jpg') }}" alt="img" />
                         </a>
                     </div>
                     <div class="post-body">
@@ -138,7 +138,7 @@
                     <div class="latest-post-media">
                         <a href="news-single.html" class="latest-post-img">
                             <img loading="lazy" class="img-fluid"
-                                src="{{ asset('public/images/news/enginerrin-support.jpg') }}" alt="img" />
+                                src="{{ asset('images/news/enginerrin-support.jpg') }}" alt="img" />
                         </a>
                     </div>
                     <div class="post-body">
@@ -162,7 +162,7 @@
                     <div class="latest-post-media">
                         <a href="news-single.html" class="latest-post-img">
                             <img loading="lazy" class="img-fluid"
-                                src="{{ asset('public/images/news/enginerrin-support.jpg') }}" alt="img" />
+                                src="{{ asset('images/news/enginerrin-support.jpg') }}" alt="img" />
                         </a>
                     </div>
                     <div class="post-body">
@@ -186,7 +186,7 @@
                     <div class="latest-post-media">
                         <a href="news-single.html" class="latest-post-img">
                             <img loading="lazy" class="img-fluid"
-                                src="{{ asset('public/images/news/enginerrin-support.jpg') }}" alt="img" />
+                                src="{{ asset('images/news/enginerrin-support.jpg') }}" alt="img" />
                         </a>
                     </div>
                     <div class="post-body">

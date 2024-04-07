@@ -1,7 +1,7 @@
 <section class="content">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6">
+            {{-- <div class="col-lg-6">
                 <h3 class="column-title">Testimonials</h3>
 
                 <div id="testimonial-slide" class="testimonial-slide">
@@ -18,7 +18,7 @@
                             </span>
 
                             <div class="quote-item-footer">
-                                <img loading="lazy" class="testimonial-thumb" src="{{ asset('public/images/clients/testimonial1.png') }}"
+                                <img loading="lazy" class="testimonial-thumb" src="{{ asset('images/clients/testimonial1.png') }}"
                                     alt="testimonial" />
                                 <div class="quote-item-info">
                                     <h3 class="quote-author">
@@ -45,7 +45,7 @@
                             </span>
 
                             <div class="quote-item-footer">
-                                <img loading="lazy" class="testimonial-thumb" src="{{ asset('public/images/clients/testimonial2.png') }}"
+                                <img loading="lazy" class="testimonial-thumb" src="{{ asset('images/clients/testimonial2.png') }}"
                                     alt="testimonial" />
                                 <div class="quote-item-info">
                                     <h3 class="quote-author">
@@ -72,7 +72,7 @@
                             </span>
 
                             <div class="quote-item-footer">
-                                <img loading="lazy" class="testimonial-thumb" src="{{ asset('public/images/clients/testimonial3.png') }}"
+                                <img loading="lazy" class="testimonial-thumb" src="{{ asset('images/clients/testimonial3.png') }}"
                                     alt="testimonial" />
                                 <div class="quote-item-info">
                                     <h3 class="quote-author">
@@ -85,61 +85,67 @@
                         <!-- Quote item end -->
                     </div>
                     <!--/ Item 3 end -->
-                </div>
-                <!--/ Testimonial carousel end-->
-            </div>
-            <!-- Col end -->
-            <div class="col-lg-6 mt-5 mt-lg-0">
-                <h3 class="column-title">Happy Clients</h3>
-
-                <div class="row all-clients">
-                    <div class="col-sm-4 col-6">
-                        <figure class="clients-logo">
-                            <a href="#!"><img loading="lazy" class="img-fluid" src="{{ asset('public/images/clients/client1.png') }}" alt="clients-logo" /></a>
-                        </figure>
-                    </div>
-                    <!-- Client 1 end -->
-
-                    <div class="col-sm-4 col-6">
-                        <figure class="clients-logo">
-                            <a href="#!"><img loading="lazy" class="img-fluid" src="{{ asset('public/images/clients/client2.png') }}" alt="clients-logo" /></a>
-                        </figure>
-                    </div>
-                    <!-- Client 2 end -->
-
-                    <div class="col-sm-4 col-6">
-                        <figure class="clients-logo">
-                            <a href="#!"><img loading="lazy" class="img-fluid" src="{{ asset('public/images/clients/client3.png') }}" alt="clients-logo" /></a>
-                        </figure>
-                    </div>
-                    <!-- Client 3 end -->
-
-                    <div class="col-sm-4 col-6">
-                        <figure class="clients-logo">
-                            <a href="#!"><img loading="lazy" class="img-fluid" src="{{ asset('public/images/clients/client4.png') }}" alt="clients-logo" /></a>
-                        </figure>
-                    </div>
-                    <!-- Client 4 end -->
-
-                    <div class="col-sm-4 col-6">
-                        <figure class="clients-logo">
-                            <a href="#!"><img loading="lazy" class="img-fluid" src="{{ asset('public/images/clients/client5.png') }}" alt="clients-logo" /></a>
-                        </figure>
-                    </div>
-                    <!-- Client 5 end -->
-
-                    <div class="col-sm-4 col-6">
-                        <figure class="clients-logo">
-                            <a href="#!"><img loading="lazy" class="img-fluid" src="{{ asset('public/images/clients/client6.png') }}" alt="clients-logo" /></a>
-                        </figure>
-                    </div>
-                    <!-- Client 6 end -->
-                </div>
-                <!-- Clients row end -->
-            </div>
-            <!-- Col end -->
+                </div> --}}
+            <!--/ Testimonial carousel end-->
         </div>
-        <!--/ Content row end -->
+        <!-- Col end -->
+        <div class="col-lg-12 mt-10 mt-lg-0">
+            <h3 class="column-title"> Check Our Courses</h3>
+
+            <div class="row all-clients">
+                <div class="col-sm-4 col-6">
+                    <figure class="clients-logo">
+                        <a href="#!"><img loading="lazy" class="img-fluid"
+                                src="{{ asset('images/clients/client1.png') }}" alt="clients-logo" /></a>
+                    </figure>
+                </div>
+                <!-- Client 1 end -->
+
+                <div class="col-sm-4 col-6">
+                    <figure class="clients-logo">
+                        <a href="#!"><img loading="lazy" class="img-fluid"
+                                src="{{ asset('images/clients/client2.png') }}" alt="clients-logo" /></a>
+                    </figure>
+                </div>
+                <!-- Client 2 end -->
+
+                <div class="col-sm-4 col-6">
+                    <figure class="clients-logo">
+                        <a href="#!"><img loading="lazy" class="img-fluid"
+                                src="{{ asset('images/clients/client3.png') }}" alt="clients-logo" /></a>
+                    </figure>
+                </div>
+                <!-- Client 3 end -->
+
+                <div class="col-sm-4 col-6">
+                    <figure class="clients-logo">
+                        <a href="#!"><img loading="lazy" class="img-fluid"
+                                src="{{ asset('images/clients/client4.png') }}" alt="clients-logo" /></a>
+                    </figure>
+                </div>
+                <!-- Client 4 end -->
+
+                <div class="col-sm-4 col-6">
+                    <figure class="clients-logo">
+                        <a href="#!"><img loading="lazy" class="img-fluid"
+                                src="{{ asset('images/clients/client5.png') }}" alt="clients-logo" /></a>
+                    </figure>
+                </div>
+                <!-- Client 5 end -->
+
+                <div class="col-sm-4 col-6">
+                    <figure class="clients-logo">
+                        <a href="#!"><img loading="lazy" class="img-fluid"
+                                src="{{ asset('images/clients/client6.png') }}" alt="clients-logo" /></a>
+                    </figure>
+                </div>
+                <!-- Client 6 end -->
+            </div>
+            <!-- Clients row end -->
+        </div>
+        <!-- Col end -->
+    </div>
+    <!--/ Content row end -->
     </div>
     <!--/ Container end -->
 </section>

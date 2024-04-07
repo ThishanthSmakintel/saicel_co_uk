@@ -2,78 +2,41 @@
     <div class="footer-main">
         <div class="container">
             <div class="row justify-content-between">
+                <!-- About Us Section -->
                 <div class="col-lg-4 col-md-6 footer-widget footer-about">
-                    <h3 class="widget-title">About Us</h3>
-                    <img loading="lazy" class="footer-logo" src="{{ asset('public/images/footer-logo.png') }}"
-                        alt="Constra">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit, sed do eiusmod tempor inci
-                        done idunt ut labore et dolore magna aliqua.
-                    </p>
-                    <div class="footer-social">
-                        <ul>
-                            <li>
-                                <a href="https://facebook.com/themefisher" aria-label="Facebook"><i
-                                        class="fab fa-facebook-f"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/themefisher" aria-label="Twitter"><i
-                                        class="fab fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://instagram.com/themefisher" aria-label="Instagram"><i
-                                        class="fab fa-instagram"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/themefisher" aria-label="Github"><i
-                                        class="fab fa-github"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Footer social end -->
+                    <h3 class="widget-title">SAICEL UK</h3>
+                    <p>Worcester Park, Surrey, KT4 8AY, UK</p>
+                    <p>Email: <a href="mailto:sailtd@hotmail.co.uk">sailtd@hotmail.co.uk</a></p>
+                    <p>Tel: <a href="tel:+447939057566">+44 (0) 7939057566</a></p>
                 </div>
                 <!-- Col end -->
 
+                <!-- Working Hours Section -->
                 <div class="col-lg-4 col-md-6 footer-widget mt-5 mt-md-0">
-                    <h3 class="widget-title">Working Hours</h3>
-                    <div class="working-hours">
-                        We work 7 days a week, every day excluding
-                        major holidays. Contact us if you have an
-                        emergency, with our Hotline and Contact
-                        form.
-                        <br /><br />
-                        Monday - Friday:
-                        <span class="text-right">10:00 - 16:00
-                        </span>
-                        <br />
-                        Saturday:
-                        <span class="text-right">12:00 - 15:00</span>
-                        <br />
-                        Sunday and holidays:
-                        <span class="text-right">09:00 - 12:00</span>
-                    </div>
+                    {{-- <h3 class="widget-title">Disclaimer</h3> --}}
+                    {{-- <p>As an Amazon Associate, we earn from qualifying purchases.</p> --}}
+                    <h3 class="widget-title">Copyright</h3>
+                    <p>&copy; SAI Civil Engineering Limited 2010.<br>
+                        Company Number: 07330001.<br>
+                        Registered in England and Wales.<br>
+                        All rights reserved.
+                    </p>
                 </div>
                 <!-- Col end -->
 
+                <!-- Social Media Section -->
                 <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
-                    <h3 class="widget-title">Services</h3>
-                    <ul class="list-arrow">
+                    <h3 class="widget-title">Follow Us</h3>
+                    <ul class="footer-social">
+
                         <li>
-                            <a href="service-single.html">Pre-Construction</a>
+                            <a href="https://www.youtube.com/"><i class="fab fa-youtube" aria-label="YouTube"></i></a>
                         </li>
                         <li>
-                            <a href="service-single.html">General Contracting</a>
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"
+                                    aria-label="Facebook"></i></a>
                         </li>
-                        <li>
-                            <a href="service-single.html">Construction Management</a>
-                        </li>
-                        <li>
-                            <a href="service-single.html">Design and Build</a>
-                        </li>
-                        <li>
-                            <a href="service-single.html">Self-Perform Construction</a>
-                        </li>
+
                     </ul>
                 </div>
                 <!-- Col end -->

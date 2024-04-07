@@ -5,14 +5,14 @@
                 <div class="col-md-8 text-center text-md-left">
                     <div class="call-to-action-text">
                         <h3 class="action-title">
-                            We understand your needs on construction
+                            Empowering Your Journey, Every Step, with Our Services
                         </h3>
                     </div>
                 </div>
                 <!-- Col end -->
                 <div class="col-md-4 text-center text-md-right mt-3 mt-md-0">
                     <div class="call-to-action-btn">
-                        <a class="btn btn-dark" href="#">Request Quote</a>
+                        <a class="btn btn-dark" href="#">Contact US</a>
                     </div>
                 </div>
                 <!-- col end -->

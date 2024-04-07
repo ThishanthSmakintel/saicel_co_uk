@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-lg-12">
-                <h2 class="section-title"><img src="{{ asset('public/images/logos/cpdLogo.png') }}" alt="CPD Logo"></h2>
+                <h2 class="section-title"><img src="{{ asset('images/logos/cpdLogo.png') }}" alt="CPD Logo"></h2>
                 <h3 class="section-sub-title">UK CPD accredited Free Online Courses </h3>
             </div>
         </div>
@@ -11,49 +11,38 @@
         <div class="row">
             <div class="col-12">
                 <div class="shuffle-btn-group">
-                    <label class="active" for="all">
+                    <label class="active mb-2 mb-md-0 me-md-2" for="all">
                         <input type="radio" name="shuffle-filter" id="all" value="all"
                             checked="checked" />Show All
                     </label>
-                    <label for="health">
-                        <input type="radio" name="shuffle-filter" id="health" value="health" />
-                        Health, Care & Medication
+                    <label class="mb-2 mb-md-0 me-md-2" for="health">
+                        <input type="radio" name="shuffle-filter" id="health" value="health" />Health, Care &
+                        Medication
                     </label>
-
-                    <label for="sales">
-                        <input type="radio" name="shuffle-filter" id="sales" value="sales" />
-                        Sales & Marketing
+                    <label class="mb-2 mb-md-0 me-md-2" for="sales">
+                        <input type="radio" name="shuffle-filter" id="sales" value="sales" />Sales & Marketing
                     </label>
-
-                    <label for="education">
-                        <input type="radio" name="shuffle-filter" id="education" value="education" />
-                        Educational & Teaching
+                    <label class="mb-2 mb-md-0 me-md-2" for="education">
+                        <input type="radio" name="shuffle-filter" id="education" value="education" />Educational &
+                        Teaching
                     </label>
-
-                    <label for="management">
-                        <input type="radio" name="shuffle-filter" id="management" value="management" />
-                        Management & Law
+                    <label class="mb-2 mb-md-0 me-md-2" for="management">
+                        <input type="radio" name="shuffle-filter" id="management" value="management" />Management &
+                        Law
                     </label>
-
-                    <label for="it">
-                        <input type="radio" name="shuffle-filter" id="it" value="it" />
-                        IT & Computing
+                    <label class="mb-2 mb-md-0 me-md-2" for="it">
+                        <input type="radio" name="shuffle-filter" id="it" value="it" />IT & Computing
                     </label>
-
-                    <label for="engineering">
-                        <input type="radio" name="shuffle-filter" id="engineering" value="engineering" />
-                        Engineering
+                    <label class="mb-2 mb-md-0 me-md-2" for="engineering">
+                        <input type="radio" name="shuffle-filter" id="engineering" value="engineering" />Engineering
                     </label>
-
-                    <label for="language">
-                        <input type="radio" name="shuffle-filter" id="language" value="language" />
-                        English & Other Language
+                    <label class="mb-2 mb-md-0 me-md-2" for="language">
+                        <input type="radio" name="shuffle-filter" id="language" value="language" />English & Other
+                        Language
                     </label>
-
-                    <label for="personalDevelopment">
+                    <label class="mb-2 mb-md-0 me-md-2" for="personalDevelopment">
                         <input type="radio" name="shuffle-filter" id="personalDevelopment"
-                            value="personalDevelopment" />
-                        Personal Development
+                            value="personalDevelopment" />Personal Development
                     </label>
                 </div>
                 <!-- project filter end -->
@@ -62,11 +51,11 @@
                     <div class="col-1 shuffle-sizer"></div>
 
                     <!-- Dummy project cards -->
-                    <div class="col-lg-4 col-md-6 shuffle-item" data-groups='["healthcare"]'>
+                    <div class="col-lg-4 col-md-6 shuffle-item " data-groups='["healthcare"]'>
                         <div class="project-img-container">
-                            <a class="gallery-popup" href="{{ asset('public/images/projects/project1.jpg') }}"
+                            <a class="gallery-popup" href="{{ asset('images/projects/project1.jpg') }}"
                                 aria-label="project-img">
-                                <img class="img-fluid" src="{{ asset('public/images/projects/project1.jpg') }}"
+                                <img class="img-fluid" src="{{ asset('images/projects/project1.jpg') }}"
                                     alt="project-img" />
                                 <span class="gallery-icon"><i class="fa fa-plus"></i></span>
                             </a>
@@ -88,9 +77,9 @@
                     <!-- Dummy project card 2 -->
                     <div class="col-lg-4 col-md-6 shuffle-item" data-groups='["sales"]'>
                         <div class="project-img-container">
-                            <a class="gallery-popup" href="{{ asset('public/images/projects/project2.jpg') }}"
+                            <a class="gallery-popup" href="{{ asset('images/projects/project2.jpg') }}"
                                 aria-label="project-img">
-                                <img class="img-fluid" src="{{ asset('public/images/projects/project2.jpg') }}"
+                                <img class="img-fluid" src="{{ asset('images/projects/project2.jpg') }}"
                                     alt="project-img" />
                                 <span class="gallery-icon"><i class="fa fa-plus"></i></span>
                             </a>
@@ -112,9 +101,9 @@
                     <!-- Dummy project card 2 -->
                     <div class="col-lg-4 col-md-6 shuffle-item" data-groups='["government"]'>
                         <div class="project-img-container">
-                            <a class="gallery-popup" href="{{ asset('public/images/projects/project2.jpg') }}"
+                            <a class="gallery-popup" href="{{ asset('images/projects/project2.jpg') }}"
                                 aria-label="project-img">
-                                <img class="img-fluid" src="{{ asset('public/images/projects/project2.jpg') }}"
+                                <img class="img-fluid" src="{{ asset('images/projects/project2.jpg') }}"
                                     alt="project-img" />
                                 <span class="gallery-icon"><i class="fa fa-plus"></i></span>
                             </a>
@@ -136,9 +125,9 @@
                     <!-- Dummy project card 2 -->
                     <div class="col-lg-4 col-md-6 shuffle-item" data-groups='["language"]'>
                         <div class="project-img-container">
-                            <a class="gallery-popup" href="{{ asset('public/images/projects/project2.jpg') }}"
+                            <a class="gallery-popup" href="{{ asset('images/projects/project2.jpg') }}"
                                 aria-label="project-img">
-                                <img class="img-fluid" src="{{ asset('public/images/projects/project2.jpg') }}"
+                                <img class="img-fluid" src="{{ asset('images/projects/project2.jpg') }}"
                                     alt="project-img" />
                                 <span class="gallery-icon"><i class="fa fa-plus"></i></span>
                             </a>
