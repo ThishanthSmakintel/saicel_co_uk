@@ -326,7 +326,25 @@
                     </div>
                     </a>
                 </div>
-                <!-- Col end -->
+                <div class="container-fluid  p-4">
+                    <div class="row">
+                        <div class="col">
+                            <p>
+                                With over 20 years in the industry working on major projects across the UK, we aim for the
+                                highest
+                                standards of site safety, quality, efficiency, and environmental management. SAICEL UK
+                                offers a wide range
+                                of civil engineering solutions by a team of qualified and experienced civil engineers and
+                                project managers.
+                                Our project managers and engineers are SMSTS qualified and hold valid CSCS cards, giving our
+                                clients peace
+                                of mind that they are dealing with a single contractor who can offer quality workmanship and
+                                service as per
+                                their requirements.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
             </div>
             <!-- Main row end -->
