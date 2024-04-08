@@ -8,11 +8,11 @@
 
     <!-- Mobile Specific Metas -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Construction Html5 Template">
+    <meta name="description" content=">@yield('title')">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="{{ asset('images/logo.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('images/CompanyLogo.ico') }}">
 
     <!-- CSS files inclusion -->
     @include('include.layouts.css-paths')

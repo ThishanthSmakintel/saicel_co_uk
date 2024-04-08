@@ -8,7 +8,7 @@
                         Empowering Through Education
                     </h3>
                     <p>
-                        SAICEL UK is dedicated to advancing education through innovation and sustainability. Our mission
+                        Saicel UK is dedicated to advancing education through innovation and sustainability. Our mission
                         is to provide quality educational solutions that empower individuals and communities.
                     </p>
                 </div>
@@ -87,7 +87,7 @@
             <div class="col-lg-6 mt-4 mt-lg-0">
                 <h3 class="into-sub-title">Our Values</h3>
                 <p>
-                    At SAICEL UK, we believe in fostering a culture of continuous learning and trust.
+                    At Saicel UK, we believe in fostering a culture of continuous learning and trust.
                 </p>
 
                 <div class="accordion accordion-group" id="our-values-accordion">

@@ -1,6 +1,6 @@
 @extends('default')
 
-@section('title', 'Patios')
+@section('title', 'Saicel Patios Service')
 
 @section('content')
     <section id="main-container" class="main-container">

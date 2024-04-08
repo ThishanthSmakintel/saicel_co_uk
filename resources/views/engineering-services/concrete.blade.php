@@ -1,6 +1,6 @@
 @extends('default')
 
-@section('title', 'Concrete Floor Sealing and Painting')
+@section('title', 'Saicel Concrete Floor Sealing and Painting Service')
 
 @section('content')
     <section id="main-container" class="main-container">

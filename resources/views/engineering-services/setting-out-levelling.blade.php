@@ -1,6 +1,6 @@
 @extends('default')
 
-@section('title', 'setting-out-levelling')
+@section('title', 'services Setting Out Levelling Service')
 
 @section('content')
     <section id="main-container" class="main-container">
@@ -15,7 +15,7 @@
                     <p>They can pinpoint positions and set out subterranean features such as pile positions, drainage, and
                         ground beams as well as structures to be built above ground such as gridlines, brickwork, stud
                         walls, columns, cladding, reinforced concrete slabs.</p>
-                    <p>SAICEL UK offers a variety of surveying and engineering services throughout the UK. They provide
+                    <p>Saicel UK offers a variety of surveying and engineering services throughout the UK. They provide
                         topographical surveys, measured land/building surveys, and underground detection surveys. Using the
                         data collected, the team of setting out engineers will get your project ready for construction.</p>
                     <p></p>

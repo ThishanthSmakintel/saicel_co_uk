@@ -1,6 +1,6 @@
 @extends('default')
 
-@section('title', 'CCTV & Security Alarm Solutions')
+@section('title', 'Saicel CCTV & Security Alarm Solutions')
 
 @section('content')
     <section id="main-container" class="main-container">

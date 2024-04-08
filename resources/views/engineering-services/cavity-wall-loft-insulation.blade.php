@@ -1,6 +1,6 @@
 @extends('default')
 
-@section('title', 'Home Insulation Services')
+@section('title', 'Saicel Home Insulation Service')
 
 @section('content')
     <section id="main-container" class="main-container">

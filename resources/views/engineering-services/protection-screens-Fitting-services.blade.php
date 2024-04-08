@@ -1,6 +1,6 @@
 @extends('default')
 
-@section('title', 'Protection Screens Fitting Services')
+@section('title', 'Saicel Protection Screens Fitting Service')
 
 @section('content')
     <section id="main-container" class="main-container">

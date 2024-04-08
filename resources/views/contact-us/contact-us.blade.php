@@ -1,6 +1,6 @@
 @extends('default')
 
-@section('title', 'Free Online Businesses')
+@section('title', 'contact Us')
 
 @section('content')
 

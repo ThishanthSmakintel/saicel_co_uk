@@ -1,6 +1,6 @@
 @extends('default')
 
-@section('title', 'Free Online Businesses')
+@section('title', 'Saicel Free Online Businesses')
 
 @section('content')
     <section id="facts" class="ts-service-box d-flex">

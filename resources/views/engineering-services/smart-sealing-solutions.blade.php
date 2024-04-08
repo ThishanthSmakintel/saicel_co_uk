@@ -1,6 +1,6 @@
 @extends('default')
 
-@section('title', 'Smart Sealing and Painting Solutions')
+@section('title', 'Saicel Smart Sealing and Painting Solutions')
 
 @section('content')
     <section id="main-container" class="main-container">

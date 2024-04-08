@@ -1,6 +1,6 @@
 @extends('default')
 
-@section('title', 'saicel.co.uk - Home')
+@section('title', 'Saicel Skilled Labour Supply Service')
 
 @section('content')
     <section id="main-container" class="main-container">
