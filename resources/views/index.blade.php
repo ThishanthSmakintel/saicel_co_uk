@@ -61,7 +61,7 @@
         <!-- Section 6 end -->
 
         <!-- Section 7 (Subscribe) -->
-        @include('include.sections.section7-subscribe')
+        {{-- @include('include.sections.section7-subscribe') --}}
         <!-- Section 7 end -->
 
 

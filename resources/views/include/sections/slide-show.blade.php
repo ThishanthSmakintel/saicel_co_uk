@@ -1,5 +1,5 @@
 <div class="banner-carousel banner-carousel-1 mb-0">
-    <div class="banner-carousel-item" style="background-image: url({{ asset('images/slider-main/fabrik.png') }})">
+    {{-- <div class="banner-carousel-item" style="background-image: url({{ asset('images/slider-main/fabrik.png') }})">
         <div class="slider-content">
             <div class="container h-100">
                 <div class="row align-items-center h-100">
@@ -19,7 +19,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <div class="banner-carousel-item" style="background-image: url({{ asset('images/slider-main/bg2.png') }})">
         <div class="slider-content text-left">
