@@ -82,9 +82,14 @@ Route::get('/property-investments/property-investments', function () {
 })->name('property-investments');
 
 
-Route::get('/free-online-businesses', function () {
-    return view('free-online-businesses.free-online-businesses');
-})->name('free-online-businesses');
+Route::get('/cleaning-and-sealing-service/cleaning-service', function () {
+    return view('/cleaning-and-sealing-service.cleaning-service');
+})->name('cleaning-service');
+
+
+// Route::get('/cleaning-and-sealing-service/sealing-services', function () {
+//     return view('/cleaning-and-sealing-service.sealing-services');
+// })->name('sealing-services');
 
 Route::get('/contact-us', function () {
     return view('contact-us.contact-us');
