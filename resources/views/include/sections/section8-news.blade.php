@@ -1,220 +1,129 @@
-<style>
-    .latest-post.card {
-        position: relative;
-        overflow: hidden;
-        height: 100%;
-    }
-
-    .latest-post.card .latest-post-media {
-        height: 200px;
-        /* Set a fixed height for the media container */
-    }
-
-    .latest-post.card:hover .latest-post-media::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        transition: all 0.3s ease;
-    }
-
-    .latest-post.card:hover .post-body {
-        transform: translateY(-50%);
-    }
-
-    .latest-post.card:hover .latest-post-meta,
-    .latest-post.card:hover .post-title {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    .latest-post-media::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0);
-        transition: all 0.3s ease;
-    }
-
-    .post-body {
-        position: relative;
-        z-index: 1;
-        transition: all 0.3s ease;
-        transform: translateY(0);
-    }
-
-    .latest-post-meta,
-    .post-title {
-        opacity: 0;
-        transition: all 0.3s ease;
-        transform: translateY(20px);
-    }
-
-    .latest-post-img {
-        height: 100%;
-    }
-
-    .post-item-tools.text-bold {
-        font-weight: bold;
-        font-size: 1.2em;
-    }
-</style>
-
-<section id="news" class="news">
+<section id="project-area" class="project-area solid-bg">
     <div class="container">
         <div class="row text-center">
-            <div class="col-12">
-                <span class="section-title">As an </span>
-                <div class="">
-                    <img loading="lazy" class="img-fluid" src="{{ asset('images/logos/amazonAsscoi.png') }}"
-                        alt="Subtitle Image" style="max-width: 300px; height: auto;">
-                </div>
-                <span class="section-title pb-2">we earn from qualifying purchases</span>
+            <div class="col-lg-12">
+                <h2 class="section-title">Work of Excellence</h2>
+                <h3 class="section-sub-title">Recent Projects</h3>
             </div>
         </div>
-
-
         <!--/ Title row end -->
 
         <div class="row">
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="latest-post card">
-                    <div class="latest-post-media">
-                        <a href="news-single.html" class="latest-post-img">
-                            <img loading="lazy" class="img-fluid"
-                                src="{{ asset('images/news/enginerrin-support.jpg') }}" alt="img" />
-                        </a>
-                    </div>
-                    <div class="post-body">
-                        <h4 class="post-title">
-                            <a href="news-single.html" class="d-inline-block"></a>
-                        </h4>
-                        <div class="latest-post-meta">
-                            <span class="post-item-date">
-                                <i class="fa fa-clock-o"></i>Enginnering Support
-                            </span>
-                            <span class="post-item-tools">procedures</span>
+            <div class="col-12">
+                <div class="row shuffle-wrapper">
+                    <div class="col-1 shuffle-sizer"></div>
+
+                    <div class="col-lg-4 col-md-6 shuffle-item">
+                        <div class="project-img-container">
+                            <a class="gallery-popup" href="images/projects/project1.jpg" aria-label="project-img">
+                                <img class="img-fluid" src="images/projects/project1.jpg" alt="project-img">
+                                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+                            </a>
+                            <div class="project-item-info">
+                                <div class="project-item-info-content">
+                                    <h3 class="project-item-title">
+                                        <a href="projects-single.html">Capital Teltway Building</a>
+                                    </h3>
+                                    <p class="project-cat">Commercial, Interiors</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <!-- Latest post end -->
-            </div>
-            <!-- 1st post col end -->
+                    </div><!-- shuffle item 1 end -->
 
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="latest-post card">
-                    <div class="latest-post-media">
-                        <a href="news-single.html" class="latest-post-img">
-                            <img loading="lazy" class="img-fluid"
-                                src="{{ asset('images/news/enginerrin-support.jpg') }}" alt="img" />
-                        </a>
-                    </div>
-                    <div class="post-body">
-                        <h4 class="post-title">
-                            <a href="news-single.html" class="d-inline-block"></a>
-                        </h4>
-                        <div class="latest-post-meta">
-                            <span class="post-item-date">
-                                <i class="fa fa-clock-o"></i>Enginnering Support
-                            </span>
-                            <span class="post-item-tools">workshop </span>
+                    <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;healthcare&quot;]">
+                        <div class="project-img-container">
+                            <a class="gallery-popup" href="images/projects/project2.jpg" aria-label="project-img">
+                                <img class="img-fluid" src="images/projects/project2.jpg" alt="project-img">
+                                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+                            </a>
+                            <div class="project-item-info">
+                                <div class="project-item-info-content">
+                                    <h3 class="project-item-title">
+                                        <a href="projects-single.html">Ghum Touch Hospital</a>
+                                    </h3>
+                                    <p class="project-cat">Healthcare</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <!-- Latest post end -->
-            </div>
-            <!-- 2nd post col end -->
+                    </div><!-- shuffle item 2 end -->
 
-
-
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="latest-post card">
-                    <div class="latest-post-media">
-                        <a href="news-single.html" class="latest-post-img">
-                            <img loading="lazy" class="img-fluid"
-                                src="{{ asset('images/news/enginerrin-support.jpg') }}" alt="img" />
-                        </a>
-                    </div>
-                    <div class="post-body">
-                        <h4 class="post-title">
-                            <a href="news-single.html" class="d-inline-block"></a>
-                        </h4>
-                        <div class="latest-post-meta">
-                            <span class="post-item-date">
-                                <i class="fa fa-clock-o"></i>Enginnering Support
-                            </span>
-                            <span class="post-item-tools">Tools</span>
+                    <div class="col-lg-4 col-md-6 shuffle-item">
+                        <div class="project-img-container">
+                            <a class="gallery-popup" href="images/projects/project3.jpg" aria-label="project-img">
+                                <img class="img-fluid" src="images/projects/project3.jpg" alt="project-img">
+                                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+                            </a>
+                            <div class="project-item-info">
+                                <div class="project-item-info-content">
+                                    <h3 class="project-item-title">
+                                        <a href="projects-single.html">TNT East Facility</a>
+                                    </h3>
+                                    <p class="project-cat">Government</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <!-- Latest post end -->
-            </div>
+                    </div><!-- shuffle item 3 end -->
 
-
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="latest-post card">
-                    <div class="latest-post-media">
-                        <a href="news-single.html" class="latest-post-img">
-                            <img loading="lazy" class="img-fluid"
-                                src="{{ asset('images/news/enginerrin-support.jpg') }}" alt="img" />
-                        </a>
-                    </div>
-                    <div class="post-body">
-                        <h4 class="post-title">
-                            <a href="news-single.html" class="d-inline-block"></a>
-                        </h4>
-                        <div class="latest-post-meta">
-                            <span class="post-item-date">
-                                <i class="fa fa-clock-o"></i>Enginnering Support
-                            </span>
-                            <span class="post-item-tools">books</span>
+                    <div class="col-lg-4 col-md-6 shuffle-item">
+                        <div class="project-img-container">
+                            <a class="gallery-popup" href="images/projects/project4.jpg" aria-label="project-img">
+                                <img class="img-fluid" src="images/projects/project4.jpg" alt="project-img">
+                                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+                            </a>
+                            <div class="project-item-info">
+                                <div class="project-item-info-content">
+                                    <h3 class="project-item-title">
+                                        <a href="projects-single.html">Narriot Headquarters</a>
+                                    </h3>
+                                    <p class="project-cat">Infrastructure</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <!-- Latest post end -->
-            </div>
-            <!-- 2nd post col end -->
+                    </div><!-- shuffle item 4 end -->
 
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="latest-post card">
-                    <div class="latest-post-media">
-                        <a href="news-single.html" class="latest-post-img">
-                            <img loading="lazy" class="img-fluid"
-                                src="{{ asset('images/news/enginerrin-support.jpg') }}" alt="img" />
-                        </a>
-                    </div>
-                    <div class="post-body">
-                        <h4 class="post-title">
-                            <a href="news-single.html" class="d-inline-block"></a>
-                        </h4>
-                        <div class="latest-post-meta">
-                            <span class="post-item-date">
-                                <i class="fa fa-clock-o"></i>Enginnering Support
-                            </span>
-                            <span class="post-item-tools">materials</span>
+                    <div class="col-lg-4 col-md-6 shuffle-item">
+                        <div class="project-img-container">
+                            <a class="gallery-popup" href="images/projects/project5.jpg" aria-label="project-img">
+                                <img class="img-fluid" src="images/projects/project5.jpg" alt="project-img">
+                                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+                            </a>
+                            <div class="project-item-info">
+                                <div class="project-item-info-content">
+                                    <h3 class="project-item-title">
+                                        <a href="projects-single.html">Kalas Metrorail</a>
+                                    </h3>
+                                    <p class="project-cat">Infrastructure</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                    </div><!-- shuffle item 5 end -->
 
-
-                <!-- Latest post end -->
+                    <div class="col-lg-4 col-md-6 shuffle-item">
+                        <div class="project-img-container">
+                            <a class="gallery-popup" href="images/projects/project6.jpg" aria-label="project-img">
+                                <img class="img-fluid" src="images/projects/project6.jpg" alt="project-img">
+                                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+                            </a>
+                            <div class="project-item-info">
+                                <div class="project-item-info-content">
+                                    <h3 class="project-item-title">
+                                        <a href="projects-single.html">Ancraft Avenue House</a>
+                                    </h3>
+                                    <p class="project-cat">Residential</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- shuffle item 6 end -->
+                </div><!-- shuffle end -->
             </div>
-            <!-- 3rd post col end -->
-        </div>
 
-        <div class="row">
-            <!-- More posts here -->
-        </div>
+            <div class="col-12">
+                <div class="general-btn text-center">
+                    <a class="btn btn-primary" href="projects.html">View All Projects</a>
+                </div>
+            </div>
 
-        {{-- <div class="general-btn text-center mt-4">
-            <a class="btn btn-primary" href="news-left-sidebar.html">See All Posts</a>
-        </div> --}}
+        </div><!-- Content row end -->
     </div>
     <!--/ Container end -->
-</section>
+</section><!-- Project area end -->

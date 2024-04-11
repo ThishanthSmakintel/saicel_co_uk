@@ -31,6 +31,9 @@
         <!-- Slide show end -->
 
         <!-- Section -->
+        @include('include.sections.section-info-card-cleaning')
+        <!-- Section end -->
+        <!-- Section -->
         @include('include.sections.section')
         <!-- Section end -->
 
@@ -40,6 +43,10 @@
 
         <!-- Section 3 -->
         @include('include.sections.section3')
+        <!-- Section 3 end -->
+
+        <!-- Section 3 -->
+        @include('include.sections.section-info-card-enginnering')
         <!-- Section 3 end -->
 
         <!-- Section 4 -->
@@ -64,6 +71,10 @@
         {{-- @include('include.sections.section7-subscribe') --}}
         <!-- Section 7 end -->
 
+
+        <!-- Section 6 -->
+        {{-- @include('include.sections.section-user-reviews') --}}
+        <!-- Section 6 end -->
 
 
         <!-- Footer -->

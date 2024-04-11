@@ -1,4 +1,4 @@
-<section id="project-area" class="project-area solid-bg">
+{{-- <section id="project-area" class="project-area solid-bg">
     <div class="container">
         <div class="row text-center">
             <div class="col-lg-12">
@@ -163,4 +163,4 @@
         <!-- Content row end -->
     </div>
     <!--/ Container end -->
-</section>
+</section> --}}

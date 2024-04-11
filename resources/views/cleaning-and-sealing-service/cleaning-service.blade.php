@@ -119,7 +119,7 @@
         <div class="card-body text-left">
             <section id="ts-service-area" class="ts-service-area pb-0">
                 <div class="container">
-                    <div class="row text-center align-items-center">
+                    <div class="row text-left align-items-center">
                         <div class="col-lg-6">
                             <div class="ts-service-box">
                                 <div class="ts-service-box-info">
