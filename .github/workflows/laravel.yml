@@ -22,4 +22,5 @@ jobs:
       - name: Directory Permissions
         run: chmod -R 777 storage bootstrap/cache
       - name: Copy to public_html
-        run: cp -r * /home/saicelsl/public_html
+        run: |
+          find . -type f ! -name ".env" ! -name ".htaccess" -exec rsync -avz --progress {} /home/saicelsl/public_html \;
