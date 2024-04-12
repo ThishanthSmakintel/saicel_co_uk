@@ -1,5 +1,3 @@
-// .github/workflows/laravel.yml
-
 name: Laravel Deployment
 
 on:
