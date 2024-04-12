@@ -37,7 +37,7 @@
                                                 options</strong> that don't compromise quality. We offer <strong>quality
                                                 assurance</strong> to guarantee your satisfaction. Let us craft a cleaning
                                             plan that fits your <strong>goals</strong> and <strong>budget</strong>
-                                            perfectly.</span>
+                                            perfectly</span>
                                     </p>
                                 </div>
                             </div><!-- Service box end -->
