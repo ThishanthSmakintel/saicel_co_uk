@@ -41,7 +41,8 @@
                     <div class="col-lg-6">
                         <div class="ts-service-box bg-image hover-zoom shadow">
                             <img loading="lazy" class="img-fluid" style="max-width: 100%;"
-                                src="{{ asset('images/cleaningServices/img-right.jpg') }}" alt="service-avater-image">
+                                src="{{ asset('images/cleaningServices/img-card-cleaning-square.png') }}"
+                                alt="service-avater-image">
                             <!-- Adjusted max-width to fit image within the card -->
                         </div><!-- Service box end -->
                     </div><!-- Col end -->

@@ -17,7 +17,7 @@
                         <div class="project-img-container">
                             <a class="gallery-popup" href="images/projects/project1.jpg" aria-label="project-img">
                                 <img class="img-fluid" src="images/projects/project1.jpg" alt="project-img">
-                                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+
                             </a>
                             <div class="project-item-info">
                                 <div class="project-item-info-content">
@@ -34,7 +34,7 @@
                         <div class="project-img-container">
                             <a class="gallery-popup" href="images/projects/project2.jpg" aria-label="project-img">
                                 <img class="img-fluid" src="images/projects/project2.jpg" alt="project-img">
-                                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+
                             </a>
                             <div class="project-item-info">
                                 <div class="project-item-info-content">
@@ -51,7 +51,7 @@
                         <div class="project-img-container">
                             <a class="gallery-popup" href="images/projects/project3.jpg" aria-label="project-img">
                                 <img class="img-fluid" src="images/projects/project3.jpg" alt="project-img">
-                                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+
                             </a>
                             <div class="project-item-info">
                                 <div class="project-item-info-content">
@@ -68,7 +68,7 @@
                         <div class="project-img-container">
                             <a class="gallery-popup" href="images/projects/project4.jpg" aria-label="project-img">
                                 <img class="img-fluid" src="images/projects/project4.jpg" alt="project-img">
-                                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+
                             </a>
                             <div class="project-item-info">
                                 <div class="project-item-info-content">
@@ -85,7 +85,7 @@
                         <div class="project-img-container">
                             <a class="gallery-popup" href="images/projects/project5.jpg" aria-label="project-img">
                                 <img class="img-fluid" src="images/projects/project5.jpg" alt="project-img">
-                                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+
                             </a>
                             <div class="project-item-info">
                                 <div class="project-item-info-content">
@@ -102,7 +102,7 @@
                         <div class="project-img-container">
                             <a class="gallery-popup" href="images/projects/project6.jpg" aria-label="project-img">
                                 <img class="img-fluid" src="images/projects/project6.jpg" alt="project-img">
-                                <span class="gallery-icon"><i class="fa fa-plus"></i></span>
+
                             </a>
                             <div class="project-item-info">
                                 <div class="project-item-info-content">

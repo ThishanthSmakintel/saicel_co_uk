@@ -6,8 +6,8 @@
 
                     <div class="col-lg-6">
                         <div class="ts-service-box bg-image hover-zoom">
-                            <img loading="lazy" class="img-fluid"
-                                src="{{ asset('images/cleaningServices/img-right.jpg') }}" alt="service-avater-image">
+                            <img loading="lazy" class="img-fluid" src="{{ asset('images/services/img-engineering.jpg') }}"
+                                alt="service-avater-image">
                         </div><!-- Service box end -->
                     </div><!-- Col end -->
                     <div class="col-lg-6">

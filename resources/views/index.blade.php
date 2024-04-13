@@ -4,7 +4,7 @@
 <head>
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
-    <title>Saicel.co.uk - Home</title>
+    <title>Saicel.ca | Home</title>
 
     <!-- Mobile Specific Metas -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

@@ -3,6 +3,55 @@
 @section('title', 'Saicel Cleaning Services')
 
 @section('content')
+    <section id="ContactUsCard" class="ts-service-box d-flex">
+        <!-- About Start -->
+        <div class="container">
+            <div class="row align-items-stretch">
+                <div class="col-md-6">
+                    <div class="d-flex flex-column h-100 justify-content-center">
+                        <h2 style="color: black; font-size: 40px; margin-bottom: 20px;">Cleaning Services</h2>
+                        <p style="color: black; font-size: 16px;">We offer a wide range of cleaning services including
+                            residential, commercial, and specialized cleaning to meet your needs. Our experienced team uses
+                            advanced cleaning techniques and eco-friendly products to ensure a clean and healthy environment
+                            for you and your family or employees. From regular maintenance cleaning to deep cleaning and
+                            sanitation, we tailor our services to exceed your expectations.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100"
+                        style="background-color: rgba(255, 255, 255, 0.8); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                        <div class="card-header">
+                            <h5 class="card-title"
+                                style="font-weight: bold; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); color: black; font-size: 18px;">
+                                Contact Us</h5>
+                        </div>
+                        <div class="card-body" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                            <form style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">
+                                <div class="form-group">
+                                    <label for="inputName"><i class="fas fa-user"></i> Name</label>
+                                    <input type="text" class="form-control" id="inputName" placeholder="Enter your name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputMobile"><i class="fas fa-phone"></i> Mobile</label>
+                                    <input type="tel" class="form-control" id="inputMobile"
+                                        placeholder="Enter your mobile number">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputAddress"><i class="fas fa-map-marker-alt"></i> Address</label>
+                                    <input type="text" class="form-control" id="inputAddress"
+                                        placeholder="Enter your address">
+                                </div>
+                                <button type="submit" class="btn btn-primary"><i class="fas fa-envelope"></i>
+                                    Contact</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <section id="facts" class="ts-service-box d-flex">
         <!-- About Start -->
         <div class="container-fluid py-5">
@@ -39,10 +88,13 @@
                                             plan that fits your <strong>goals</strong> and <strong>budget</strong>
                                             perfectly</span>
                                     </p>
+                                    <!-- Font Awesome Icons -->
+                                    <div class="mt-4">
+
+                                        <i class="fas fa-check-circle fa-3x me-3"></i>
+                                    </div>
                                 </div>
                             </div><!-- Service box end -->
-
-
                         </div>
                     </div>
                 </div>
@@ -50,6 +102,7 @@
         </div>
         <!-- About End -->
     </section>
+
 
     <section id="ts-service-area" class="ts-service-area pb-5">
         <div class="container">
@@ -64,8 +117,8 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="ts-service-box d-flex">
-                        <div class="ts-service-box-img">
-                            <img loading="lazy" src="{{ asset('images/icon-image/service-icon1.png') }}" alt="service-icon">
+                        <div class="ts-service-box-img" style="color: rgb(204, 147, 4);">
+                            <i class="fas fa-industry fa-3x"></i>
                         </div>
                         <div class="ts-service-box-info">
                             <h3 class="service-box-title"><strong>Industry-Leading Expertise</strong></h3>
@@ -91,28 +144,34 @@
 
                 <div class="col-lg-4 mt-5 mt-lg-0 mb-4 mb-lg-0">
                     <div class="ts-service-box d-flex">
-                        <div class="ts-service-box-img">
-                            <img loading="lazy" src="{{ asset('images/icon-image/service-icon1.png') }}" alt="service-icon">
+                        <div class="ts-service-box-img" style="color: rgb(204, 147, 4);">
+                            <i class="fas fa-industry fa-3x"></i>
                         </div>
                         <div class="ts-service-box-info">
-
-                            <h3 class="service-box-title"><strong>Bespoke Cleaning Solutions</strong></h3>
-                            <p>Experience the Total Clean difference with our customized cleaning plans:</p>
-                            <ul>
-                                <li>Flexibility tailored to your schedule</li>
-                                <li>Specialized protocols for thorough cleaning</li>
-                                <li>Environmentally-friendly options for a green clean</li>
-                                <li>Add-ons to enhance your cleaning package</li>
-                                <li>Budget-friendly options without compromising quality</li>
-                                <li>Quality assurance to guarantee satisfaction</li>
+                            <h3 class="service-box-title">Tailored Cleaning Solutions</h3>
+                            <p>Discover the Total Clean difference with our customized cleaning plans:</p>
+                            <ul class="list-unstyled">
+                                <li><strong>Flexibility:</strong> Schedule cleaning services according to your convenience
+                                </li>
+                                <li><strong>Specialized Protocols:</strong> Thorough cleaning methods tailored to your needs
+                                </li>
+                                <li><strong>Environmentally-Friendly:</strong> Choose green cleaning options for a
+                                    sustainable approach</li>
+                                <li><strong>Add-Ons:</strong> Enhance your cleaning package with additional services</li>
+                                <li><strong>Budget-Friendly:</strong> Quality services that fit your budget without
+                                    compromise</li>
+                                <li><strong>Quality Assurance:</strong> Guaranteed satisfaction with every clean</li>
                             </ul>
-                            <p>Let us craft a cleaning plan that fits your goals and budget perfectly.</p>
+                            <p>Let us create a cleaning plan that aligns perfectly with your goals and budget.</p>
                         </div>
                     </div>
                 </div><!-- Col end -->
+
             </div><!-- Content row end -->
         </div><!--/ Container end -->
     </section>
+
+
 
 
     <section class="card mx-0 shadow">
@@ -167,7 +226,8 @@
                     <a href="#">
                         <div class="ts-service-box">
                             <div class="ts-service-image-wrapper">
-                                <img loading="lazy" class="w-100" src="{{ asset('images/cleaningServices/img-card.jpg') }}"
+                                <img loading="lazy" class="w-100"
+                                    src="{{ asset('images/cleaningServices/card-img/img-cleaning-card-img (2).png') }}"
                                     alt="Car Dealership & Showroom Cleaning Image" />
                             </div>
                             <div class="d-flex">
@@ -195,7 +255,8 @@
                     <a href="#">
                         <div class="ts-service-box">
                             <div class="ts-service-image-wrapper">
-                                <img loading="lazy" class="w-100" src="{{ asset('images/cleaningServices/img-card.jpg') }}"
+                                <img loading="lazy" class="w-100"
+                                    src="{{ asset('images/cleaningServices/card-img/img-cleaning-card-img (1).png') }}"
                                     alt="Hospitality, Hotel & Pub Cleaning Image" />
                             </div>
                             <div class="d-flex">
@@ -224,7 +285,7 @@
                         <div class="ts-service-box">
                             <div class="ts-service-image-wrapper">
                                 <img loading="lazy" class="w-100"
-                                    src="{{ asset('images/cleaningServices/img-card.jpg') }}"
+                                    src="{{ asset('images/cleaningServices/card-img/img-cleaning-card-img (3).png') }}"
                                     alt="Healthcare & Medical Cleaning Image" />
                             </div>
                             <div class="d-flex">
@@ -253,7 +314,7 @@
                         <div class="ts-service-box">
                             <div class="ts-service-image-wrapper">
                                 <img loading="lazy" class="w-100"
-                                    src="{{ asset('images/cleaningServices/img-card.jpg') }}"
+                                    src="{{ asset('images/cleaningServices/card-img/img-cleaning-card-img (2).png') }}"
                                     alt="Daily Office Cleaning Image" />
                             </div>
                             <div class="d-flex">
@@ -282,7 +343,7 @@
                         <div class="ts-service-box">
                             <div class="ts-service-image-wrapper">
                                 <img loading="lazy" class="w-100"
-                                    src="{{ asset('images/cleaningServices/img-card.jpg') }}"
+                                    src="{{ asset('images/cleaningServices/card-img/img-cleaning-card-img (3).png') }}"
                                     alt="Fintech Cleaning Image" />
                             </div>
                             <div class="d-flex">
@@ -311,7 +372,7 @@
                         <div class="ts-service-box">
                             <div class="ts-service-image-wrapper">
                                 <img loading="lazy" class="w-100"
-                                    src="{{ asset('images/cleaningServices/img-card.jpg') }}"
+                                    src="{{ asset('images/cleaningServices/card-img/img-cleaning-card-img (4).png') }}"
                                     alt="Banking and Finance Cleaning Image" />
                             </div>
                             <div class="d-flex">
@@ -340,7 +401,7 @@
                         <div class="ts-service-box">
                             <div class="ts-service-image-wrapper">
                                 <img loading="lazy" class="w-100"
-                                    src="{{ asset('images/cleaningServices/img-card.jpg') }}"
+                                    src="{{ asset('images/cleaningServices/card-img/img-cleaning-card-img (5).png') }}"
                                     alt="Property Management Cleaning Image" />
                             </div>
                             <div class="d-flex">
@@ -369,7 +430,7 @@
                         <div class="ts-service-box">
                             <div class="ts-service-image-wrapper">
                                 <img loading="lazy" class="w-100"
-                                    src="{{ asset('images/cleaningServices/img-card.jpg') }}"
+                                    src="{{ asset('images/cleaningServices/card-img/img-cleaning-card-img (6).png') }}"
                                     alt="Professional Practices Cleaning Image" />
                             </div>
                             <div class="d-flex">
@@ -398,7 +459,7 @@
                         <div class="ts-service-box">
                             <div class="ts-service-image-wrapper">
                                 <img loading="lazy" class="w-100"
-                                    src="{{ asset('images/cleaningServices/img-card.jpg') }}"
+                                    src="{{ asset('images/cleaningServices/card-img/img-cleaning-card-img (7).png') }}"
                                     alt="Public Sector Cleaning Image" />
                             </div>
                             <div class="d-flex">
@@ -427,7 +488,7 @@
                         <div class="ts-service-box">
                             <div class="ts-service-image-wrapper">
                                 <img loading="lazy" class="w-100"
-                                    src="{{ asset('images/cleaningServices/img-card.jpg') }}"
+                                    src="{{ asset('images/cleaningServices/card-img/img-cleaning-card-img (8).png') }}"
                                     alt="Retail, Gym and Leisure Cleaning Image" />
                             </div>
                             <div class="d-flex">
@@ -456,7 +517,7 @@
                         <div class="ts-service-box">
                             <div class="ts-service-image-wrapper">
                                 <img loading="lazy" class="w-100"
-                                    src="{{ asset('images/cleaningServices/img-card.jpg') }}"
+                                    src="{{ asset('images/cleaningServices/card-img/img-cleaning-card-img (9).png') }}"
                                     alt="Schools & Educational Facilities Cleaning Image" />
                             </div>
                             <div class="d-flex">
@@ -485,7 +546,7 @@
                         <div class="ts-service-box">
                             <div class="ts-service-image-wrapper">
                                 <img loading="lazy" class="w-100"
-                                    src="{{ asset('images/cleaningServices/img-card.jpg') }}"
+                                    src="{{ asset('images/cleaningServices/card-img/img-cleaning-card-img (10).png') }}"
                                     alt="TV, Radio and Film Studio Cleaning Image" />
                             </div>
                             <div class="d-flex">
@@ -514,7 +575,7 @@
                         <div class="ts-service-box">
                             <div class="ts-service-image-wrapper">
                                 <img loading="lazy" class="w-100"
-                                    src="{{ asset('images/cleaningServices/img-card.jpg') }}"
+                                    src="{{ asset('images/cleaningServices/card-img/img-cleaning-card-img (11).png') }}"
                                     alt="Pharmaceutical Cleaning Image" />
                             </div>
                             <div class="d-flex">
@@ -558,3 +619,20 @@
 
     </section><!-- Service end -->
 @endsection
+<style>
+    /* Background image for medium-sized screens */
+    @media (min-width: 768px) {
+        #ContactUsCard {
+            background-image: url('{{ asset('images/cleaningServices/img-cleaning-page-1-md.png') }}');
+            background-size: cover;
+        }
+    }
+
+    /* Background image for mobile devices */
+    @media (max-width: 767px) {
+        #ContactUsCard {
+            background-image: url('{{ asset('images/cleaningServices/img-cleaning-page-1-mobile.png') }}');
+            background-size: contain;
+        }
+    }
+</style>
