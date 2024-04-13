@@ -221,10 +221,10 @@
                                         Sealing Services
                                         <i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown-menu" role="menu">
-                                        <li><a href="{{ route('cleaning-service') }}">Cleaning Service
+                                        <li><a href="{{ route('cleaning-services') }}">Cleaning Service
                                                 Courses</a>
                                         </li>
-                                        <li><a href="{{ route('cleaning-service') }}">Sealing Services</a>
+                                        <li><a href="{{ route('sealing-services') }}">Sealing Services</a>
                                         </li>
                                     </ul>
                                 </li>

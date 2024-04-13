@@ -84,26 +84,13 @@ Route::get('/property-investments/property-investments', function () {
 
 Route::get('/cleaning-and-sealing-service/cleaning-service', function () {
     return view('/cleaning-and-sealing-service.cleaning-service');
-})->name('cleaning-service');
+})->name('cleaning-services');
 
 
-// Route::get('/cleaning-and-sealing-service/sealing-services', function () {
-//     return view('/cleaning-and-sealing-service.sealing-services');
-// })->name('sealing-services');
+Route::get('/cleaning-and-sealing-service/sealing-services', function () {
+    return view('/cleaning-and-sealing-service.sealing-services');
+})->name('sealing-services');
 
 Route::get('/contact-us', function () {
     return view('contact-us.contact-us');
 })->name('contact-us');
-
-
-
-
-Route::get('/clear-cache', function () {
-    Artisan::call('cache:clear');
-    Artisan::call('route:clear');
-    Artisan::call('view:clear');
-
-    $redirectionTime = 2;
-    header("refresh:{$redirectionTime};url=/");
-    return "<div style='background-color: #dff0d8; color: #3c763d; padding: 10px; border: 1px solid #d6e9c6;'>Cache cleared successfully. You will be redirected to the home page in {$redirectionTime} seconds.</div>";
-});

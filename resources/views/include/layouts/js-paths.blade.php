@@ -14,11 +14,9 @@
 <!-- Shuffle -->
 <script src="{{ asset('plugins/shuffle/shuffle.min.js') }}" defer></script>
 
-<!-- Google Map API Key -->
-<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY" defer></script>
+<!-- beforeafter Plugin -->
+<script src="{{ asset('js/plugins/beforeafter.jquery-1.0.0.js') }}" defer></script>
 
-<!-- Google Map Plugin -->
-<script src="{{ asset('plugins/google-map/map.js') }}" defer></script>
 
 <!-- Template custom -->
 <script src="{{ asset('js/script.js') }}"></script>
