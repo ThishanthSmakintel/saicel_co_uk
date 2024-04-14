@@ -15,7 +15,7 @@
 <script src="{{ asset('plugins/shuffle/shuffle.min.js') }}" defer></script>
 
 <!-- beforeafter Plugin -->
-<script src="{{ asset('js/plugins/beforeafter.jquery-1.0.0.js') }}" defer></script>
+<script src="{{ asset('js/plugins/before-afer-js/beforeafter.jquery.js') }}" defer></script>
 
 
 <!-- Template custom -->

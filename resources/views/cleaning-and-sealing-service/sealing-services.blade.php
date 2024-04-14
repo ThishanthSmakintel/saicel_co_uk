@@ -3,7 +3,6 @@
 @section('title', 'Saicel Cleaning Services')
 
 @section('content')
-    <!-- About Start -->
     <div class="row">
         <div class="col-md-6">
             <div class="banner-carousel banner-carousel-1 mb-0">
@@ -13,24 +12,20 @@
                         <div class="container h-100">
                             <div class="row align-items-center h-100">
                                 <div class="col-md-12">
-                                    <h2 class="slide-title" data-animation-in="slideInDown"
-                                        style="font-size: 32px; font-weight: bold;">
-                                        Innovative <span class="low-highlight">Engineering Solutions
-                                        </span> for Your Projects
+                                    <h2 class="slide-title" data-animation-in="slideInDown">
+                                        Innovative <span class="low-highlight">Engineering Solutions</span> for Your
+                                        Projects
                                     </h2>
-                                    <h3 class="slide-title" data-animation-in="fadeIn"
-                                        style="font-size: 24px; font-weight: bold;">
+                                    <h3 class="slide-title" data-animation-in="fadeIn">
                                         Elevate Your Spaces with Cutting-Edge Engineering
                                     </h3>
-                                    <p data-animation-in="slideInRight" style="font-size: 16px; font-weight: bold;">
-                                        Explore our innovative engineering solutions designed to optimize your
-                                        projects and
+                                    <p data-animation-in="slideInRight">
+                                        Explore our innovative engineering solutions designed to optimize your projects and
                                         elevate your spaces to new heights.
                                     </p>
                                     <div data-animation-in="slideInLeft">
                                         <a href="services/engineering.html" class="slider btn btn-primary border">Discover
-                                            Our
-                                            Engineering Services</a>
+                                            Our Engineering Services</a>
                                         <a href="about.html" class="slider btn btn-primary border"
                                             aria-label="learn-more-about-us">Learn More</a>
                                     </div>
@@ -44,101 +39,75 @@
             </div>
         </div>
         <div class="col-md-6">
-
             <div class="row">
-                <!-- Upper section -->
+                <!-- First card -->
                 <div class="col-md-4 mb-4">
                     <div class="card">
                         <img src="https://smartseal.2dimg.com/25/untitled-design-4_b4ca94ef5c.jpg" class="card-img-top"
-                            style="height: 255px;" alt="https://smartseal.2dimg.com/25/untitled-design-4_b4ca94ef5c.jpg">
+                            style="height: 255px;" alt="Card Image">
                         <div class="card-body d-flex flex-column">
-                            <!-- Image covers full card -->
                             <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
-                            <!-- Button aligned to the bottom -->
                         </div>
                     </div>
                 </div>
 
-                <!-- Lower section -->
-
+                <!-- Second card -->
                 <div class="col-md-4 mb-4">
                     <div class="card">
                         <img src="https://smartseal.2dimg.com/25/untitled-design-4_b4ca94ef5c.jpg" class="card-img-top"
-                            style="height: 255px;" alt="https://smartseal.2dimg.com/25/untitled-design-4_b4ca94ef5c.jpg">
+                            style="height: 255px;" alt="Card Image">
                         <div class="card-body d-flex flex-column">
-                            <!-- Image covers full card -->
                             <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
-                            <!-- Button aligned to the bottom -->
                         </div>
                     </div>
                 </div>
-
 
                 <!-- Third card -->
                 <div class="col-md-4 mb-4">
                     <div class="card">
                         <img src="https://smartseal.2dimg.com/25/untitled-design-4_b4ca94ef5c.jpg" class="card-img-top"
-                            style="height: 255px;" alt="https://smartseal.2dimg.com/25/untitled-design-4_b4ca94ef5c.jpg">
+                            style="height: 255px;" alt="Card Image">
                         <div class="card-body d-flex flex-column">
-                            <!-- Image covers full card -->
                             <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
-                            <!-- Button aligned to the bottom -->
                         </div>
                     </div>
                 </div>
-
-                <!-- Additional section -->
-
             </div>
 
             <div class="row">
-                <!-- Upper section -->
+                <!-- Fourth card -->
                 <div class="col-md-4 mb-4">
                     <div class="card">
                         <img src="https://smartseal.2dimg.com/25/untitled-design-4_b4ca94ef5c.jpg" class="card-img-top"
-                            style="height: 250px;" alt="https://smartseal.2dimg.com/25/untitled-design-4_b4ca94ef5c.jpg">
+                            style="height: 250px;" alt="Card Image">
                         <div class="card-body d-flex flex-column">
-                            <!-- Image covers full card -->
                             <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
-                            <!-- Button aligned to the bottom -->
                         </div>
                     </div>
                 </div>
 
-                <!-- Lower section -->
-
+                <!-- Fifth card -->
                 <div class="col-md-4 mb-4">
                     <div class="card">
                         <img src="https://smartseal.2dimg.com/25/untitled-design-4_b4ca94ef5c.jpg" class="card-img-top"
-                            style="height: 250px;" alt="https://smartseal.2dimg.com/25/untitled-design-4_b4ca94ef5c.jpg">
+                            style="height: 250px;" alt="Card Image">
                         <div class="card-body d-flex flex-column">
-                            <!-- Image covers full card -->
                             <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
-                            <!-- Button aligned to the bottom -->
                         </div>
                     </div>
                 </div>
 
-
-                <!-- Third card -->
+                <!-- Sixth card -->
                 <div class="col-md-4 mb-4">
                     <div class="card">
                         <img src="https://smartseal.2dimg.com/25/untitled-design-4_b4ca94ef5c.jpg" class="card-img-top"
-                            style="height: 250px;" alt="https://smartseal.2dimg.com/25/untitled-design-4_b4ca94ef5c.jpg">
+                            style="height: 250px;" alt="Card Image">
                         <div class="card-body d-flex flex-column">
-                            <!-- Image covers full card -->
                             <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
-                            <!-- Button aligned to the bottom -->
                         </div>
                     </div>
                 </div>
-
-                <!-- Additional section -->
-
             </div>
-
-            <!-- Add more rows as needed -->
-
         </div>
     </div>
 
@@ -176,46 +145,99 @@
             </section>
         </div>
     </section>
-    <section class="card mx-0 shadow">
 
-        <div class="container">
-            <div class="row">
-                <!-- First card -->
-                <div class="col-md-4 mb-4">
-                    <div class="card shadow h-100">
-                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Card Image 2">
-                        <div class="card-body">
-                            <!-- Card content here -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="card mx-0">
+        <div class="row">
+            <!-- Before & After Images Column -->
+            <div class="col-md-6 ">
+                <div class="row align-items-center"> <!-- Added align-items-center class -->
+                    <div class="col-md-5">
+                        <div class="card"> <!-- Apply custom class -->
+                            <div class="card-body before-image"
+                                style="font-size: 16px; background-image: url('{{ asset('images/sealing-services/img-sealing-before.jpg') }}');">
+                                <!-- Content for the first nested column -->
+                                <p class="mt-0 mb-0 text-center"><button class="btn btn-secondary" disabled>
+                                        Before</button>
+                                </p>
+                            </div>
                         </div>
                     </div>
-
-                </div>
-
-                <!-- Second card -->
-                <div class="col-md-4 mb-4">
-                    <div class="card shadow h-100">
-                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Card Image 2">
-                        <div class="card-body">
-                            <!-- Card content here -->
-                        </div>
+                    <div class="col-md-2 text-center my-3" style="font-size: 56px; font-weight:bolder">
+                        <!-- Adjust font size and added text-center class -->
+                        vs
                     </div>
-                </div>
-
-                <!-- Third card -->
-                <div class="col-md-4 mb-4">
-                    <div class="card shadow h-100">
-                        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Card Image 3">
-                        <div class="card-body">
-                            <!-- Card content here -->
+                    <div class="col-md-5">
+                        <div class="card ">
+                            <!-- Apply custom class and negative margin -->
+                            <div class="card-body before-image"
+                                style="font-size: 16px; background-image: url('{{ asset('images/sealing-services/img-sealing-after.jpg') }}');">
+                                <!-- Content for the first nested column -->
+                                <p class="mt-0 mb-0 text-center"><button class="btn btn-secondary" disabled>
+                                        After</button>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Main Content Column -->
+            <div class="col-md-6 my-3">
+                <div class="card">
+                    <div class="card-body" style="font-size: 18px;">
+                        <h3>Why Choose Us</h3>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-primary"></i></span>Experienced
+                                professionals</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-primary"></i></span>High-quality
+                                sealants</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-primary"></i></span>Long-lasting
+                                protection</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-primary"></i></span>Expert
+                                consultation</li>
+                            <li><span class="fa-li"><i class="fas fa-check-circle text-primary"></i></span>Transformative
+                                results</li>
+                        </ul>
+                        <p class="text-center my-3" style="font-size: 18px;">Ready to transform your space? <br> Contact
+                            us today!</p>
+                        <div class="text-center">
+                            <button class="btn btn-primary btn-lg">Hire Us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    </section>
+
 
 
 
 @endsection
+
+<style>
+    .before-image,
+    .after-image {
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+
+        margin: 5%;
+        /* Adjust height as needed */
+        color: #fff;
+        /* Optional: Add text color for better readability */
+    }
+</style>
