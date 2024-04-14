@@ -7,31 +7,31 @@
         <div class="col-md-6">
             <div class="banner-carousel banner-carousel-1 mb-0">
                 <div class="banner-carousel-item"
-                    style="background-image: url({{ asset('images/slider-main/img-engineering.png') }}); background-color: transparent; background-size: cover; background-position: center;">
+                    style="background-image: url({{ asset('images/sealing-services/img-sealing-slide-show.png') }}); background-color: transparent; background-size: cover; background-position: center;">
                     <div class="slider-content text-left">
                         <div class="container h-100">
                             <div class="row align-items-center h-100">
                                 <div class="col-md-12">
                                     <h2 class="slide-title" data-animation-in="slideInDown">
-                                        Innovative <span class="low-highlight">Engineering Solutions</span> for Your
-                                        Projects
+                                        Effective <span class="low-highlight">Sealing Solutions</span> for Your Needs
                                     </h2>
                                     <h3 class="slide-title" data-animation-in="fadeIn">
-                                        Elevate Your Spaces with Cutting-Edge Engineering
+                                        Enhance Protection with Quality Sealing Services
                                     </h3>
                                     <p data-animation-in="slideInRight">
-                                        Explore our innovative engineering solutions designed to optimize your projects and
-                                        elevate your spaces to new heights.
+                                        Discover our effective sealing solutions crafted to safeguard your assets and
+                                        enhance longevity.
                                     </p>
                                     <div data-animation-in="slideInLeft">
-                                        <a href="services/engineering.html" class="slider btn btn-primary border">Discover
-                                            Our Engineering Services</a>
+                                        <a href="services/sealing.html" class="slider btn btn-primary border">Explore Our
+                                            Sealing Services</a>
                                         <a href="about.html" class="slider btn btn-primary border"
                                             aria-label="learn-more-about-us">Learn More</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
 
@@ -43,10 +43,12 @@
                 <!-- First card -->
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="https://smartseal.2dimg.com/25/untitled-design-4_b4ca94ef5c.jpg" class="card-img-top"
-                            style="height: 255px;" alt="Card Image">
+                        <img src="{{ asset('images/sealing-services/sealing-area-types/img-roof.jpg') }}" alt="Roof Sealing"
+                            class="card-img-top" style="height: 255px;" alt="Card Image">
+
+
                         <div class="card-body d-flex flex-column">
-                            <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+                            <a href="#" class="btn btn-primary mt-auto">Roof Sealing</a>
                         </div>
                     </div>
                 </div>
@@ -54,10 +56,10 @@
                 <!-- Second card -->
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="https://smartseal.2dimg.com/25/untitled-design-4_b4ca94ef5c.jpg" class="card-img-top"
-                            style="height: 255px;" alt="Card Image">
+                        <img src="{{ asset('images/sealing-services/sealing-area-types/img-wood-and-decking.jpg') }}"
+                            class="card-img-top" style="height: 255px;" alt="Card Image">
                         <div class="card-body d-flex flex-column">
-                            <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+                            <a href="#" class="btn btn-primary mt-auto">Wood and Decking Sealing</a>
                         </div>
                     </div>
                 </div>
@@ -65,10 +67,10 @@
                 <!-- Third card -->
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="https://smartseal.2dimg.com/25/untitled-design-4_b4ca94ef5c.jpg" class="card-img-top"
-                            style="height: 255px;" alt="Card Image">
+                        <img src="{{ asset('images/sealing-services/sealing-area-types/img-bricks.jpg') }}"
+                            class="card-img-top" style="height: 255px;" alt="Card Image">
                         <div class="card-body d-flex flex-column">
-                            <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+                            <a href="#" class="btn btn-primary mt-auto">Brick Sealing</a>
                         </div>
                     </div>
                 </div>
@@ -78,10 +80,10 @@
                 <!-- Fourth card -->
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="https://smartseal.2dimg.com/25/untitled-design-4_b4ca94ef5c.jpg" class="card-img-top"
-                            style="height: 250px;" alt="Card Image">
+                        <img src="{{ asset('images/sealing-services/sealing-area-types/img-concreate.jpg') }}"
+                            class="card-img-top" style="height: 250px;" alt="Card Image">
                         <div class="card-body d-flex flex-column">
-                            <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+                            <a href="#" class="btn btn-primary mt-auto">Concrete Sealing</a>
                         </div>
                     </div>
                 </div>
@@ -89,10 +91,10 @@
                 <!-- Fifth card -->
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="https://smartseal.2dimg.com/25/untitled-design-4_b4ca94ef5c.jpg" class="card-img-top"
-                            style="height: 250px;" alt="Card Image">
+                        <img src="{{ asset('images/sealing-services/sealing-area-types/img-patios.jpg') }}"
+                            class="card-img-top" style="height: 250px;" alt="Card Image">
                         <div class="card-body d-flex flex-column">
-                            <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+                            <a href="#" class="btn btn-primary mt-auto">Patios Sealing</a>
                         </div>
                     </div>
                 </div>
@@ -100,10 +102,10 @@
                 <!-- Sixth card -->
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="https://smartseal.2dimg.com/25/untitled-design-4_b4ca94ef5c.jpg" class="card-img-top"
-                            style="height: 250px;" alt="Card Image">
+                        <img src="{{ asset('images/sealing-services/sealing-area-types/img-driveways.jpg') }}"
+                            class="card-img-top" style="height: 250px;" alt="Card Image">
                         <div class="card-body d-flex flex-column">
-                            <a href="#" class="btn btn-primary mt-auto">Go somewhere</a>
+                            <a href="#" class="btn btn-primary mt-auto">Driveway Sealing</a>
                         </div>
                     </div>
                 </div>
@@ -119,17 +121,17 @@
                         <div class="col-lg-6">
                             <div class="ts-service-box">
                                 <div class="ts-service-box-info">
-                                    <h3 class="service-box-title"><strong>Bespoke Cleaning Solutions</strong></h3>
-                                    <p>Experience the Total Clean difference with our <strong>customized cleaning
-                                            plans</strong> tailored to your needs:</p>
-                                    <p><strong>Flexibility</strong> tailored to your schedule, <strong>specialized
-                                            protocols</strong> for thorough cleaning, and <strong>environmentally-friendly
-                                            options</strong> for a green clean. Add-ons are available to enhance your
-                                        cleaning package, with <strong>budget-friendly options</strong> that don't
-                                        compromise quality. We offer <strong>quality assurance</strong> to guarantee your
-                                        satisfaction.</p>
-                                    <p>Let us craft a cleaning plan that fits your <strong>goals</strong> and
-                                        <strong>budget</strong> perfectly.
+                                    <h3 class="service-box-title"><strong>Professional Sealing Solutions</strong></h3>
+                                    <p>Discover our comprehensive range of <strong>sealing solutions</strong> designed to
+                                        protect your assets and prolong their lifespan:</p>
+                                    <p>We offer <strong>customized sealing plans</strong> tailored to your specific
+                                        requirements, ensuring <strong>maximum protection</strong> and <strong>long-lasting
+                                            results</strong>.</p>
+                                    <p>Our services include <strong>flexible scheduling</strong>, <strong>high-quality
+                                            materials</strong>, and <strong>environmentally-friendly options</strong> for
+                                        sustainable sealing solutions.</p>
+                                    <p>Trust our experienced team to deliver <strong>reliable</strong> and
+                                        <strong>cost-effective</strong> sealing solutions that meet your needs.
                                     </p>
                                 </div>
                             </div><!-- Service box end -->
@@ -137,7 +139,8 @@
                         <div class="col-lg-6">
                             <div class="ts-service-box bg-image hover-zoom">
                                 <img loading="lazy" class="img-fluid"
-                                    src="{{ asset('images/cleaningServices/img-right.jpg') }}" alt="service-avater-image">
+                                    src="{{ asset('images/sealing-services/img-card-sealing.png') }}"
+                                    alt="sealing-service-image">
                             </div><!-- Service box end -->
                         </div><!-- Col end -->
                     </div><!--/ Title row end -->
@@ -147,21 +150,10 @@
     </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
     <section class="card mx-0">
         <div class="row">
             <!-- Before & After Images Column -->
-            <div class="col-md-6 ">
+            <div class="col-md-6">
                 <div class="row align-items-center"> <!-- Added align-items-center class -->
                     <div class="col-md-5">
                         <div class="card"> <!-- Apply custom class -->
@@ -174,7 +166,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 text-center my-3" style="font-size: 56px; font-weight:bolder">
+                    <div class="col-md-2 text-center my-2" style="font-size: 56px; font-weight:bolder">
                         <!-- Adjust font size and added text-center class -->
                         vs
                     </div>
@@ -210,17 +202,33 @@
                             <li><span class="fa-li"><i class="fas fa-check-circle text-primary"></i></span>Transformative
                                 results</li>
                         </ul>
-                        <p class="text-center my-3" style="font-size: 18px;">Ready to transform your space? <br> Contact
-                            us today!</p>
-                        <div class="text-center">
-                            <button class="btn btn-primary btn-lg">Hire Us</button>
-                        </div>
                     </div>
                 </div>
+                <div class="call-to-action classic me-2">
+                    <div class="row align-items-center">
+                        <div class="col-md-8 text-center text-md-left">
+                            <div class="call-to-action-text">
+                                <h3 class="action-title">Looking for professional Sealing services?</h3>
+
+                            </div>
+                        </div><!-- Col end -->
+                        <div class="col-md-4 text-center text-md-right mt-3 mt-md-0">
+                            <div class="call-to-action-btn">
+                                <a class="btn btn-primary" href="#">Hire Us</a>
+                            </div>
+                        </div><!-- col end -->
+                    </div><!-- row end -->
+                </div><!-- Action end -->
             </div>
 
         </div>
     </section>
+
+
+
+
+
+
 
 
 
@@ -235,7 +243,7 @@
         background-position: center;
         height: 300px;
 
-        margin: 5%;
+        margin: 10%;
         /* Adjust height as needed */
         color: #fff;
         /* Optional: Add text color for better readability */

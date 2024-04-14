@@ -4,7 +4,7 @@
             <div class="row justify-content-between">
                 <!-- About Us Section -->
                 <div class="col-lg-4 col-md-6 footer-widget footer-about">
-                    <h3 class="widget-title">Saicel UK</h3>
+                    <h3 class="widget-title">Saicel Canada</h3>
                     <p>Located in Worcester Park, Surrey, KT4 8AY, UK</p>
                     <p>Email: <a href="mailto:sailtd@hotmail.co.uk">sailtd@hotmail.co.uk</a></p>
                     <p>Contact: <a href="tel:+447939057566">+44 (0) 7939057566</a></p>
