@@ -142,8 +142,8 @@
                     <nav class="navbar navbar-expand-lg navbar-light p-0">
 
                         <div class="logo">
-                            <a class="d-block" href="index-2.html">
-                                <img loading="lazy" src="{{ asset('images/logo.png') }}" alt="Constra">
+                            <a class="d-block" href="{{ route('home-page') }}">
+                                <img loading="lazy" src="{{ asset('images/logo.png') }}" alt="logo">
                             </a>
                         </div><!-- logo end -->
 
@@ -164,9 +164,9 @@
                                         data-toggle="dropdown">Enginnering Services
                                         <i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown-menu" role="menu">
-                                        <li><a href="{{ route('engineering-services') }}">Civil Engineering
+                                        {{-- <li><a href="{{ route('engineering-services') }}">Civil Engineering
                                                 Courses</a>
-                                        </li>
+                                        </li> --}}
                                         {{-- <li><a href="{{ route('chemical-engineering') }}">Chemical Engineering</a> --}}
                                 </li>
                                 <li><a href="{{ route('management-planning') }}">Management Planning</a></li>

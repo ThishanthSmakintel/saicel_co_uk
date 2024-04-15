@@ -1,6 +1,6 @@
 @extends('default')
 
-@section('title', 'contact Us')
+@section('title', 'Contact Us')
 
 @section('content')
 
@@ -9,50 +9,36 @@
 
             <div class="row text-center">
                 <div class="col-12">
-                    <h2 class="section-title">Reaching our Office</h2>
-                    <h3 class="section-sub-title">Find Our Location</h3>
+                    <h2 class="section-title">Reaching our Offices</h2>
+                    <h3 class="section-sub-title">Find Our Locations</h3>
                 </div>
             </div>
             <!--/ Title row end -->
 
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <div class="ts-service-box-bg text-center h-100">
                         <span class="ts-service-icon icon-round">
                             <i class="fas fa-map-marker-alt mr-0"></i>
                         </span>
                         <div class="ts-service-box-content">
-                            <h4>Visit Our Office</h4>
-                            <p>Worcester Park, Surrey, KT4 8AY, UK</p>
+                            <h4>Visit Our Canada Office</h4>
+                            <p>15 Purbrook Court<br>North York, Ontario<br>Canada M2R2B6</p>
                         </div>
                     </div>
                 </div><!-- Col 1 end -->
 
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <div class="ts-service-box-bg text-center h-100">
                         <span class="ts-service-icon icon-round">
-                            <i class="fa fa-envelope mr-0"></i>
+                            <i class="fas fa-map-marker-alt mr-0"></i>
                         </span>
                         <div class="ts-service-box-content">
-                            <h4>Email Us</h4>
-                            <p>sailtd@hotmail.co.uk</p>
+                            <h4>Visit Our UK Office</h4>
+                            <p>Worcester Park, Surrey<br>KT4 8AY, UK</p>
                         </div>
                     </div>
                 </div><!-- Col 2 end -->
-
-                <div class="col-md-4">
-                    <div class="ts-service-box-bg text-center h-100">
-                        <span class="ts-service-icon icon-round">
-                            <i class="fa fa-phone-square mr-0"></i>
-                        </span>
-                        <div class="ts-service-box-content">
-                            <h4>Call Us</h4>
-                            <p>+44 (0) 7939057566
-
-                            </p>
-                        </div>
-                    </div>
-                </div><!-- Col 3 end -->
 
             </div><!-- 1st row end -->
 
@@ -67,7 +53,7 @@
 
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="column-title">We love to hear</h3>
+                    <h3 class="column-title">We'd Love to Hear From You</h3>
                     <!-- contact form works with formspree.io  -->
                     <!-- contact form activation doc: https://docs.themefisher.com/constra/contact-form/ -->
                     <form id="contact-form" action="#" method="post" role="form">
@@ -107,7 +93,7 @@
                 </div>
 
             </div><!-- Content row -->
-        </div><!-- Conatiner end -->
+        </div><!-- Container end -->
     </section><!-- Main container end -->
 
 @endsection

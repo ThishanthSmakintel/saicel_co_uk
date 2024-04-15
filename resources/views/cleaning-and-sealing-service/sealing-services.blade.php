@@ -121,7 +121,8 @@
                         <div class="col-lg-6">
                             <div class="ts-service-box">
                                 <div class="ts-service-box-info">
-                                    <h3 class="service-box-title"><strong>Professional Sealing Solutions</strong></h3>
+                                    <h2 class="service-box-title fs-5"><strong>Professional Sealing Solutions</strong></h2>
+
                                     <p>Discover our comprehensive range of <strong>sealing solutions</strong> designed to
                                         protect your assets and prolong their lifespan:</p>
                                     <p>We offer <strong>customized sealing plans</strong> tailored to your specific
@@ -189,22 +190,37 @@
             <div class="col-md-6 my-3">
                 <div class="card">
                     <div class="card-body" style="font-size: 18px;">
-                        <h3>Why Choose Us</h3>
-                        <ul class="fa-ul">
-                            <li><span class="fa-li"><i class="fas fa-check-circle text-primary"></i></span>Experienced
-                                professionals</li>
-                            <li><span class="fa-li"><i class="fas fa-check-circle text-primary"></i></span>High-quality
-                                sealants</li>
-                            <li><span class="fa-li"><i class="fas fa-check-circle text-primary"></i></span>Long-lasting
-                                protection</li>
-                            <li><span class="fa-li"><i class="fas fa-check-circle text-primary"></i></span>Expert
-                                consultation</li>
-                            <li><span class="fa-li"><i class="fas fa-check-circle text-primary"></i></span>Transformative
-                                results</li>
-                        </ul>
+                        <h3 class="mb-4 text-center">Why Choose Us</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="fa-ul">
+                                    <li class="mb-3"><span class="fa-li"><i
+                                                class="fas fa-check-circle text-primary"></i></span>Experienced
+                                        professionals</li>
+                                    <li class="mb-3"><span class="fa-li"><i
+                                                class="fas fa-check-circle text-primary"></i></span>High-quality sealants
+                                    </li>
+                                    <li class="mb-3"><span class="fa-li"><i
+                                                class="fas fa-check-circle text-primary"></i></span>Long-lasting protection
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="fa-ul">
+                                    <li class="mb-3"><span class="fa-li"><i
+                                                class="fas fa-check-circle text-primary"></i></span>Expert consultation
+                                    </li>
+                                    <li class="mb-3"><span class="fa-li"><i
+                                                class="fas fa-check-circle text-primary"></i></span>Transformative results
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="call-to-action classic me-2">
+            </div>
+
+            {{-- <div class="call-to-action classic me-2">
                     <div class="row align-items-center">
                         <div class="col-md-8 text-center text-md-left">
                             <div class="call-to-action-text">
@@ -218,14 +234,118 @@
                             </div>
                         </div><!-- col end -->
                     </div><!-- row end -->
-                </div><!-- Action end -->
-            </div>
+                </div><!-- Action end --> --}}
+        </div>
 
         </div>
     </section>
 
 
+    <section class="card mx-0">
+        <h2 class="text-center">Check out our Amazing Products</h2>
 
+        <div class="product-slider">
+            @php
+                $totalImages = 8; // Total number of images
+                $imagesPerSlide = 4; // Number of images per slide
+            @endphp
+
+            @for ($slide = 0; $slide < ceil($totalImages / $imagesPerSlide); $slide++)
+                <div class="card mx-0">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row align-items-center">
+                                @for ($i = $slide * $imagesPerSlide + 1; $i <= min(($slide + 1) * $imagesPerSlide, $totalImages); $i++)
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-body before-image"
+                                                style="font-size: 16px; background-image: url('{{ asset('images/product-images/img-product-img (' . $i . ').jpg') }}');">
+                                                <!-- Star rating icon -->
+
+                                            </div>
+                                            <div class="text-center mb-2">
+                                                <i class="fas fa-star fa-2x text-warning"></i>
+                                                <i class="fas fa-star fa-2x text-warning"></i>
+                                                <i class="fas fa-star fa-2x text-warning"></i>
+                                                <i class="fas fa-star fa-2x text-warning"></i>
+                                                <i class="far fa-star fa-2x text-warning"></i>
+                                            </div>
+                                            <!-- Dummy description -->
+                                            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                elit. Phasellus sed tortor vitae nunc eleifend dignissim.</p>
+                                        </div>
+                                    </div>
+                                @endfor
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            @endfor
+        </div>
+    </section>
+
+
+
+
+
+    <section class="call-to-action-box no-padding">
+        <div class="container">
+            <div class="action-style-box">
+                <div class="row align-items-center">
+                    <div class="col-md-8 text-center text-md-left">
+                        <div class="call-to-action-text">
+                            <h3 class="action-title">
+                                Looking for professional Sealing services?
+                            </h3>
+                        </div>
+                    </div>
+                    <!-- Col end -->
+                    <div class="col-md-4 text-center text-md-right mt-3 mt-md-0">
+                        <div class="call-to-action-btn">
+                            <a class="btn btn-dark" href="#">Hire Us</a>
+                        </div>
+                    </div>
+                    <!-- col end -->
+                </div>
+                <!-- row end -->
+            </div>
+            <!-- Action style box -->
+        </div>
+        <!-- Container end -->
+    </section>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.product-slider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1500,
+                dots: true,
+                arrows: true,
+                responsive: [{
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
 
 
 
