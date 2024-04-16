@@ -22,6 +22,8 @@
 <body>
     <div class="body-inner">
         @include('include.sections.top-bar')
+        <!-- Top bar end -->
+
         <!-- Header start -->
         @include('include.layouts.header')
         <!-- Header end -->
@@ -30,52 +32,41 @@
         @include('include.sections.slide-show')
         <!-- Slide show end -->
 
-        <!-- Section -->
-        @include('include.sections.section-info-card-cleaning')
-        <!-- Section end -->
-        <!-- Section -->
-        @include('include.sections.section')
-        <!-- Section end -->
-
         <!-- Section 2 -->
         @include('include.sections.section2')
         <!-- Section 2 end -->
 
-        <!-- Section 3 -->
+        <!-- Section 3 (Hours of Work) -->
         @include('include.sections.section3')
         <!-- Section 3 end -->
 
-        <!-- Section 3 -->
-        @include('include.sections.section-info-card-enginnering')
+        <!-- Section (Cleaning Services) -->
+        @include('include.sections.section-info-card-cleaning')
+        <!-- Section end -->
+
+        <!-- Section (Getting Started) -->
+        @include('include.sections.section')
+        <!-- Section end -->
+
+        <!-- Section 3 (Sealing Services) -->
+        @include('include.sections.section-info-card-sealing')
         <!-- Section 3 end -->
 
         <!-- Section 4 -->
-        @include('include.sections.section4')
+        @include('include.sections.section-info-card-property-maintance')
         <!-- Section 4 end -->
 
-        <!-- Section 5 course deatils wtih alsion -->
+        <!-- Section 5 (Course Details with Alison) -->
         @include('include.sections.section5')
-        <!-- Section 5 end  deatils wtih alsion -->
+        <!-- Section 5 end (Course Details with Alison) -->
 
         <!-- Section 8 (News) -->
         @include('include.sections.section8-news')
         <!-- Section 8 end -->
 
-
-
         <!-- Section 6 -->
         @include('include.sections.section6')
         <!-- Section 6 end -->
-
-        <!-- Section 7 (Subscribe) -->
-        {{-- @include('include.sections.section7-subscribe') --}}
-        <!-- Section 7 end -->
-
-
-        <!-- Section 6 -->
-        {{-- @include('include.sections.section-user-reviews') --}}
-        <!-- Section 6 end -->
-
 
         <!-- Footer -->
         @include('include.layouts.footer')

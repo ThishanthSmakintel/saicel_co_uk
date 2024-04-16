@@ -2,8 +2,8 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-lg-12">
-                <h2 class="section-title">Work of Excellence</h2>
-                <h3 class="section-sub-title">Recent Projects</h3>
+                <h2 class="section-title">Experience us</h2>
+                <h3 class="section-sub-title">book our serviess</h3>
             </div>
         </div>
         <!--/ Title row end -->
@@ -15,33 +15,42 @@
 
                     <div class="col-lg-4 col-md-6 shuffle-item">
                         <div class="project-img-container">
-                            <a class="gallery-popup" href="images/projects/project1.jpg" aria-label="project-img">
-                                <img class="img-fluid" src="images/projects/project1.jpg" alt="project-img">
+                            <a class="gallery-popup"
+                                href="{{ asset('images/services-images/img-landing-page-service-card-property-cleaning.png') }}"
+                                aria-label="project-img">
+                                <img class="img-fluid"
+                                    src="{{ asset('images/services-images/img-landing-page-service-card-property-cleaning.png') }}"
+                                    alt="project-img">
 
                             </a>
                             <div class="project-item-info">
                                 <div class="project-item-info-content">
                                     <h3 class="project-item-title">
-                                        <a href="projects-single.html">Capital Teltway Building</a>
+                                        <a href="projects-single.html">Residential Cleaning & Sealing</a>
                                     </h3>
-                                    <p class="project-cat">Commercial, Interiors</p>
+                                    <p class="project-cat"> Book now</p>
                                 </div>
                             </div>
                         </div>
                     </div><!-- shuffle item 1 end -->
 
+
                     <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;healthcare&quot;]">
                         <div class="project-img-container">
-                            <a class="gallery-popup" href="images/projects/project2.jpg" aria-label="project-img">
-                                <img class="img-fluid" src="images/projects/project2.jpg" alt="project-img">
-
+                            <a class="gallery-popup"
+                                href="{{ asset('images/services-images/img-landing-page-service-card-commerical.png') }}"
+                                aria-label="project-img">
+                                <img class="img-fluid"
+                                    src="{{ asset('images/services-images/img-landing-page-service-card-commerical.png') }}"
+                                    alt="project-img">
                             </a>
                             <div class="project-item-info">
                                 <div class="project-item-info-content">
                                     <h3 class="project-item-title">
-                                        <a href="projects-single.html">Ghum Touch Hospital</a>
+                                        <a href="projects-single.html">Commercial Cleaning & Sealing
+                                        </a>
                                     </h3>
-                                    <p class="project-cat">Healthcare</p>
+                                    <p class="project-cat"> Book now</p>
                                 </div>
                             </div>
                         </div>
@@ -49,16 +58,21 @@
 
                     <div class="col-lg-4 col-md-6 shuffle-item">
                         <div class="project-img-container">
-                            <a class="gallery-popup" href="images/projects/project3.jpg" aria-label="project-img">
-                                <img class="img-fluid" src="images/projects/project3.jpg" alt="project-img">
-
+                            <a class="gallery-popup"
+                                href="{{ asset('images/services-images/img-landing-page-service-card-carpet-cleaing.jpg') }}"
+                                aria-label="project-img">
+                                <img class="img-fluid"
+                                    src="{{ asset('images/services-images/img-landing-page-service-card-carpet-cleaing.jpg') }}"
+                                    alt="project-img">
                             </a>
+
                             <div class="project-item-info">
                                 <div class="project-item-info-content">
                                     <h3 class="project-item-title">
-                                        <a href="projects-single.html">TNT East Facility</a>
+                                        <a href="projects-single.html">Carpet Cleaning
+                                        </a>
                                     </h3>
-                                    <p class="project-cat">Government</p>
+                                    <p class="project-cat"> Book now</p>
                                 </div>
                             </div>
                         </div>
@@ -66,16 +80,20 @@
 
                     <div class="col-lg-4 col-md-6 shuffle-item">
                         <div class="project-img-container">
-                            <a class="gallery-popup" href="images/projects/project4.jpg" aria-label="project-img">
-                                <img class="img-fluid" src="images/projects/project4.jpg" alt="project-img">
-
+                            <a class="gallery-popup"
+                                href="{{ asset('images/services-images/img-landing-page-service-card-gardening.png') }}"
+                                aria-label="project-img">
+                                <img class="img-fluid"
+                                    src="{{ asset('images/services-images/img-landing-page-service-card-gardening.png') }}"
+                                    alt="project-img">
                             </a>
+
                             <div class="project-item-info">
                                 <div class="project-item-info-content">
                                     <h3 class="project-item-title">
-                                        <a href="projects-single.html">Narriot Headquarters</a>
+                                        <a href="projects-single.html">Garden Cleaning</a>
                                     </h3>
-                                    <p class="project-cat">Infrastructure</p>
+                                    <p class="project-cat"> Book now</p>
                                 </div>
                             </div>
                         </div>
@@ -83,16 +101,20 @@
 
                     <div class="col-lg-4 col-md-6 shuffle-item">
                         <div class="project-img-container">
-                            <a class="gallery-popup" href="images/projects/project5.jpg" aria-label="project-img">
-                                <img class="img-fluid" src="images/projects/project5.jpg" alt="project-img">
-
+                            <a class="gallery-popup"
+                                href="{{ asset('images/services-images/img-landing-page-service-card-drive-away.png') }}"
+                                aria-label="project-img">
+                                <img class="img-fluid"
+                                    src="{{ asset('images/services-images/img-landing-page-service-card-drive-away.png') }}"
+                                    alt="project-img">
                             </a>
+
                             <div class="project-item-info">
                                 <div class="project-item-info-content">
                                     <h3 class="project-item-title">
-                                        <a href="projects-single.html">Kalas Metrorail</a>
+                                        <a href="projects-single.html">Driveways Cleaning & Sealing</a>
                                     </h3>
-                                    <p class="project-cat">Infrastructure</p>
+                                    <p class="project-cat"> Book now</p>
                                 </div>
                             </div>
                         </div>
@@ -100,16 +122,19 @@
 
                     <div class="col-lg-4 col-md-6 shuffle-item">
                         <div class="project-img-container">
-                            <a class="gallery-popup" href="images/projects/project6.jpg" aria-label="project-img">
-                                <img class="img-fluid" src="images/projects/project6.jpg" alt="project-img">
-
+                            <a class="gallery-popup"
+                                href="{{ asset('images/services-images/img-landing-page-service-card-property-maaintance.png') }}"
+                                aria-label="project-img">
+                                <img class="img-fluid"
+                                    src="{{ asset('images/services-images/img-landing-page-service-card-property-maaintance.png') }}"
+                                    alt="project-img">
                             </a>
                             <div class="project-item-info">
                                 <div class="project-item-info-content">
                                     <h3 class="project-item-title">
-                                        <a href="projects-single.html">Ancraft Avenue House</a>
+                                        <a href="projects-single.html">Property Maintenance Services</a>
                                     </h3>
-                                    <p class="project-cat">Residential</p>
+                                    <p class="project-cat"> Book now</p>
                                 </div>
                             </div>
                         </div>
@@ -117,13 +142,34 @@
                 </div><!-- shuffle end -->
             </div>
 
-            <div class="col-12">
+            {{-- <div class="col-12">
                 <div class="general-btn text-center">
                     <a class="btn btn-primary" href="projects.html">View All Projects</a>
                 </div>
-            </div>
+            </div> --}}
 
         </div><!-- Content row end -->
     </div>
     <!--/ Container end -->
 </section><!-- Project area end -->
+
+
+<style>
+    .shuffle-item {
+        margin-bottom: 30px;
+        /* Adjust margin as needed */
+    }
+
+    .project-img-container {
+        height: 250px;
+        /* Set a fixed height for all cards */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-img-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* Ensure the image covers the container */
+    }
+</style>

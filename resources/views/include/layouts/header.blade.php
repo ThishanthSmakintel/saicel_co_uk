@@ -158,38 +158,44 @@
                                 <li class="nav-item">
                                     <a href="{{ route('home-page') }}" class="nav-link">Home</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a href="{{ route('cleaning-services') }}" class="nav-link">Cleaning Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{ route('sealing-services') }}" class="nav-link">Sealing Services</a>
+                                </li>
 
-                                <li class="nav-item dropdown">
+                                {{-- <li class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle"
                                         data-toggle="dropdown">Enginnering Services
                                         <i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown-menu" role="menu">
-                                        {{-- <li><a href="{{ route('engineering-services') }}">Civil Engineering
+                                        <li><a href="{{ route('engineering-services') }}">Civil Engineering
                                                 Courses</a>
-                                        </li> --}}
-                                        {{-- <li><a href="{{ route('chemical-engineering') }}">Chemical Engineering</a> --}}
-                                </li>
-                                <li><a href="{{ route('management-planning') }}">Management Planning</a></li>
-                                <li><a href="{{ route('skilled-labour-supply') }}">Skilled Labour Supply</a>
-                                </li>
-                                <li><a href="{{ route('setting-out-levelling') }}">Setting Out & Surveying</a>
-                                </li>
-                                <li><a href="{{ route('smart-sealing-solutions') }}">Smart Sealing
-                                        Solutions</a>
-                                </li>
-                                <li><a href="{{ route('driveways') }}">Driveways</a></li>
-                                <li><a href="{{ route('patios') }}">Patios</a></li>
-                                <li><a href="{{ route('concrete') }}">Concrete</a></li>
-                                <li><a href="{{ route('cavity-wall-loft-insulation') }}">Cavity Wall / Loft
-                                        Insulation</a></li>
-                                <li><a href="{{ route('cctc-security-alarms') }}">CCTV & Security Alarm
-                                        Solutions</a></li>
-                                <li><a href="{{ route('protection-screens-Fitting-services') }}">Protection
-                                        Screens Fitting Services</a></li>
-                            </ul>
-                            </li>
+                                        </li>
+                                        <li><a href="{{ route('chemical-engineering') }}">Chemical Engineering</a>
+                                        </li>
+                                        <li><a href="{{ route('management-planning') }}">Management Planning</a></li>
+                                        <li><a href="{{ route('skilled-labour-supply') }}">Skilled Labour Supply</a>
+                                        </li>
+                                        <li><a href="{{ route('setting-out-levelling') }}">Setting Out & Surveying</a>
+                                        </li>
+                                        <li><a href="{{ route('smart-sealing-solutions') }}">Smart Sealing
+                                                Solutions</a>
+                                        </li>
+                                        <li><a href="{{ route('driveways') }}">Driveways</a></li>
+                                        <li><a href="{{ route('patios') }}">Patios</a></li>
+                                        <li><a href="{{ route('concrete') }}">Concrete</a></li>
+                                        <li><a href="{{ route('cavity-wall-loft-insulation') }}">Cavity Wall / Loft
+                                                Insulation</a></li>
+                                        <li><a href="{{ route('cctc-security-alarms') }}">CCTV & Security Alarm
+                                                Solutions</a></li>
+                                        <li><a href="{{ route('protection-screens-Fitting-services') }}">Protection
+                                                Screens Fitting Services</a></li>
+                                    </ul>
+                                </li> --}}
 
-                            {{-- <li class="nav-item dropdown">
+                                {{-- <li class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Projects
                                         <i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown-menu" role="menu">
@@ -216,26 +222,28 @@
                                 </li> --}}
 
 
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Cleaning &
-                                    Sealing Services
-                                    <i class="fa fa-angle-down"></i></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="{{ route('cleaning-services') }}">Cleaning Service
-                                        </a>
-                                    </li>
-                                    <li><a href="{{ route('sealing-services') }}">Sealing Services</a>
-                                    </li>
-                                </ul>
-                            </li>
+                                {{-- <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Cleaning &
+                                        Sealing Services
+                                        <i class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="{{ route('cleaning-services') }}">Cleaning Service
+                                            </a>
+                                        </li>
+                                        <li><a href="{{ route('sealing-services') }}">Sealing Services</a>
+                                        </li>
+                                    </ul>
+                                </li> --}}
 
-                            <li class="nav-item">
-                                <a href="{{ route('home-page') }}" class="nav-link">Property Maintenance</a>
-                            </li>
+                                <li class="nav-item">
+                                    <a href="{{ route('home-page') }}" class="nav-link">Property Maintenance</a>
+                                </li>
 
-                            <li class="nav-item">
-                                <a href="{{ route('contact-us') }}" class="nav-link">Contact Us</a>
-                            </li>
+
+
+                                <li class="nav-item">
+                                    <a href="{{ route('contact-us') }}" class="nav-link">Contact Us</a>
+                                </li>
 
 
                             </ul>
