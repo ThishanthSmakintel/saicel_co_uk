@@ -3,17 +3,17 @@
         <div class="container">
             <div class="row justify-content-between">
                 <!-- About Us Section -->
-                <div class="col-lg-4 col-md-6 footer-widget footer-about">
+                {{-- <div class="col-lg-4 col-md-6 footer-widget footer-about">
                     <h3 class="widget-title">Our Company (UK)</h3>
                     <p>Worcester Park, Surrey, KT4 8AY, UK</p>
                     <p>Email: <a href="mailto:info@saicel.co.uk">info@saicel.co.uk</a></p>
                     <p>Contact: <a href="tel:+447939057566">+44 (0) 7939057566</a></p>
-                </div>
+                </div> --}}
                 <!-- Col end -->
 
                 <!-- About Us Section for Canada-->
                 <div class="col-lg-4 col-md-6 footer-widget footer-about">
-                    <h3 class="widget-title">Our Company (Canada)</h3>
+                    <h3 class="widget-title">Contact Us</h3>
                     <p>15 Purbrook Court, North York, Ontario, Canada, M2R2B6</p>
                     <p>Email: <a href="mailto:info@saicel.ca">info@saicel.ca</a></p>
                     <p>Contact: <a href="tel:+14379224224">+1 (437) 922-4224</a></p>

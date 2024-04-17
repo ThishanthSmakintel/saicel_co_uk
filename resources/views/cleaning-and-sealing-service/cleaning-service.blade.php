@@ -9,8 +9,14 @@
             <div class="row align-items-stretch">
                 <div class="col-md-6">
                     <div class="d-flex flex-column h-100 justify-content-center">
-                        <h2 style="color: black; font-size: 40px; margin-bottom: 20px;">Cleaning Services</h2>
-                        <p style="color: black; font-size: 16px;">We offer a wide range of cleaning services including
+                        <h2
+                            style="color: rgb(255, 255, 255); font-size: 16px; text-shadow: 2px 2px 2px black; font-size: 40px; margin-bottom: 20px;">
+                            Cleaning Services</h2>
+                        <p
+                            style="color: rgba(255, 255, 255, 0.941), 0.953); font-size: 16px; text-shadow: 2px 2px 2px black;">
+                            We offer a
+                            wide range of
+                            cleaning services including
                             residential, commercial, and specialized cleaning to meet your needs. Our experienced team uses
                             advanced cleaning techniques and eco-friendly products to ensure a clean and healthy environment
                             for you and your family or employees. From regular maintenance cleaning to deep cleaning and
@@ -19,10 +25,10 @@
                 </div>
                 <div class="col-md-6">
                     <div class="card h-100"
-                        style="background-color: rgba(255, 255, 255, 0.8); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                        style="background-color: rgba(244, 244, 244, 0.422); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
                         <div class="card-header">
                             <h5 class="card-title"
-                                style="font-weight: bold; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); color: black; font-size: 18px;">
+                                style="font-weight: bold; color: rgb(255, 255, 255); font-size: 16px; text-shadow: 2px 2px 2px black; font-size: 18px;">
                                 Contact Us</h5>
                         </div>
                         <div class="card-body" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
@@ -625,14 +631,37 @@
         #ContactUsCard {
             background-image: url('{{ asset('images/cleaningServices/img-cleaning-page-1-md.png') }}');
             background-size: cover;
+            color: rgb(255, 255, 255);
+
+
+            input[type="text"]::placeholder,
+            input[type="tel"]::placeholder {
+                color: rgb(0, 0, 0);
+
+            }
         }
     }
 
     /* Background image for mobile devices */
     @media (max-width: 767px) {
         #ContactUsCard {
+            display: block;
+            width: 100%;
+            color: rgb(255, 255, 255);
             background-image: url('{{ asset('images/cleaningServices/img-cleaning-page-1-mobile.png') }}');
             background-size: contain;
+            background-repeat: no-repeat;
+
+            text-shadow: 2px 2px 2px black;
+            box-shadow: 0 0 10px rgba(5, 0, 0, 0.5);
+            background-color: rgb(176, 175, 175);
+            /* Darken the background */
+        }
+
+        input[type="text"]::placeholder,
+        input[type="tel"]::placeholder {
+            color: rgb(0, 0, 0);
+            text-shadow: 2px 2px 2px rgb(255, 252, 252);
         }
     }
 </style>

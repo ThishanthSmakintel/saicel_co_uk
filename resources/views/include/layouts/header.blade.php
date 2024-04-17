@@ -165,6 +165,7 @@
                                     <a href="{{ route('sealing-services') }}" class="nav-link">Sealing Services</a>
                                 </li>
 
+
                                 {{-- <li class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle"
                                         data-toggle="dropdown">Enginnering Services
@@ -236,8 +237,13 @@
                                 </li> --}}
 
                                 <li class="nav-item">
-                                    <a href="{{ route('home-page') }}" class="nav-link">Property Maintenance</a>
+                                    <a href="{{ route('home-page') }}" class="nav-link">Products</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a href="{{ route('home-page') }}" class="nav-link">Training</a>
+                                </li>
+
+
 
 
 

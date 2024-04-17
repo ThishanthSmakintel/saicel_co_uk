@@ -7,9 +7,10 @@
                 <div class="row align-items-center h-100">
                     <div class="col-md-12">
                         <h2 class="slide-title" data-animation-in="slideInDown"
-                            style="font-size: 32px; font-weight: bold;">
-                            Experience Spotless Cleanliness with <span class="low-highlight">Our Cleaning
-                                Services</span>
+                            style="font-size: 32px; font-weight: bold;  >
+                            Experience Spotless Cleanliness with <span class="low-highlight">
+                            Our Cleaning
+                            Services</span>
                         </h2>
                         <h3 class="slide-sub-title" data-animation-in="fadeIn"
                             style="font-size: 24px; font-weight: bold;">
@@ -46,7 +47,8 @@
                         <h3 class="slide-title" data-animation-in="fadeIn" style="font-size: 24px; font-weight: bold;">
                             Sealing Excellence for Long-Lasting Protection
                         </h3>
-                        <p data-animation-in="slideInRight" style="font-size: 16px; font-weight: bold;">
+                        <p data-animation-in="slideInRight" style="font-size: 16px; font-weight: bold;"
+                            class="slideParagraph">
                             Unlock the potential of your surfaces with our advanced sealing solutions, offering both
                             protection and aesthetic enhancement.
                         </p>
@@ -77,7 +79,8 @@
                                 style="font-size: 24px; font-weight: bold;">
                                 Enhance Your Properties with Professional Management
                             </h3>
-                            <p data-animation-in="slideInRight" style="font-size: 16px; font-weight: bold;">
+                            <p data-animation-in="slideInRight" style="font-size: 16px; font-weight: bold;"
+                                class="slideParagraph">
                                 Discover our comprehensive property management solutions designed to optimize your
                                 assets and
                                 enhance your properties' value.
@@ -99,9 +102,38 @@
 </div>
 </div>
 
-
 <style>
-    .low-highlight {
-        background: linear-gradient(180deg, transparent 60%, yellow 60%);
+    .slide-title,
+    .slide-sub-title,
+    .slider-description,
+    .slider.btn {
+        font-weight: bold;
+    }
+
+    .slide-title,
+    .slide-sub-title,
+    .slider-description,
+    .slideParagraph {
+        text-shadow: 2px 2px 2px black;
+    }
+
+    .slider.btn {
+        text-shadow: 1px 1px 1px black;
+    }
+
+    .slide-title {
+        font-size: 32px;
+    }
+
+    .slide-sub-title {
+        font-size: 24px;
+    }
+
+    .slider-description {
+        font-size: 16px;
+    }
+
+    .slider.btn {
+        font-size: 16px;
     }
 </style>
