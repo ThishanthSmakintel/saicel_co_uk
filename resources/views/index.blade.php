@@ -37,7 +37,7 @@
         <!-- Section 2 end -->
 
         <!-- Section 3 (Hours of Work) -->
-        @include('include.sections.section3')
+        {{-- @include('include.sections.section3') --}}
         <!-- Section 3 end -->
 
         <!-- Section (Cleaning Services) -->

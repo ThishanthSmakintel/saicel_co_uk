@@ -44,9 +44,7 @@
                 <div class="col-md-4 mb-4">
                     <div class="card">
                         <img src="{{ asset('images/sealing-services/sealing-area-types/img-roof.jpg') }}" alt="Roof Sealing"
-                            class="card-img-top" style="height: 255px;" alt="Card Image">
-
-
+                            class="card-img-top img-fluid" alt="Card Image">
                         <div class="card-body d-flex flex-column">
                             <a href="#" class="btn btn-primary mt-auto">Roof Sealing</a>
                         </div>
@@ -57,7 +55,7 @@
                 <div class="col-md-4 mb-4">
                     <div class="card">
                         <img src="{{ asset('images/sealing-services/sealing-area-types/img-wood-and-decking.jpg') }}"
-                            class="card-img-top" style="height: 255px;" alt="Card Image">
+                            class="card-img-top img-fluid" alt="Card Image">
                         <div class="card-body d-flex flex-column">
                             <a href="#" class="btn btn-primary mt-auto">Wood and Decking Sealing</a>
                         </div>
@@ -68,7 +66,7 @@
                 <div class="col-md-4 mb-4">
                     <div class="card">
                         <img src="{{ asset('images/sealing-services/sealing-area-types/img-bricks.jpg') }}"
-                            class="card-img-top" style="height: 255px;" alt="Card Image">
+                            class="card-img-top img-fluid" alt="Card Image">
                         <div class="card-body d-flex flex-column">
                             <a href="#" class="btn btn-primary mt-auto">Brick Sealing</a>
                         </div>
@@ -81,7 +79,7 @@
                 <div class="col-md-4 mb-4">
                     <div class="card">
                         <img src="{{ asset('images/sealing-services/sealing-area-types/img-concreate.jpg') }}"
-                            class="card-img-top" style="height: 250px;" alt="Card Image">
+                            class="card-img-top img-fluid" alt="Card Image">
                         <div class="card-body d-flex flex-column">
                             <a href="#" class="btn btn-primary mt-auto">Concrete Sealing</a>
                         </div>
@@ -92,7 +90,7 @@
                 <div class="col-md-4 mb-4">
                     <div class="card">
                         <img src="{{ asset('images/sealing-services/sealing-area-types/img-patios.jpg') }}"
-                            class="card-img-top" style="height: 250px;" alt="Card Image">
+                            class="card-img-top img-fluid" alt="Card Image">
                         <div class="card-body d-flex flex-column">
                             <a href="#" class="btn btn-primary mt-auto">Patios Sealing</a>
                         </div>
@@ -103,7 +101,7 @@
                 <div class="col-md-4 mb-4">
                     <div class="card">
                         <img src="{{ asset('images/sealing-services/sealing-area-types/img-driveways.jpg') }}"
-                            class="card-img-top" style="height: 250px;" alt="Card Image">
+                            class="card-img-top img-fluid" alt="Card Image">
                         <div class="card-body d-flex flex-column">
                             <a href="#" class="btn btn-primary mt-auto">Driveway Sealing</a>
                         </div>
@@ -111,6 +109,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 
     <section class="card mx-0 shadow">
@@ -241,7 +240,7 @@
     </section>
 
 
-    <section class="card mx-0">
+    <section class="card mx-5">
         <h2 class="text-center">Check out our Amazing Products</h2>
 
         <div class="product-slider">
@@ -251,38 +250,35 @@
             @endphp
 
             @for ($slide = 0; $slide < ceil($totalImages / $imagesPerSlide); $slide++)
-                <div class="card mx-0">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="row align-items-center">
-                                @for ($i = $slide * $imagesPerSlide + 1; $i <= min(($slide + 1) * $imagesPerSlide, $totalImages); $i++)
-                                    <div class="col-md-3">
-                                        <div class="card">
-                                            <div class="card-body before-image"
-                                                style="font-size: 16px; background-image: url('{{ asset('images/product-images/img-product-img (' . $i . ').jpg') }}');">
-                                                <!-- Star rating icon -->
+                <div class="row align-items-center">
+                    @for ($i = $slide * $imagesPerSlide + 1; $i <= min(($slide + 1) * $imagesPerSlide, $totalImages); $i++)
+                        <div class="col-md-3 mb-lg-4 mb-sm-2"> <!-- Added mb-lg-4 and mb-sm-2 classes for margin -->
+                            <div class="card">
+                                <div class="card-body before-image"
+                                    style="font-size: 14px; background-image: url('{{ asset('images/product-images/img-product-img (' . $i . ').jpg') }}');">
+                                    <!-- Star rating icon -->
 
-                                            </div>
-                                            <div class="text-center mb-2">
-                                                <i class="fas fa-star fa-2x text-warning"></i>
-                                                <i class="fas fa-star fa-2x text-warning"></i>
-                                                <i class="fas fa-star fa-2x text-warning"></i>
-                                                <i class="fas fa-star fa-2x text-warning"></i>
-                                                <i class="far fa-star fa-2x text-warning"></i>
-                                            </div>
-                                            <!-- Dummy description -->
-                                            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                elit. Phasellus sed tortor vitae nunc eleifend dignissim.</p>
-                                        </div>
-                                    </div>
-                                @endfor
+                                </div>
+                                <div class="text-center mb-2">
+                                    <i class="fas fa-star fa-2x text-warning"></i>
+                                    <i class="fas fa-star fa-2x text-warning"></i>
+                                    <i class="fas fa-star fa-2x text-warning"></i>
+                                    <i class="fas fa-star fa-2x text-warning"></i>
+                                    <i class="far fa-star fa-2x text-warning"></i>
+                                </div>
+                                <!-- Dummy description -->
+                                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                                    sed tortor vitae nunc eleifend dignissim.</p>
                             </div>
                         </div>
-                    </div>
+                    @endfor
                 </div>
             @endfor
         </div>
     </section>
+
+    </section>
+
 
 
 

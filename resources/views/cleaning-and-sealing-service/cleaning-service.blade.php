@@ -4,35 +4,28 @@
 
 @section('content')
     <section id="ContactUsCard" class="ts-service-box d-flex">
-        <!-- About Start -->
         <div class="container">
             <div class="row align-items-stretch">
                 <div class="col-md-6">
                     <div class="d-flex flex-column h-100 justify-content-center">
-                        <h2
-                            style="color: rgb(255, 255, 255); font-size: 16px; text-shadow: 2px 2px 2px black; font-size: 40px; margin-bottom: 20px;">
+                        <h2 class="text-white" style="text-shadow: 2px 2px 2px black; font-size: 30px; margin-bottom: 20px;">
                             Cleaning Services</h2>
-                        <p
-                            style="color: rgba(255, 255, 255, 0.941), 0.953); font-size: 16px; text-shadow: 2px 2px 2px black;">
-                            We offer a
-                            wide range of
-                            cleaning services including
-                            residential, commercial, and specialized cleaning to meet your needs. Our experienced team uses
-                            advanced cleaning techniques and eco-friendly products to ensure a clean and healthy environment
-                            for you and your family or employees. From regular maintenance cleaning to deep cleaning and
-                            sanitation, we tailor our services to exceed your expectations.</p>
+                        <p class="text-white" style="font-size: 12px; text-shadow: 2px 2px 2px black;">We offer a wide range
+                            of cleaning services including residential, commercial, and specialized cleaning to meet your
+                            needs. Our experienced team uses advanced cleaning techniques and eco-friendly products to
+                            ensure a clean and healthy environment for you and your family or employees. From regular
+                            maintenance cleaning to deep cleaning and sanitation, we tailor our services to exceed your
+                            expectations.</p>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 my-4">
                     <div class="card h-100"
                         style="background-color: rgba(244, 244, 244, 0.422); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                        <div class="card-header">
-                            <h5 class="card-title"
-                                style="font-weight: bold; color: rgb(255, 255, 255); font-size: 16px; text-shadow: 2px 2px 2px black; font-size: 18px;">
-                                Contact Us</h5>
+                        <div class="card-header" style="background-color: rgba(0, 0, 0, 0.5);">
+                            <h5 class="card-title text-white" style="font-weight: bold; font-size: 18px;">Contact Us</h5>
                         </div>
-                        <div class="card-body" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                            <form style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">
+                        <div class="card-body">
+                            <form>
                                 <div class="form-group">
                                     <label for="inputName"><i class="fas fa-user"></i> Name</label>
                                     <input type="text" class="form-control" id="inputName" placeholder="Enter your name">
@@ -58,124 +51,121 @@
     </section>
 
 
-    <section id="facts" class="ts-service-box d-flex">
-        <!-- About Start -->
-        <div class="container-fluid py-5">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="about-img">
-                            <div class="rotate-left bg-dark"></div>
-                            <div class="rotate-right bg-dark"></div>
-                            <img src="{{ asset('images/banner/img-about.jpg') }}" class="img-fluid h-100" alt="img">
-                            <div class="bg-white experiences">
-                                <h1 class="display-3">35</h1>
-                                <h6 class="fw-bold">Years Of Experiences</h6>
-                            </div>
+
+
+    <div class="container-fluid  d-flex">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="about-img card shadow">
+                        <div class="rotate-left bg-dark"></div>
+                        <div class="rotate-right bg-dark"></div>
+                        <img src="{{ asset('images/banner/img-about.jpg') }}" class="img-fluid h-100" alt="img">
+                        <div class="bg-white experiences">
+                            <h1 class="display-3"><i class="fas  fa-check-circle fa-sm me-3"></i></h1>
+                            <h5 class="fw-bold">Bringing Innovation to Cleaning</h5>
+
+
+
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay=".6s">
-                        <div class="about-item overflow-hidden">
-                            <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary">
-                                About Us</h5>
-                            <h1 class="display-5 mb-2"> provide Best Cleaning Services Since 2008</h1>
-                            <div class="ts-service-box">
-                                <div class="ts-service-box-info">
-                                    <h3 class="service-box-title"><strong>Bespoke Cleaning Solutions</strong></h3>
-                                    <p>
-                                        <span class="text-left">Experience the Total Clean difference with our
-                                            <strong>customized cleaning plans</strong> tailored to your needs.
-                                            <strong>Flexibility</strong> tailored to your schedule, <strong>specialized
-                                                protocols</strong> for thorough cleaning, and
-                                            <strong>environmentally-friendly options</strong> for a green clean. Add-ons are
-                                            available to enhance your cleaning package, with <strong>budget-friendly
-                                                options</strong> that don't compromise quality. We offer <strong>quality
-                                                assurance</strong> to guarantee your satisfaction. Let us craft a cleaning
-                                            plan that fits your <strong>goals</strong> and <strong>budget</strong>
-                                            perfectly</span>
-                                    </p>
-                                    <!-- Font Awesome Icons -->
-                                    <div class="mt-4">
+                </div>
+                <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay=".6s">
+                    <div class="about-item overflow-hidden py-3">
+                        <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary">
+                            About Us</h5>
+                        <h1 class="display-5 mb-2">Delivering Excellence in Cleaning Services</h1>
+                        <div class="ts-service-box ">
+                            <div class="ts-service-box-info">
+                                <h3 class="service-box-title"><strong>Customized Cleaning Solutions</strong></h3>
+                                <p>
+                                    <span class="text-left">Embark on a journey with us as we strive to provide
+                                        <strong>personalized cleaning plans</strong> tailored to your requirements.
+                                        Enjoy the <strong>flexibility</strong> of scheduling, industry-leading
+                                        <strong>cleaning standards</strong>, and <strong>eco-conscious options</strong>
+                                        for a sustainable approach. Our services are <strong>cost-effective</strong>
+                                        without compromising on quality, backed by our <strong>dedicated team</strong>
+                                        committed to your satisfaction. Let us design a cleaning solution that meets
+                                        your objectives and budget.</span>
+                                </p>
+                                <!-- Font Awesome Icons -->
 
-                                        <i class="fas fa-check-circle fa-3x me-3"></i>
-                                    </div>
-                                </div>
-                            </div><!-- Service box end -->
-                        </div>
+                            </div>
+                        </div><!-- Service box end -->
                     </div>
                 </div>
             </div>
         </div>
-        <!-- About End -->
-    </section>
+    </div>
 
 
-    <section id="ts-service-area" class="ts-service-area pb-5">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-12">
-                    <h2 class="section-title">Elevate Your Space with Total Clean</h2>
-                    <h3 class="section-sub-title">Tailored Cleaning Solutions for Your Business</h3>
-                </div>
+
+
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-12">
+                <h2 class="section-title">Elevate Your Space with Total Clean</h2>
+                <h3 class="section-sub-title">Tailored Cleaning Solutions for Your Business</h3>
             </div>
-            <!--/ Title row end -->
+        </div>
+        <!--/ Title row end -->
 
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="ts-service-box d-flex">
-                        <div class="ts-service-box-img" style="color: rgb(204, 147, 4);">
-                            <i class="fas fa-industry fa-3x"></i>
-                        </div>
-                        <div class="ts-service-box-info">
-                            <h3 class="service-box-title"><strong>Industry-Leading Expertise</strong></h3>
-                            <p>With Total Clean, you benefit from decades of expertise across various sectors:</p>
-                            <ul>
-                                <li><strong>Office Buildings</strong></li>
-                                <li><strong>Medical Facilities</strong></li>
-                                <li><strong>Educational Institutions</strong></li>
-                                <li><strong>Retail Stores</strong></li>
-                                <li><strong>Hospitality Establishments</strong></li>
-                                <li><strong>Manufacturing Facilities</strong></li>
-                            </ul>
-                            <p>Our expertise ensures your space receives top-notch cleaning tailored to your industry's
-                                unique needs.</p>
-                        </div>
-                    </div><!-- Service 1 end -->
-                </div><!-- Col end -->
-
-                <div class="col-lg-4 text-center">
-                    <img loading="lazy" class="img-fluid" src="{{ asset('images/cleaningServices/img-middle.jpg') }}"
-                        alt="service-avater-image">
-                </div>
-
-                <div class="col-lg-4 mt-5 mt-lg-0 mb-4 mb-lg-0">
-                    <div class="ts-service-box d-flex">
-                        <div class="ts-service-box-img" style="color: rgb(204, 147, 4);">
-                            <i class="fas fa-industry fa-3x"></i>
-                        </div>
-                        <div class="ts-service-box-info">
-                            <h3 class="service-box-title">Tailored Cleaning Solutions</h3>
-                            <p>Discover the Total Clean difference with our customized cleaning plans:</p>
-                            <ul class="list-unstyled">
-                                <li><strong>Flexibility:</strong> Schedule cleaning services according to your convenience
-                                </li>
-                                <li><strong>Specialized Protocols:</strong> Thorough cleaning methods tailored to your needs
-                                </li>
-                                <li><strong>Environmentally-Friendly:</strong> Choose green cleaning options for a
-                                    sustainable approach</li>
-                                <li><strong>Add-Ons:</strong> Enhance your cleaning package with additional services</li>
-                                <li><strong>Budget-Friendly:</strong> Quality services that fit your budget without
-                                    compromise</li>
-                                <li><strong>Quality Assurance:</strong> Guaranteed satisfaction with every clean</li>
-                            </ul>
-                            <p>Let us create a cleaning plan that aligns perfectly with your goals and budget.</p>
-                        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="ts-service-box d-flex">
+                    <div class="ts-service-box-img" style="color: rgb(204, 147, 4);">
+                        <i class="fas fa-industry fa-3x"></i>
                     </div>
-                </div><!-- Col end -->
+                    <div class="ts-service-box-info">
+                        <h3 class="service-box-title"><strong>Industry-Leading Expertise</strong></h3>
+                        <p>With Total Clean, you benefit from decades of expertise across various sectors:</p>
+                        <ul>
+                            <li><strong>Office Buildings</strong></li>
+                            <li><strong>Medical Facilities</strong></li>
+                            <li><strong>Educational Institutions</strong></li>
+                            <li><strong>Retail Stores</strong></li>
+                            <li><strong>Hospitality Establishments</strong></li>
+                            <li><strong>Manufacturing Facilities</strong></li>
+                        </ul>
+                        <p>Our expertise ensures your space receives top-notch cleaning tailored to your industry's
+                            unique needs.</p>
+                    </div>
+                </div><!-- Service 1 end -->
+            </div><!-- Col end -->
 
-            </div><!-- Content row end -->
-        </div><!--/ Container end -->
-    </section>
+            <div class="col-lg-4 text-center">
+                <img loading="lazy" class="img-fluid" src="{{ asset('images/cleaningServices/img-middle.jpg') }}"
+                    alt="service-avater-image">
+            </div>
+
+            <div class="col-lg-4 mt-5 mt-lg-0 mb-4 mb-lg-0">
+                <div class="ts-service-box d-flex">
+                    <div class="ts-service-box-img" style="color: rgb(204, 147, 4);">
+                        <i class="fas fa-industry fa-3x"></i>
+                    </div>
+                    <div class="ts-service-box-info">
+                        <h3 class="service-box-title">Tailored Cleaning Solutions</h3>
+                        <p>Discover the Total Clean difference with our customized cleaning plans:</p>
+                        <ul class="list-unstyled">
+                            <li><strong>Flexibility:</strong> Schedule cleaning services according to your convenience
+                            </li>
+                            <li><strong>Specialized Protocols:</strong> Thorough cleaning methods tailored to your needs
+                            </li>
+                            <li><strong>Environmentally-Friendly:</strong> Choose green cleaning options for a
+                                sustainable approach</li>
+                            <li><strong>Add-Ons:</strong> Enhance your cleaning package with additional services</li>
+                            <li><strong>Budget-Friendly:</strong> Quality services that fit your budget without
+                                compromise</li>
+                            <li><strong>Quality Assurance:</strong> Guaranteed satisfaction with every clean</li>
+                        </ul>
+                        <p>Let us create a cleaning plan that aligns perfectly with your goals and budget.</p>
+                    </div>
+                </div>
+            </div><!-- Col end -->
+
+        </div><!-- Content row end -->
+    </div><!--/ Container end -->
+
 
 
 
@@ -188,7 +178,7 @@
                         <div class="col-lg-6">
                             <div class="ts-service-box">
                                 <div class="ts-service-box-info">
-                                    <h3 class="service-box-title"><strong>Bespoke Cleaning Solutions</strong></h3>
+                                    <h1 class="service-box-title"><strong>Bespoke Cleaning Solutions</strong></h1>
                                     <p>Experience the Total Clean difference with our <strong>customized cleaning
                                             plans</strong> tailored to your needs:</p>
                                     <p><strong>Flexibility</strong> tailored to your schedule, <strong>specialized
