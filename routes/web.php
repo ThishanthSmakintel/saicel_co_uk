@@ -94,3 +94,8 @@ Route::get('/cleaning-and-sealing-service/sealing-services', function () {
 Route::get('/contact-us', function () {
     return view('contact-us.contact-us');
 })->name('contact-us');
+
+
+Route::get('/products', function () {
+    return view('products.products');
+})->name('products');

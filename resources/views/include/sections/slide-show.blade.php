@@ -13,7 +13,7 @@
                             Services</span>
                         </h2>
                         <h3 class="slide-sub-title" data-animation-in="fadeIn"
-                            style="font-size: 24px; font-weight: bold;">
+                            style="font-size: 15px; font-weight: bold;">
                             Transform Your Environment with Professional Cleaning
                         </h3>
                         <p class="slider-description lead" data-animation-in="slideInRight"
@@ -44,7 +44,7 @@
                             Protect and Beautify Your Surfaces with <span class="low-highlight">Our Cleaning
                                 solution</span>
                         </h2>
-                        <h3 class="slide-title" data-animation-in="fadeIn" style="font-size: 24px; font-weight: bold;">
+                        <h3 class="slide-title" data-animation-in="fadeIn" style="font-size: 15px; font-weight: bold;">
                             Sealing Excellence for Long-Lasting Protection
                         </h3>
                         <p data-animation-in="slideInRight" style="font-size: 16px; font-weight: bold;"
@@ -75,15 +75,15 @@
                                 Comprehensive <span class="low-highlight">Property Management Solutions
                                 </span> for Your Assets
                             </h2>
-                            <h3 class="slide-title" data-animation-in="fadeIn"
-                                style="font-size: 24px; font-weight: bold;">
+                            {{-- <h3 class="slide-title" data-animation-in="fadeIn"
+                                style="font-size: 15px; font-weight: bold;">
                                 Enhance Your Properties with Professional Management
-                            </h3>
+                            </h3> --}}
                             <p data-animation-in="slideInRight" style="font-size: 16px; font-weight: bold;"
                                 class="slideParagraph">
-                                Discover our comprehensive property management solutions designed to optimize your
-                                assets and
-                                enhance your properties' value.
+
+                                Explore our property management solutions to maximize asset value and elevate property
+                                performance.
                             </p>
                             <div data-animation-in="slideInLeft">
                                 <a href="services/property-management.html"
@@ -126,7 +126,7 @@
     }
 
     .slide-sub-title {
-        font-size: 24px;
+        font-size: 15px;
     }
 
     .slider-description {

@@ -1,9 +1,16 @@
 jQuery(function ($) {
-    "use strict";
-
     /* ----------------------------------------------------------- */
     /*  Fixed header
 	/* ----------------------------------------------------------- */
+    $(window).on("load", function () {
+        // Add blur effect
+
+        // Remove blur effect after loader fades out
+        $("#loader").fadeOut("slow", function () {
+            $("body").css("filter", "none");
+        });
+    });
+
     $(window).on("scroll", function () {
         // fixedHeader on scroll
         function fixedHeader() {
@@ -278,56 +285,56 @@ jQuery(function ($) {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    // Get the dropdown toggle element
-    var dropdownToggle = document.querySelector(".mainLink");
-    console.log(": document trigered");
-    // Add a click event listener to the dropdown toggle
-    dropdownToggle.addEventListener("click", function (event) {
-        // Prevent the default action of the link
-        event.preventDefault();
+// document.addEventListener("DOMContentLoaded", function () {
+//     // Get the dropdown toggle element
+//     var dropdownToggle = document.querySelector(".mainLink");
+//     console.log(": document trigered");
+//     // Add a click event listener to the dropdown toggle
+//     dropdownToggle.addEventListener("click", function (event) {
+//         // Prevent the default action of the link
+//         event.preventDefault();
 
-        // Get the URL from the href attribute of the dropdown toggle
-        var redirectUrl = dropdownToggle.getAttribute("href");
+//         // Get the URL from the href attribute of the dropdown toggle
+//         var redirectUrl = dropdownToggle.getAttribute("href");
 
-        // Redirect to the desired URL
-        window.location.href = redirectUrl;
-    });
-});
+//         // Redirect to the desired URL
+//         window.location.href = redirectUrl;
+//     });
+// });
 
-document.addEventListener("DOMContentLoaded", function () {
-    // Get the dropdown toggle element
-    var dropdownToggle = document.querySelector(".ProceduresAndTemplates");
-    // console.log(": document trigered");
-    // Add a click event listener to the dropdown toggle
-    dropdownToggle.addEventListener("click", function (event) {
-        // Prevent the default action of the link
-        event.preventDefault();
+// document.addEventListener("DOMContentLoaded", function () {
+//     // Get the dropdown toggle element
+//     var dropdownToggle = document.querySelector(".ProceduresAndTemplates");
+//     // console.log(": document trigered");
+//     // Add a click event listener to the dropdown toggle
+//     dropdownToggle.addEventListener("click", function (event) {
+//         // Prevent the default action of the link
+//         event.preventDefault();
 
-        // Get the URL from the href attribute of the dropdown toggle
-        var redirectUrl = dropdownToggle.getAttribute("href");
+//         // Get the URL from the href attribute of the dropdown toggle
+//         var redirectUrl = dropdownToggle.getAttribute("href");
 
-        // Redirect to the desired URL
-        window.location.href = redirectUrl;
-    });
-});
+//         // Redirect to the desired URL
+//         window.location.href = redirectUrl;
+//     });
+// });
 
-document.addEventListener("DOMContentLoaded", function () {
-    // Get the dropdown toggle element
-    var dropdownToggle = document.querySelector(".engineeringService");
-    // console.log(": document trigered");
-    // Add a click event listener to the dropdown toggle
-    dropdownToggle.addEventListener("click", function (event) {
-        // Prevent the default action of the link
-        event.preventDefault();
+// document.addEventListener("DOMContentLoaded", function () {
+//     // Get the dropdown toggle element
+//     var dropdownToggle = document.querySelector(".engineeringService");
+//     // console.log(": document trigered");
+//     // Add a click event listener to the dropdown toggle
+//     dropdownToggle.addEventListener("click", function (event) {
+//         // Prevent the default action of the link
+//         event.preventDefault();
 
-        // Get the URL from the href attribute of the dropdown toggle
-        var redirectUrl = dropdownToggle.getAttribute("href");
+//         // Get the URL from the href attribute of the dropdown toggle
+//         var redirectUrl = dropdownToggle.getAttribute("href");
 
-        // Redirect to the desired URL
-        window.location.href = redirectUrl;
-    });
-});
+//         // Redirect to the desired URL
+//         window.location.href = redirectUrl;
+//     });
+// });
 
 (function ($) {
     "use strict";
@@ -341,9 +348,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 1);
     };
     spinner(0);
-
-    // Initiate the wowjs
-    new WOW().init();
 
     // Back to top button
     $(window).scroll(function () {
@@ -359,65 +363,92 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Blog carousel
-    $(".blog-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1000,
-        center: false,
-        dots: false,
-        loop: true,
-        margin: 50,
-        nav: true,
-        navText: [
-            '<i class="bi bi-arrow-left"></i>',
-            '<i class="bi bi-arrow-right"></i>',
-        ],
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            768: {
-                items: 2,
-            },
-            992: {
-                items: 2,
-            },
-            1200: {
-                items: 3,
-            },
-        },
-    });
+    // $(".blog-carousel").owlCarousel({
+    //     autoplay: true,
+    //     smartSpeed: 1000,
+    //     center: false,
+    //     dots: false,
+    //     loop: true,
+    //     margin: 50,
+    //     nav: true,
+    //     navText: [
+    //         '<i class="bi bi-arrow-left"></i>',
+    //         '<i class="bi bi-arrow-right"></i>',
+    //     ],
+    //     responsiveClass: true,
+    //     responsive: {
+    //         0: {
+    //             items: 1,
+    //         },
+    //         768: {
+    //             items: 2,
+    //         },
+    //         992: {
+    //             items: 2,
+    //         },
+    //         1200: {
+    //             items: 3,
+    //         },
+    //     },
+    // });
 
     // Testimonial carousel
-    $(".testimonial-carousel").owlCarousel({
+    // $(".testimonial-carousel").owlCarousel({
+    //     autoplay: true,
+    //     smartSpeed: 1500,
+    //     center: true,
+    //     dots: true,
+    //     loop: true,
+    //     margin: 50,
+    //     nav: true,
+    //     navText: [
+    //         '<i class="bi bi-arrow-left"></i>',
+    //         '<i class="bi bi-arrow-right"></i>',
+    //     ],
+    //     responsiveClass: true,
+    //     responsive: {
+    //         0: {
+    //             items: 1,
+    //         },
+    //         576: {
+    //             items: 1,
+    //         },
+    //         768: {
+    //             items: 2,
+    //         },
+    //         992: {
+    //             items: 2,
+    //         },
+    //         1200: {
+    //             items: 3,
+    //         },
+    //     },
+    // });
+
+    $(".product-slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
         autoplay: true,
-        smartSpeed: 1500,
-        center: true,
+        autoplaySpeed: 1500,
         dots: true,
-        loop: true,
-        margin: 50,
-        nav: true,
-        navText: [
-            '<i class="bi bi-arrow-left"></i>',
-            '<i class="bi bi-arrow-right"></i>',
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true,
+                },
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
         ],
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            576: {
-                items: 1,
-            },
-            768: {
-                items: 2,
-            },
-            992: {
-                items: 2,
-            },
-            1200: {
-                items: 3,
-            },
-        },
     });
 })(jQuery);

@@ -21,6 +21,21 @@
 
 <body>
     <div class="body-inner">
+
+        <div id="loader">
+            <div class="spinner">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
         @include('include.sections.top-bar')
         <!-- Top bar end -->
 

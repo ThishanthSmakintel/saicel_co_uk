@@ -26,6 +26,21 @@
         @include('include.layouts.header')
         <!-- Header end -->
 
+        <!-- Loader -->
+        <div id="loader">
+            <div class="spinner">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
         <!-- Content Section -->
         @yield('content')
         <!-- End of Content Section -->

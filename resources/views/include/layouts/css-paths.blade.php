@@ -16,3 +16,10 @@
 
 <!-- Template styles -->
 <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
+<!-- Include Slick Carousel CSS via CDN -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+
+<!-- Include Slick Carousel theme CSS via CDN -->
+<link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">

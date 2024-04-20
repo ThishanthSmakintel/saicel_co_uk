@@ -44,7 +44,9 @@
                 <div class="col-md-4 mb-4">
                     <div class="card">
                         <img src="{{ asset('images/sealing-services/sealing-area-types/img-roof.jpg') }}" alt="Roof Sealing"
-                            class="card-img-top img-fluid" alt="Card Image">
+                            class="card-img-top" style="height: 255px;" alt="Card Image">
+
+
                         <div class="card-body d-flex flex-column">
                             <a href="#" class="btn btn-primary mt-auto">Roof Sealing</a>
                         </div>
@@ -55,7 +57,7 @@
                 <div class="col-md-4 mb-4">
                     <div class="card">
                         <img src="{{ asset('images/sealing-services/sealing-area-types/img-wood-and-decking.jpg') }}"
-                            class="card-img-top img-fluid" alt="Card Image">
+                            class="card-img-top" style="height: 255px;" alt="Card Image">
                         <div class="card-body d-flex flex-column">
                             <a href="#" class="btn btn-primary mt-auto">Wood and Decking Sealing</a>
                         </div>
@@ -66,7 +68,7 @@
                 <div class="col-md-4 mb-4">
                     <div class="card">
                         <img src="{{ asset('images/sealing-services/sealing-area-types/img-bricks.jpg') }}"
-                            class="card-img-top img-fluid" alt="Card Image">
+                            class="card-img-top" style="height: 255px;" alt="Card Image">
                         <div class="card-body d-flex flex-column">
                             <a href="#" class="btn btn-primary mt-auto">Brick Sealing</a>
                         </div>
@@ -79,7 +81,7 @@
                 <div class="col-md-4 mb-4">
                     <div class="card">
                         <img src="{{ asset('images/sealing-services/sealing-area-types/img-concreate.jpg') }}"
-                            class="card-img-top img-fluid" alt="Card Image">
+                            class="card-img-top" style="height: 250px;" alt="Card Image">
                         <div class="card-body d-flex flex-column">
                             <a href="#" class="btn btn-primary mt-auto">Concrete Sealing</a>
                         </div>
@@ -90,7 +92,7 @@
                 <div class="col-md-4 mb-4">
                     <div class="card">
                         <img src="{{ asset('images/sealing-services/sealing-area-types/img-patios.jpg') }}"
-                            class="card-img-top img-fluid" alt="Card Image">
+                            class="card-img-top" style="height: 250px;" alt="Card Image">
                         <div class="card-body d-flex flex-column">
                             <a href="#" class="btn btn-primary mt-auto">Patios Sealing</a>
                         </div>
@@ -101,7 +103,7 @@
                 <div class="col-md-4 mb-4">
                     <div class="card">
                         <img src="{{ asset('images/sealing-services/sealing-area-types/img-driveways.jpg') }}"
-                            class="card-img-top img-fluid" alt="Card Image">
+                            class="card-img-top" style="height: 250px;" alt="Card Image">
                         <div class="card-body d-flex flex-column">
                             <a href="#" class="btn btn-primary mt-auto">Driveway Sealing</a>
                         </div>
@@ -109,7 +111,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 
     <section class="card mx-0 shadow">
@@ -148,6 +149,7 @@
             </section>
         </div>
     </section>
+
 
 
     <section class="card mx-0">
@@ -234,15 +236,12 @@
                         </div><!-- col end -->
                     </div><!-- row end -->
                 </div><!-- Action end --> --}}
-        </div>
 
-        </div>
     </section>
 
 
-    <section class="card mx-5">
+    <div class="card my-3">
         <h2 class="text-center">Check out our Amazing Products</h2>
-
         <div class="product-slider">
             @php
                 $totalImages = 8; // Total number of images
@@ -250,105 +249,34 @@
             @endphp
 
             @for ($slide = 0; $slide < ceil($totalImages / $imagesPerSlide); $slide++)
-                <div class="row align-items-center">
-                    @for ($i = $slide * $imagesPerSlide + 1; $i <= min(($slide + 1) * $imagesPerSlide, $totalImages); $i++)
-                        <div class="col-md-3 mb-lg-4 mb-sm-2"> <!-- Added mb-lg-4 and mb-sm-2 classes for margin -->
-                            <div class="card">
-                                <div class="card-body before-image"
-                                    style="font-size: 14px; background-image: url('{{ asset('images/product-images/img-product-img (' . $i . ').jpg') }}');">
-                                    <!-- Star rating icon -->
+                <div class="card mx-1">
+                    <div class="row">
+                        @for ($i = $slide * $imagesPerSlide + 1; $i <= min(($slide + 1) * $imagesPerSlide, $totalImages); $i++)
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-body before-image"
+                                        style="font-size: 10px; background-image: url('{{ asset('images/product-images/img-product-img (' . $i . ').jpg') }}');">
+                                        <!-- Star rating icon -->
 
+                                    </div>
+                                    <div class="text-center mb-2">
+                                        <i class="fas fa-star fa-2x text-warning"></i>
+                                        <i class="fas fa-star fa-2x text-warning"></i>
+                                        <i class="fas fa-star fa-2x text-warning"></i>
+                                        <i class="fas fa-star fa-2x text-warning"></i>
+                                        <i class="far fa-star fa-2x text-warning"></i>
+                                    </div>
+                                    <!-- Dummy description -->
+                                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Phasellus sed tortor vitae nunc eleifend dignissim.</p>
                                 </div>
-                                <div class="text-center mb-2">
-                                    <i class="fas fa-star fa-2x text-warning"></i>
-                                    <i class="fas fa-star fa-2x text-warning"></i>
-                                    <i class="fas fa-star fa-2x text-warning"></i>
-                                    <i class="fas fa-star fa-2x text-warning"></i>
-                                    <i class="far fa-star fa-2x text-warning"></i>
-                                </div>
-                                <!-- Dummy description -->
-                                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-                                    sed tortor vitae nunc eleifend dignissim.</p>
                             </div>
-                        </div>
-                    @endfor
+                        @endfor
+                    </div>
                 </div>
             @endfor
         </div>
-    </section>
-
-    </section>
-
-
-
-
-
-
-    <section class="call-to-action-box no-padding">
-        <div class="container">
-            <div class="action-style-box">
-                <div class="row align-items-center">
-                    <div class="col-md-8 text-center text-md-left">
-                        <div class="call-to-action-text">
-                            <h3 class="action-title">
-                                Looking for professional Sealing services?
-                            </h3>
-                        </div>
-                    </div>
-                    <!-- Col end -->
-                    <div class="col-md-4 text-center text-md-right mt-3 mt-md-0">
-                        <div class="call-to-action-btn">
-                            <a class="btn btn-dark" href="#">Hire Us</a>
-                        </div>
-                    </div>
-                    <!-- col end -->
-                </div>
-                <!-- row end -->
-            </div>
-            <!-- Action style box -->
-        </div>
-        <!-- Container end -->
-    </section>
-
-
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.product-slider').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 1500,
-                dots: true,
-                arrows: true,
-                responsive: [{
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                            infinite: true,
-                            dots: true
-                        }
-                    },
-                    {
-                        breakpoint: 576,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
-                    }
-                ]
-            });
-        });
-    </script>
-
-
-
-
-
-
-
+    </div>
 
 @endsection
 
