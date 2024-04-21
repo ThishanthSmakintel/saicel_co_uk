@@ -1,54 +1,26 @@
-{{-- @extends('default')
+<!-- resources/views/products/products.blade.php -->
 
-@section('title', 'Health and Safety Procedures')
+@extends('default')
+
+@section('title', 'Products')
 
 @section('content')
     <div class="container">
-        $products = [[{
-            name: 'Product 1',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.',
-            price: 19.99,
-            image: 'https://via.placeholder.com/150' // Placeholder URL for the dummy image
-        },
-        {
-            name: 'Product 2',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.',
-            price: 29.99,
-            image: 'https://via.placeholder.com/150' // Placeholder URL for the dummy image
-        },
-        {
-            name: 'Product 3',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.',
-            price: 24.99,
-            image: 'https://via.placeholder.com/150' // Placeholder URL for the dummy image
-        },
-        {
-            name: 'Product 4',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.',
-            price: 34.99,
-            image: 'https://via.placeholder.com/150' // Placeholder URL for the dummy image
-        }
-        // Add more products as needed
-    ];
+        <h1>Products</h1>
         <div class="row">
-            <div class="col-md-8">
-                <section id="main-container" class="main-container pb-2">
-                    <div class="container">
-                        <div class="row" id="product-container">
-                            <!-- Product cards will be dynamically generated here -->
+            @foreach ($products as $product)
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="{{ $product['image'] }}" class="card-img-top" alt="{{ $product['name'] }}">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ $product['name'] }}</h5>
+                            <p class="card-text">${{ $product['price'] }}</p>
+                            <p class="card-text">Rating: {{ $product['rating'] }}</p>
+                            <p class="card-text">Category: {{ $product['category'] }}</p>
                         </div>
                     </div>
-                    <!-- Container end -->
-                </section>
-                <!-- Section end -->
-            </div>
-            <!-- Col 8 end -->
+                </div>
+            @endforeach
         </div>
-        <!-- Main row end -->
     </div>
-    <!-- Container end -->
 @endsection
-
-<!-- jQuery CDN -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
- --}}
