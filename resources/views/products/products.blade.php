@@ -1,12 +1,99 @@
-<!-- resources/views/products/products.blade.php -->
-
 @extends('default')
 
-@section('title', 'Products')
+@section('title', 'Our Awesome Products')
 
 @section('content')
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <style>
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: none;
+
+            height: 100%;
+
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-body {
+            padding: 1rem;
+
+            height: 100%;
+
+        }
+
+        .card-img-top {
+            object-fit: cover;
+
+            height: 200px;
+
+            width: 100%;
+
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+
+            margin-bottom: 0.5rem;
+
+            text-align: center;
+
+        }
+
+        .card-price {
+            font-size: 1rem;
+
+            color: #007bff;
+
+            margin-bottom: 0.5rem;
+
+        }
+
+        .card-rating {
+            font-size: 0.9rem;
+
+            color: #28a745;
+
+            margin-bottom: 0.5rem;
+
+            text-align: center;
+
+        }
+
+        .card-category {
+            font-size: 0.9rem;
+
+            color: #6c757d;
+
+            text-align: center;
+
+            margin-bottom: 0.5rem;
+
+        }
+
+        .card-description {
+            text-align: center;
+
+            margin-bottom: 0;
+
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                margin-bottom: 2rem;
+
+            }
+        }
+    </style>
+
     <div class="container">
-        <h1>Products</h1>
+        <h1 class="text-center mb-4">Our Awesome Products</h1>
+        <h4 class="text-center mb-4">Explore our wide range of high-quality products</h4>
         <div class="row">
             @foreach ($products as $product)
                 <div class="col-md-3 mb-4">
@@ -14,13 +101,19 @@
                         <img src="{{ $product['image'] }}" class="card-img-top" alt="{{ $product['name'] }}">
                         <div class="card-body">
                             <h5 class="card-title">{{ $product['name'] }}</h5>
-                            <p class="card-text">${{ $product['price'] }}</p>
-                            <p class="card-text">Rating: {{ $product['rating'] }}</p>
-                            <p class="card-text">Category: {{ $product['category'] }}</p>
+                            <p class="card-price text-center"><strong>${{ number_format($product['price'], 2) }}</strong>
+                            </p>
+                            <p class="text-center card-rating" style="font-size: 24px;">
+                                {!! str_repeat('<i class="fas fa-star"></i>', intval($product['rating'])) .
+                                    str_repeat('<i class="far fa-star"></i>', 5 - intval($product['rating'])) !!}
+                            </p>
+                            <p class="card-category">{{ $product['category'] }}</p>
+                            <p class="card-description">{{ $product['description'] }}</p>
                         </div>
                     </div>
                 </div>
             @endforeach
         </div>
     </div>
+
 @endsection

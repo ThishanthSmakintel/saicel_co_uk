@@ -6,68 +6,84 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    public function showAllProducts()
+    // Method to return the view file containing the product data and send JSON data to AJAX request
+    public function showProducts()
     {
         // Array data with additional fields and dummy image URLs
         $products = [
             [
-                'name' => 'Product 1',
-                'price' => 100,
-                'rating' => 4.5,
-                'category' => 'Category 1',
-                'image' => 'https://picsum.photos/200/300'
-            ],
-            [
-                'name' => 'Product 2',
-                'price' => 200,
-                'rating' => 3.8,
-                'category' => 'Category 2',
-                'image' => 'https://picsum.photos/200/300'
-            ],
-            [
-                'name' => 'Product 3',
-                'price' => 300,
-                'rating' => 4.0,
-                'category' => 'Category 1',
-                'image' => 'https://picsum.photos/200/300'
-            ],
-            [
-                'name' => 'Product 4',
+                'name' => 'High-Quality Sealant',
                 'price' => 150,
-                'rating' => 4.2,
-                'category' => 'Category 3',
-                'image' => 'https://picsum.photos/200/300'
+                'rating' => $this->generateRandomRating(),
+                'category' => 'Sealants',
+                'image' => asset('images/product-images/img-product-img (1).jpg'),
+                'description' => 'Perfect for various applications. Provides long-lasting protection.',
             ],
             [
-                'name' => 'Product 5',
+                'name' => 'Premium Cleaning Solution',
+                'price' => 100,
+                'rating' => $this->generateRandomRating(),
+                'category' => 'Cleaning Solutions',
+                'image' => asset('images/product-images/img-product-img (2).jpg'),
+                'description' => 'Effectively removes tough stains and dirt. Leaves surfaces clean and shiny.',
+            ],
+            [
+                'name' => 'Multi-Surface Polish',
+                'price' => 120,
+                'rating' => $this->generateRandomRating(),
+                'category' => 'Polishes',
+                'image' => asset('images/product-images/img-product-img (3).jpg'),
+                'description' => 'Achieve a glossy finish on any surface. Provides lasting protection.',
+            ],
+            [
+                'name' => 'Heavy-Duty Degreaser',
+                'price' => 80,
+                'rating' => $this->generateRandomRating(),
+                'category' => 'Degreasers',
+                'image' => asset('images/product-images/img-product-img (4).jpg'),
+                'description' => 'Tackle grease and grime. Specially formulated to dissolve tough residues.',
+            ],
+            [
+                'name' => 'Professional Detailing Kit',
                 'price' => 250,
-                'rating' => 4.8,
-                'category' => 'Category 2',
-                'image' => 'https://picsum.photos/200/300'
+                'rating' => $this->generateRandomRating(),
+                'category' => 'Detailing Kits',
+                'image' => asset('images/product-images/img-product-img (5).jpg'),
+                'description' => 'Comprehensive kit for professional-quality detailing. Includes interior and exterior cleaning products.',
             ],
             [
-                'name' => 'Product 6',
-                'price' => 180,
-                'rating' => 3.9,
-                'category' => 'Category 1',
-                'image' => 'https://picsum.photos/200/300'
+                'name' => 'Quick-Drying Tire Shine',
+                'price' => 30,
+                'rating' => $this->generateRandomRating(),
+                'category' => 'Tire Care',
+                'image' => asset('images/product-images/img-product-img (6).jpg'),
+                'description' => 'Gives tires a glossy, like-new finish. Provides long-lasting protection.',
             ],
             [
-                'name' => 'Product 7',
-                'price' => 220,
-                'rating' => 4.6,
-                'category' => 'Category 3',
-                'image' => 'https://picsum.photos/200/300'
+                'name' => 'Leather Upholstery Cleaner',
+                'price' => 40,
+                'rating' => $this->generateRandomRating(),
+                'category' => 'Interior Care',
+                'image' => asset('images/product-images/img-product-img (7).jpg'),
+                'description' => 'Keeps leather upholstery looking like new. Removes dirt and stains.',
             ],
             [
-                'name' => 'Product 8',
-                'price' => 280,
-                'rating' => 4.3,
-                'category' => 'Category 2',
-                'image' => 'https://picsum.photos/200/300'
+                'name' => 'Glass Cleaner Spray',
+                'price' => 15,
+                'rating' => $this->generateRandomRating(),
+                'category' => 'Glass Cleaners',
+                'image' => asset('images/product-images/img-product-img (8).jpg'),
+                'description' => 'Achieve streak-free, crystal-clear windows and mirrors. Cuts through dirt and grime.',
             ],
         ];
 
+        // Pass the $products variable to the view and render it
         return view('products.products', ['products' => $products]);
+    }
+
+    // Method to generate a random rating between 0 and 5
+    private function generateRandomRating()
+    {
+        return number_format(mt_rand(0, 5), 1);
     }
 }

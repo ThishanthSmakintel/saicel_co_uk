@@ -81,5 +81,6 @@ Route::get('/contact-us', function () {
     return view('contact-us.contact-us');
 })->name('contact-us');
 
-// Products
-Route::get('/products', [ProductController::class, 'showAllProducts'])->name('products');
+
+
+Route::get('/products', [ProductController::class, 'showProducts'])->name('products');
