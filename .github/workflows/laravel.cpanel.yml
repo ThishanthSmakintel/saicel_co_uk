@@ -12,4 +12,4 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Copy files to public_html
-        run: rsync -av --exclude='.env' --exclude='.htaccess' --delete --progress ./ /home/saicelsl/public_html/
+        run: rsync -av --exclude='.env' --exclude='.htaccess' --delete --progress ./ /home/saicelsl/public_html/ || true
