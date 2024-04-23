@@ -10,11 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Clear Cache
-        run: |
-          php artisan cache:clear
-          php artisan config:clear
-          php artisan route:clear
+      - name: Remove public_html directory
+        run: rm -rf /home/saicelsl/public_html
       - name: Generate key
         run: php artisan key:generate
       - name: Directory Permissions
