@@ -1,4 +1,4 @@
-name: Laravel Deployment
+\name: Laravel Deployment
 
 on:
   push:
@@ -10,11 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Clear Cache
-        run: |
-          php artisan cache:clear
-          php artisan config:clear
-          php artisan route:clear
       - name: Generate key
         run: php artisan key:generate
       - name: Directory Permissions
