@@ -9,11 +9,7 @@ jobs:
   laravel-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Remove public_html directory
-        run: rm -rf /home/saicelsl/public_html
+      - uses: actions/checkout@v2
 
       - name: Copy files to public_html
-        run: rsync -av --exclude='.env' --exclude='.htaccess' --progress ./ /home/saicelsl/public_html/
+        run: rsync -av --exclude='.env' --exclude='.htaccess' --delete --progress ./ /home/saicelsl/public_html/
