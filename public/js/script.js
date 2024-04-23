@@ -2,13 +2,14 @@ jQuery(function ($) {
     /* ----------------------------------------------------------- */
     /*  Fixed header
 	/* ----------------------------------------------------------- */
-    $(window).on("load", function () {
-        // Add blur effect
+    $(document).ready(function () {
+        $("#loader").show();
 
-        // Remove blur effect after loader fades out
-        $("#loader").fadeOut("slow", function () {
+        // Remove loader after 5 seconds
+        setTimeout(function () {
+            $("#loader").remove();
             $("body").css("filter", "none");
-        });
+        }, 2200);
     });
 
     $(window).on("scroll", function () {

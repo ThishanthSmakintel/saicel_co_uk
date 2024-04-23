@@ -6,10 +6,10 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    // Method to return the view file containing the product data and send JSON data to AJAX request
+
     public function showProducts()
     {
-        // Array data with additional fields and dummy image URLs
+
         $products = [
             [
                 'name' => 'High-Quality Sealant',
@@ -77,11 +77,11 @@ class ProductController extends Controller
             ],
         ];
 
-        // Pass the $products variable to the view and render it
+
         return view('products.products', ['products' => $products]);
     }
 
-    // Method to generate a random rating between 0 and 5
+    //generate a random rating between 0 and 5
     private function generateRandomRating()
     {
         return number_format(mt_rand(0, 5), 1);
