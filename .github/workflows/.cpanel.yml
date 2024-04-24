@@ -11,5 +11,16 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Create public_html directory
+        run: sudo mkdir -p /home/saicelsl/public_html
+
       - name: Copy files to public_html
         run: rsync -av --exclude='.env' --exclude='.htaccess' --delete --progress ./ /home/saicelsl/public_html/ || true
+
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clean up workspace
+        run: |
+          git submodule deinit -f -- vendor/carbonphp/carbon-doctrine-types
+          git rm -f vendor/carbonphp/carbon-doctrine-types
