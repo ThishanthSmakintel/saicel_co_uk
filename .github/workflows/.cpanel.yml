@@ -11,5 +11,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Create public_html directory if not exists
+        run: mkdir -p /home/saicelsl/public_html
+
       - name: Copy files to public_html
-        run: rsync -av --exclude='.env' --exclude='.htaccess' --delete --progress ./ /home/saicelsl/public_html/ || true
+        run: |
+          mkdir -p /home/saicelsl/public_html && \
+          rsync -av --exclude='.env' --exclude='.htaccess' --delete --progress ./ /home/saicelsl/public_html/ || true
