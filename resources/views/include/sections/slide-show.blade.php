@@ -7,10 +7,10 @@
                 <div class="row align-items-center h-100">
                     <div class="col-md-12">
                         <h2 class="slide-title" data-animation-in="slideInDown"
-                            style="font-size: 32px; font-weight: bold;  >
+                            style="font-size: 32px; font-weight: bold;">
                             Experience Spotless Cleanliness with <span class="low-highlight">
-                            Our Cleaning
-                            Services</span>
+                                Our Cleaning
+                                Services</span>
                         </h2>
                         <h3 class="slide-sub-title" data-animation-in="fadeIn"
                             style="font-size: 15px; font-weight: bold;">
@@ -22,10 +22,10 @@
                             pristine environment for all.
                         </p>
                         <div data-animation-in="slideInLeft">
-                            <a href="services/cleaning.html" class="slider btn btn-primary"
+                            <a href="{{ route('cleaning-services') }}" class="slider btn btn-primary"
                                 aria-label="contact-with-us">Explore Our Cleaning Services</a>
-                            <a href="contact.html" class="slider btn btn-primary border"
-                                aria-label="learn-more-about-us">Get Started</a>
+                            <a href="{{ route('contact-us') }}" class="slider btn btn-primary border"
+                                aria-label="learn-more-about-us">contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -34,7 +34,7 @@
     </div>
 
     <div class="banner-carousel-item"
-        style="background-image: url({{ asset('images/cleaningServices/img-slideshow.png') }}); background-color: transparent;">
+        style="background-image: url({{ asset('images/cleaningServices/img-slideshow.jpg') }}); background-color: transparent;">
         <div class="slider-content text-left">
             <div class="container h-100">
                 <div class="row align-items-center h-100">
@@ -53,45 +53,10 @@
                             protection and aesthetic enhancement.
                         </p>
                         <div data-animation-in="slideInLeft">
-                            <a href="services/sealing.html" class="slider btn btn-primary border">Explore Our
+                            <a href="{{ route('sealing-services') }}" class="slider btn btn-primary border">Explore Our
                                 Sealing Services</a>
-                            <a href="contact.html" class="slider btn btn-primary border"
-                                aria-label="contact-with-us">Contact Us</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="banner-carousel banner-carousel-1 mb-0">
-        <div class="banner-carousel-item"
-            style="background-image: url({{ asset('images/property-management/img-landingpage-card-property-management.png') }}); background-color: transparent;">
-            <div class="slider-content text-left">
-                <div class="container h-100">
-                    <div class="row align-items-center h-100">
-                        <div class="col-md-12">
-                            <h2 class="slide-title" data-animation-in="slideInDown"
-                                style="font-size: 32px; font-weight: bold;">
-                                Comprehensive <span class="low-highlight">Property Management Solutions
-                                </span> for Your Assets
-                            </h2>
-                            {{-- <h3 class="slide-title" data-animation-in="fadeIn"
-                                style="font-size: 15px; font-weight: bold;">
-                                Enhance Your Properties with Professional Management
-                            </h3> --}}
-                            <p data-animation-in="slideInRight" style="font-size: 16px; font-weight: bold;"
-                                class="slideParagraph">
-
-                                Explore our property management solutions to maximize asset value and elevate property
-                                performance.
-                            </p>
-                            <div data-animation-in="slideInLeft">
-                                <a href="services/property-management.html"
-                                    class="slider btn btn-primary border">Explore Our
-                                    Property Management Services</a>
-                                <a href="about.html" class="slider btn btn-primary border"
-                                    aria-label="learn-more-about-us">Learn More</a>
-                            </div>
+                            <a href="{{ route('contact-us') }}" class="slider btn btn-primary border"
+                                aria-label="learn-more-about-us">contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -99,7 +64,34 @@
         </div>
     </div>
 
-</div>
+    <div class="banner-carousel-item"
+        style="background-image: url({{ asset('images/property-management/img-landingpage-card-property-management.png') }}); background-color: transparent;">
+        <div class="slider-content text-left">
+            <div class="container h-100">
+                <div class="row align-items-center h-100">
+                    <div class="col-md-12">
+                        <h2 class="slide-title" data-animation-in="slideInDown"
+                            style="font-size: 32px; font-weight: bold;">
+                            Comprehensive <span class="low-highlight">Property Management Solutions
+                            </span> for Your Assets
+                        </h2>
+                        <p data-animation-in="slideInRight" style="font-size: 16px; font-weight: bold;"
+                            class="slideParagraph">
+                            Explore our property management solutions to maximize asset value and elevate property
+                            performance.
+                        </p>
+                        <div data-animation-in="slideInLeft">
+                            <a href="{{ route('home-page') }}" class="slider btn btn-primary border">Explore Our
+                                Property Management Services</a>
+                            <a href="{{ route('contact-us') }}" class="slider btn btn-primary border"
+                                aria-label="learn-more-about-us">contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 <style>

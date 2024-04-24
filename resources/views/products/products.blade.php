@@ -9,84 +9,69 @@
         .card {
             transition: transform 0.3s, box-shadow 0.3s;
             border: none;
-
             height: 100%;
-
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
+            /* Added box-shadow */
         }
 
         .card:hover {
             transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            /* Increased box-shadow on hover */
         }
 
         .card-body {
             padding: 1rem;
-
             height: 100%;
-
         }
 
         .card-img-top {
             object-fit: cover;
-
-            height: 200px;
-
             width: 100%;
-
+            height: auto;
+            padding: 10px;
+            /* Adjust the padding as needed */
         }
 
         .card-title {
             font-size: 1.25rem;
-
             margin-bottom: 0.5rem;
-
             text-align: center;
-
         }
 
         .card-price {
             font-size: 1rem;
-
             color: #007bff;
-
             margin-bottom: 0.5rem;
-
         }
 
         .card-rating {
             font-size: 0.9rem;
-
             color: #28a745;
-
             margin-bottom: 0.5rem;
-
             text-align: center;
-
         }
 
         .card-category {
             font-size: 0.9rem;
-
             color: #6c757d;
-
             text-align: center;
-
             margin-bottom: 0.5rem;
-
         }
 
         .card-description {
             text-align: center;
-
             margin-bottom: 0;
-
         }
 
         @media (max-width: 768px) {
             .card {
                 margin-bottom: 2rem;
+            }
 
+            .col-md-3 {
+                flex: 0 0 100%;
+                max-width: 100%;
             }
         }
     </style>
@@ -115,5 +100,4 @@
             @endforeach
         </div>
     </div>
-
 @endsection
