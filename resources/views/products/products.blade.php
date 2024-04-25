@@ -8,16 +8,14 @@
     <style>
         .card {
             transition: transform 0.3s, box-shadow 0.3s;
-            border: none;
-            height: 100%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            /* Added box-shadow */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
         }
 
         .card:hover {
             transform: scale(1.05);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            /* Increased box-shadow on hover */
         }
 
         .card-body {
@@ -28,9 +26,8 @@
         .card-img-top {
             object-fit: cover;
             width: 100%;
+            max-width: 100%;
             height: auto;
-            padding: 10px;
-            /* Adjust the padding as needed */
         }
 
         .card-title {
@@ -43,10 +40,11 @@
             font-size: 1rem;
             color: #007bff;
             margin-bottom: 0.5rem;
+            text-align: center;
         }
 
         .card-rating {
-            font-size: 0.9rem;
+            font-size: 1rem;
             color: #28a745;
             margin-bottom: 0.5rem;
             text-align: center;
@@ -86,9 +84,8 @@
                         <img src="{{ $product['image'] }}" class="card-img-top" alt="{{ $product['name'] }}">
                         <div class="card-body">
                             <h5 class="card-title">{{ $product['name'] }}</h5>
-                            <p class="card-price text-center"><strong>${{ number_format($product['price'], 2) }}</strong>
-                            </p>
-                            <p class="text-center card-rating" style="font-size: 24px;">
+                            <p class="card-price"><strong>${{ number_format($product['price'], 2) }}</strong></p>
+                            <p class="card-rating">
                                 {!! str_repeat('<i class="fas fa-star"></i>', intval($product['rating'])) .
                                     str_repeat('<i class="far fa-star"></i>', 5 - intval($product['rating'])) !!}
                             </p>

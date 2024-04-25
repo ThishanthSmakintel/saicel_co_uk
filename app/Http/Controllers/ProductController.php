@@ -6,84 +6,51 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-
     public function showProducts()
     {
-
         $products = [
             [
-                'name' => 'High-Quality Sealant',
-                'price' => 150,
-                'rating' => $this->generateRandomRating(),
-                'category' => 'Sealants',
-                'image' => asset('images/product-images/img-product-img (1).jpg'),
-                'description' => 'Perfect for various applications. Provides long-lasting protection.',
+                'name' => 'Green Clear (Formerly Moss Clear) Fast & Easy',
+                'price' => '29.95',
+                'rating' => 5, // Added rating
+                'category' => 'Green Growth & Algae Remover',
+                'image' => asset('images/product-images/img-Green_Clear.jpg'),
+                'description' => 'Powerful Green Growth & Algae Remover - Apply & Leave. For Drives, Roofs, Concrete, Stone, Patios, Tarmac, Wood.'
             ],
             [
-                'name' => 'Premium Cleaning Solution',
-                'price' => 100,
-                'rating' => $this->generateRandomRating(),
-                'category' => 'Cleaning Solutions',
-                'image' => asset('images/product-images/img-product-img (2).jpg'),
-                'description' => 'Effectively removes tough stains and dirt. Leaves surfaces clean and shiny.',
+                'name' => 'Rapid Thaw - MELT Ice (5kg, 10kg, 20kg)',
+                'price' => '29.95',
+                'rating' => 5,
+                'category' => 'Ice Melt',
+                'image' => asset('images/product-images/img-rapid_thaw.jpg'),
+                'description' => 'Alternative to Rock Salt. Plant Safe. For Drives, Patios, Paths. Rapid, non-corrosive de-icer for all surfaces.'
             ],
             [
-                'name' => 'Multi-Surface Polish',
-                'price' => 120,
-                'rating' => $this->generateRandomRating(),
-                'category' => 'Polishes',
-                'image' => asset('images/product-images/img-product-img (3).jpg'),
-                'description' => 'Achieve a glossy finish on any surface. Provides lasting protection.',
+                'name' => 'Patio Clean Xtreme - Fast, Easy & Effective',
+                'price' => '31.95',
+                'rating' => 5,
+                'category' => 'Patio Cleaner',
+                'image' => asset('images/product-images/img-block_paving_sealer.jpg'),
+                'description' => 'Powerful Concentrated Patio Cleaner. Removes Algae, Dirt & Blackspot. Treats 40 m². For Sandstone, Paving Slabs.'
             ],
             [
-                'name' => 'Heavy-Duty Degreaser',
-                'price' => 80,
-                'rating' => $this->generateRandomRating(),
-                'category' => 'Degreasers',
-                'image' => asset('images/product-images/img-product-img (4).jpg'),
-                'description' => 'Tackle grease and grime. Specially formulated to dissolve tough residues.',
+                'name' => 'Anti-Mould Paint (10 Colours & Samples)',
+                'price' => '17.95',
+                'rating' => 5, // Added rating
+                'category' => 'Paint',
+                'image' => asset('images/product-images/img-Anti_Mould_Paint.jpg'),
+                'description' => 'Acrylic Emulsion. Prevents Growth of Dangerous Mould. 5yr Protection. For Bathrooms, Kitchens, Bedrooms.'
             ],
             [
-                'name' => 'Professional Detailing Kit',
-                'price' => 250,
-                'rating' => $this->generateRandomRating(),
-                'category' => 'Detailing Kits',
-                'image' => asset('images/product-images/img-product-img (5).jpg'),
-                'description' => 'Comprehensive kit for professional-quality detailing. Includes interior and exterior cleaning products.',
-            ],
-            [
-                'name' => 'Quick-Drying Tire Shine',
-                'price' => 30,
-                'rating' => $this->generateRandomRating(),
-                'category' => 'Tire Care',
-                'image' => asset('images/product-images/img-product-img (6).jpg'),
-                'description' => 'Gives tires a glossy, like-new finish. Provides long-lasting protection.',
-            ],
-            [
-                'name' => 'Leather Upholstery Cleaner',
-                'price' => 40,
-                'rating' => $this->generateRandomRating(),
-                'category' => 'Interior Care',
-                'image' => asset('images/product-images/img-product-img (7).jpg'),
-                'description' => 'Keeps leather upholstery looking like new. Removes dirt and stains.',
-            ],
-            [
-                'name' => 'Glass Cleaner Spray',
-                'price' => 15,
-                'rating' => $this->generateRandomRating(),
-                'category' => 'Glass Cleaners',
-                'image' => asset('images/product-images/img-product-img (8).jpg'),
-                'description' => 'Achieve streak-free, crystal-clear windows and mirrors. Cuts through dirt and grime.',
-            ],
+                'name' => 'Anti-Condensation Paint (10 Colours, 3 Sizes)',
+                'price' => '32.95',
+                'rating' => 5, // Added rating
+                'category' => 'Paint',
+                'image' => asset('images/product-images/img-Anti_Condensation_Paint.jpg'),
+                'description' => 'Acrylic co-polymer emulsion paint. Reduces condensation build-up. Prevents black spot mould. For Walls, Ceilings.'
+            ]
         ];
 
-
         return view('products.products', ['products' => $products]);
-    }
-
-    //generate a random rating between 0 and 5
-    private function generateRandomRating()
-    {
-        return number_format(mt_rand(0, 5), 1);
     }
 }
