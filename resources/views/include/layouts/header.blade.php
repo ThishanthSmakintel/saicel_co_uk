@@ -240,7 +240,7 @@
                                     <a href="{{ route('products') }}" class="nav-link">Products</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{{ route('home-page') }}" class="nav-link">Training</a>
+                                    <a href="{{ route('training') }}" class="nav-link">Training</a>
                                 </li>
 
 

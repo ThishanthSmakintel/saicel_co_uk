@@ -84,3 +84,8 @@ Route::get('/contact-us', function () {
 
 
 Route::get('/products', [ProductController::class, 'showProducts'])->name('products');
+
+
+Route::get('/training', function () {
+    return view('training.training');
+})->name('training');
