@@ -239,44 +239,49 @@
 
     </section>
 
-
     <div class="card my-3">
         <h2 class="text-center">Check out our Amazing Products</h2>
         <div class="product-slider">
             @php
-                $totalImages = 8; // Total number of images
-                $imagesPerSlide = 4; // Number of images per slide
+                $totalProducts = count($products);
+                $productsPerSlide = 4;
             @endphp
 
-            @for ($slide = 0; $slide < ceil($totalImages / $imagesPerSlide); $slide++)
+            @for ($slide = 0; $slide < ceil($totalProducts / $productsPerSlide); $slide++)
                 <div class="card mx-1">
                     <div class="row">
-                        @for ($i = $slide * $imagesPerSlide + 1; $i <= min(($slide + 1) * $imagesPerSlide, $totalImages); $i++)
+                        @php
+                            $productsInSlide = array_slice($products, $slide * $productsPerSlide, $productsPerSlide);
+                        @endphp
+                        @foreach ($productsInSlide as $product)
                             <div class="col-md-3">
                                 <div class="card">
                                     <div class="card-body before-image"
-                                        style="font-size: 10px; background-image: url('{{ asset('images/product-images/products/img-product-img (' . $i . ').jpg') }}');">
+                                        style="font-size: 10px; background-image: url('{{ $product['image'] }}');">
                                         <!-- Star rating icon -->
-
                                     </div>
                                     <div class="text-center mb-2">
-                                        <i class="fas fa-star fa-2x text-warning"></i>
-                                        <i class="fas fa-star fa-2x text-warning"></i>
-                                        <i class="fas fa-star fa-2x text-warning"></i>
-                                        <i class="fas fa-star fa-2x text-warning"></i>
-                                        <i class="far fa-star fa-2x text-warning"></i>
+                                        @for ($i = 0; $i < $product['rating']; $i++)
+                                            <i class="fas fa-star fa-2x text-warning"></i>
+                                        @endfor
+                                        @for ($i = $product['rating']; $i < 5; $i++)
+                                            <i class="far fa-star fa-2x text-warning"></i>
+                                        @endfor
                                     </div>
-                                    <!-- Dummy description -->
-                                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit. Phasellus sed tortor vitae nunc eleifend dignissim.</p>
+                                    <p class="text-center">{{ $product['name'] }}</p>
+                                    <p class="text-center"><span class="highlight">${{ $product['price'] }}</span></p>
                                 </div>
                             </div>
-                        @endfor
+                        @endforeach
                     </div>
                 </div>
             @endfor
         </div>
     </div>
+
+
+
+
 
 @endsection
 

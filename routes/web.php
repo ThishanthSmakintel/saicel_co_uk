@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 
+use App\Http\Controllers\TrainingCoursesController;
 // Home Page
 Route::get('/', function () {
     return view('index');
@@ -67,25 +68,19 @@ Route::get('/property-investments/property-investments', function () {
     return view('property-investments.property-investments');
 })->name('property-investments');
 
-// Cleaning and Sealing Service Routes
-Route::get('/cleaning-and-sealing-service/cleaning-service', function () {
+// Cleaning  Service Routes
+Route::get('/cleaning-service', function () {
     return view('cleaning-and-sealing-service.cleaning-service');
 })->name('cleaning-services');
-
-Route::get('/cleaning-and-sealing-service/sealing-services', function () {
-    return view('cleaning-and-sealing-service.sealing-services');
-})->name('sealing-services');
 
 // Contact Us
 Route::get('/contact-us', function () {
     return view('contact-us.contact-us');
 })->name('contact-us');
 
-
+//Sealing Service Routes
+Route::get('/sealing-services', [ProductController::class, 'showProductsSlideShow'])->name('sealing-services');
 
 Route::get('/products', [ProductController::class, 'showProducts'])->name('products');
 
-
-Route::get('/training', function () {
-    return view('training.training');
-})->name('training');
+Route::get('/training', [TrainingCoursesController::class, 'fetchTrainingData'])->name('training');
