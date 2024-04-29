@@ -7,48 +7,88 @@ use Illuminate\Http\Request;
 
 class TrainingCoursesController extends Controller
 {
+    private $trainingData = [
+        [
+            'title' => 'House Cleaning Fundamentals',
+            'description' => 'Learn the essential techniques and principles of house cleaning.',
+            'category' => 'Housekeeping',
+            'url' => 'https://alison.com/course/house-cleaning-fundamentals?utm_source=alison_user&utm_medium=affiliates&utm_campaign=23738873',
+            'img' => 'https://via.placeholder.com/400x200',
+        ],
+        [
+            'title' => 'Basics of Carpet Cleaning',
+            'description' => 'Explore the foundational concepts of carpet cleaning.',
+            'category' => 'Housekeeping',
+            'url' => 'https://alison.com/course/basics-of-carpet-cleaning?utm_source=alison_user&utm_medium=affiliates&utm_campaign=23738873',
+            'img' => 'https://via.placeholder.com/400x200',
+        ],
+        [
+            'title' => 'Cleaning Steward Training',
+            'description' => 'Training program for cleaning stewards focusing on best practices and safety measures.',
+            'category' => 'Housekeeping',
+            'url' => 'https://alison.com/course/cleaning-steward-training?utm_source=alison_user&utm_medium=affiliates&utm_campaign=23738873',
+            'img' => 'https://via.placeholder.com/400x200',
+        ],
+        [
+            'title' => 'Healthcare Cleaning, Decontamination, and Waste Management',
+            'description' => 'Learn about specialized cleaning techniques for healthcare environments.',
+            'category' => 'Healthcare',
+            'url' => 'https://alison.com/course/healthcare-cleaning-decontamination-and-waste-management?utm_source=alison_user&utm_medium=affiliates&utm_campaign=23738873',
+            'img' => 'https://via.placeholder.com/400x200',
+        ],
+        [
+            'title' => 'Training on Oven Cleaning',
+            'description' => 'Comprehensive training on the proper methods for oven cleaning.',
+            'category' => 'Housekeeping',
+            'url' => 'https://alison.com/course/training-on-oven-cleaning?utm_source=alison_user&utm_medium=affiliates&utm_campaign=23738873',
+            'img' => 'https://via.placeholder.com/400x200',
+        ],
+        [
+            'title' => 'Learn English: Phrasal Verbs for Cleaning and Chores',
+            'description' => 'Improve your English language skills with a focus on cleaning-related phrasal verbs.',
+            'category' => 'Language Learning',
+            'url' => 'https://alison.com/course/learn-english-phrasal-verbs-for-cleaning-and-chores?utm_source=alison_user&utm_medium=affiliates&utm_campaign=23738873',
+            'img' => 'https://via.placeholder.com/400x200',
+        ],
+        [
+            'title' => 'Setting Up a Cleaning Business',
+            'description' => 'Guide to starting and managing a successful cleaning business.',
+            'category' => 'Entrepreneurship',
+            'url' => 'https://alison.com/course/setting-up-a-cleaning-business?utm_source=alison_user&utm_medium=affiliates&utm_campaign=23738873',
+            'img' => 'https://via.placeholder.com/400x200',
+        ],
+        [
+            'title' => 'Diploma in British Cleaning Certification Award (BCCA)',
+            'description' => 'Comprehensive diploma program covering various aspects of cleaning with British certification.',
+            'category' => 'Certification',
+            'url' => 'https://alison.com/course/diploma-in-british-cleaning-certification-award-bcca?utm_source=alison_user&utm_medium=affiliates&utm_campaign=23738873',
+            'img' => 'https://via.placeholder.com/400x200',
+        ],
+        [
+            'title' => 'Housekeeping Tasks and Procedures',
+            'description' => 'Learn the tasks and procedures involved in professional housekeeping.',
+            'category' => 'Housekeeping',
+            'url' => 'https://alison.com/course/housekeeping-tasks-and-procedures?utm_source=alison_user&utm_medium=affiliates&utm_campaign=23738873',
+            'img' => 'https://via.placeholder.com/400x200',
+        ],
+        [
+            'title' => 'Care of Young Children and Special Needs',
+            'description' => 'Guide to caring for young children with special needs in a residential setting.',
+            'category' => 'Childcare',
+            'url' => 'https://alison.com/course/care-of-young-children-and-special-needs?utm_source=alison_user&utm_medium=affiliates&utm_campaign=23738873',
+            'img' => 'https://via.placeholder.com/400x200',
+        ],
+        [
+            'title' => 'Principles of Housekeeping',
+            'description' => 'Explore the fundamental principles underlying professional housekeeping practices.',
+            'category' => 'Housekeeping',
+            'url' => 'https://alison.com/course/principles-of-housekeeping?utm_source=alison_user&utm_medium=affiliates&utm_campaign=23738873',
+            'img' => 'https://via.placeholder.com/400x200',
+        ],
+    ];
+
     public function fetchTrainingData()
     {
-        $trainingData = [
-            [
-                'title' => 'Introduction to Programming',
-                'description' => 'A beginner course covering basic programming concepts.',
-                'category' => 'Programming',
-                'image' => 'https://via.placeholder.com/400x200',
-            ],
-            [
-                'title' => 'Web Development Bootcamp',
-                'description' => 'An intensive course covering full-stack web development.',
-                'category' => 'Web Development',
-                'image' => 'https://via.placeholder.com/400x200',
-            ],
-            [
-                'title' => 'Data Science Fundamentals',
-                'description' => 'Explore the principles and techniques of data science.',
-                'category' => 'Data Science',
-                'image' => 'https://via.placeholder.com/400x200',
-            ],
-            [
-                'title' => 'Mobile App Development Workshop',
-                'description' => 'Learn how to build mobile applications for iOS and Android platforms.',
-                'category' => 'Mobile Development',
-                'image' => 'https://via.placeholder.com/400x200',
-            ],
-            [
-                'title' => 'Graphic Design Essentials',
-                'description' => 'Master the fundamentals of graphic design and visual communication.',
-                'category' => 'Graphic Design',
-                'image' => 'https://via.placeholder.com/400x200',
-            ],
-            [
-                'title' => 'Project Management Certification',
-                'description' => 'Gain essential project management skills and prepare for certification.',
-                'category' => 'Project Management',
-                'image' => 'https://via.placeholder.com/400x200',
-            ],
-
-        ];
-
-        return view('training.training', ['courses' => $trainingData]);
+        return view('training.training', ['courses' => $this->trainingData]);
     }
 }

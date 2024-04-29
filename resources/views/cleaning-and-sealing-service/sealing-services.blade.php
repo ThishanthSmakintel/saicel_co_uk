@@ -25,8 +25,8 @@
                                     <div data-animation-in="slideInLeft">
                                         <a href="services/sealing.html" class="slider btn btn-primary border">Explore Our
                                             Sealing Services</a>
-                                        <a href="about.html" class="slider btn btn-primary border"
-                                            aria-label="learn-more-about-us">Learn More</a>
+                                        {{-- <a href="about.html" class="slider btn btn-primary border"
+                                            aria-label="learn-more-about-us">Learn More</a> --}}
                                     </div>
                                 </div>
                             </div>

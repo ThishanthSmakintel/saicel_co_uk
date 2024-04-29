@@ -7,7 +7,7 @@
         <div class="col-md-12">
             <div class="banner-carousel banner-carousel-1 mb-0">
                 <div class="banner-carousel-item"
-                    style="background-image: url({{ asset('images/sealing-services/img-sealing-slide-show.png') }}); background-color: transparent; background-size: cover; background-position: center;">
+                    style="background-image: url({{ asset('images/training/img-training.png') }}); background-color: transparent; background-size: cover; background-position: center;">
                     <div class="slider-content text-left">
                         <div class="container h-100">
                             <div class="row align-items-center h-100">
@@ -58,10 +58,8 @@
                         <div class="col-lg-6">
                             <div class="ts-service-box bg-image hover-zoom">
                                 <img loading="lazy" class="img-fluid"
-                                    src="{{ asset('images/sealing-services/img-sealing-slide-show.png') }}"
-                                    alt="training-service-image">
+                                    src="{{ asset('images/training/img-training-card.png') }}" alt="training-service-image">
                             </div><!-- Service box end -->
-
                         </div><!-- Col end -->
                     </div><!--/ Title row end -->
                 </div><!--/ Container end -->
@@ -69,21 +67,24 @@
         </div>
     </section>
 
-    <div class="container">
-        <div class="card mx-auto">
-            <div class="card-body">
-                <h1 class="text-center mb-4">Our Awesome Courses</h1>
+
+    <div class="container my-4">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h1 class="text-center ">Our Awesome Courses</h1>
                 <h4 class="text-center mb-4">Explore our wide range of high-quality courses</h4>
-                <div class="row justify-content-center">
+                <div class="row row-cols-1 row-cols-lg-3 g-4">
                     @foreach ($courses as $course)
-                        <div class="col-md-4 mb-4">
-                            <div class="card">
-                                <img src="{{ $course['image'] }}" class="card-img-top" alt="{{ $course['title'] }}">
+                        <div class="col mb-4">
+                            <div class="card card-hover-effect h-100 d-flex flex-column">
+                                <a href="{{ $course['url'] }}">
+                                    <img src="{{ $course['img'] }}" class="card-img-top" alt="{{ $course['title'] }}">
+                                </a>
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title text-center">{{ $course['title'] }}</h5>
                                     <p class="card-category text-center">{{ $course['category'] }}</p>
                                     <p class="card-description text-center">{{ $course['description'] }}</p>
-                                    <a href="#" class="btn btn-primary btn-enroll">Enroll Now</a>
+                                    <a href="{{ $course['url'] }}" class="btn btn-primary mt-auto">Enroll Now</a>
                                 </div>
                             </div>
                         </div>
@@ -93,24 +94,28 @@
         </div>
     </div>
 
+
+
+
 @endsection
-
-
 <style>
     .card {
+
         transition: transform 0.3s, box-shadow 0.3s;
         border: 1px solid #ddd;
         border-radius: 8px;
         overflow: hidden;
+        width: 100%;
+        height: 100%;
     }
 
-    .card:hover {
+    .card-hover-effect:hover {
         transform: scale(1.05);
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
 
     .card-body {
-        padding: 1rem;
+        padding: 1.5rem;
         height: 100%;
     }
 
@@ -118,17 +123,20 @@
         object-fit: cover;
         width: 100%;
         max-width: 100%;
-        height: auto;
+        height: 200px;
+        /* Adjust the height as needed */
     }
 
     .card-title {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
+        /* Adjust the font size as needed */
         margin-bottom: 0.5rem;
         text-align: center;
     }
 
     .card-category {
-        font-size: 0.9rem;
+        font-size: 1rem;
+        /* Adjust the font size as needed */
         color: #6c757d;
         text-align: center;
         margin-bottom: 0.5rem;
@@ -140,7 +148,6 @@
     }
 
     .btn-enroll {
-        margin-top: auto;
         width: 100%;
     }
 </style>
