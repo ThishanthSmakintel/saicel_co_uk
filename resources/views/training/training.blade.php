@@ -78,8 +78,10 @@
                         <div class="col mb-4">
                             <div class="card card-hover-effect h-100 d-flex flex-column">
                                 <a href="{{ $course['url'] }}">
-                                    <img src="{{ $course['img'] }}" class="card-img-top" alt="{{ $course['title'] }}">
+                                    <img src="{{ asset($course['img']) }}" class="card-img-top"
+                                        alt="{{ $course['title'] }}">
                                 </a>
+
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title text-center">{{ $course['title'] }}</h5>
                                     <p class="card-category text-center">{{ $course['category'] }}</p>
