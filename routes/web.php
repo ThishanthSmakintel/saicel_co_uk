@@ -84,3 +84,14 @@ Route::get('/sealing-services', [ProductController::class, 'showProductsSlideSho
 Route::get('/products', [ProductController::class, 'showProducts'])->name('products');
 
 Route::get('/training', [TrainingCoursesController::class, 'fetchTrainingData'])->name('training');
+
+
+
+Route::get('/sealing-services/concrete-sealing', function () {
+    return view('sealing-services.concrete-sealing');
+})->name('concrete-sealing');
+
+
+Route::view('/sealing-services/roof-sealing', 'sealing-services.roof-sealing')->name('roof-sealing');
+Route::view('/sealing-services/sealing-patios', 'sealing-services.sealing-patios')->name('sealing-patios');
+Route::view('/sealing-services/driveways', 'sealing-services.sealing-driveways')->name('sealing-driveways');

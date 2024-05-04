@@ -48,8 +48,8 @@
 
 
                         <div class="card-body d-flex flex-column">
-                            <a href="https://www.saicel.co.uk/smart-sealing-solutions" class="btn btn-primary mt-auto">Roof
-                                Sealing</a>
+                            <a href="{{ route('roof-sealing') }}" class="btn btn-primary mt-auto">Roof Sealing</a>
+
                         </div>
                     </div>
                 </div>
@@ -86,8 +86,7 @@
                         <img src="{{ asset('images/sealing-services/sealing-area-types/img-concreate.jpg') }}"
                             class="card-img-top" style="height: 250px;" alt="Card Image">
                         <div class="card-body d-flex flex-column">
-                            <a href="{{ url('https://www.saicel.co.uk/concrete') }}"
-                                class="btn btn-primary mt-auto">Concrete Sealing</a>
+                            <a href="{{ route('concrete-sealing') }}" class="btn btn-primary mt-auto">Concrete Sealing</a>
 
                         </div>
                     </div>
@@ -99,7 +98,7 @@
                         <img src="{{ asset('images/sealing-services/sealing-area-types/img-patios.jpg') }}"
                             class="card-img-top" style="height: 250px;" alt="Card Image">
                         <div class="card-body d-flex flex-column">
-                            <a href="{{ url('https://www.saicel.co.uk/concrete') }}" class="btn btn-primary mt-auto">Patios
+                            <a href="{{ route('sealing-patios') }}" class="btn btn-primary mt-auto">Patios
                                 Sealing</a>
                         </div>
                     </div>
@@ -111,7 +110,7 @@
                         <img src="{{ asset('images/sealing-services/sealing-area-types/img-driveways.jpg') }}"
                             class="card-img-top" style="height: 250px;" alt="Card Image">
                         <div class="card-body d-flex flex-column">
-                            <a href="https://www.saicel.co.uk/driveways" class="btn btn-primary mt-auto">Driveway
+                            <a href="{{ route('sealing-driveways') }}" class="btn btn-primary mt-auto">Driveway
                                 Sealing</a>
                         </div>
                     </div>
