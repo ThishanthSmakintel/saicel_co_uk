@@ -71,7 +71,7 @@
                                     </div><!-- Col end -->
                                     <div class="col-md-4 text-center text-md-right mt-3 mt-md-0">
                                         <div class="call-to-action-btn">
-                                            <a class="btn btn-primary" href="#">Get Started</a>
+                                            <a class="btn btn-primary" href="{{ route('contact-us') }}">Get Started</a>
                                         </div>
                                     </div><!-- col end -->
                                 </div><!-- row end -->

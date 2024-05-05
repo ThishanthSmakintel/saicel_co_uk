@@ -11,9 +11,10 @@
                     <div class="col-lg-6 ">
                         <div class="ts-service-box bg-image hover-zoom">
                             <img loading="lazy" class="img-fluid"
-                                src="{{ asset('images/sealing-services/sealing-area-types/img-roof.jpg') }}"
-                                alt="Roof Sealing Service Image">
+                                src="{{ asset('images/sealing-services/sealing-area-types/roof-sealing.jpg') }}"
+                                alt="Deck Sealing">
                         </div><!-- Service box end -->
+
                     </div><!-- Col end -->
                     <div class="col-lg-6 ">
                         <div class="ts-service-box my-2">
@@ -109,7 +110,8 @@
                     </div><!-- Col end -->
                     <div class="col-md-4 text-center text-md-right mt-3 mt-md-0">
                         <div class="call-to-action-btn">
-                            <a class="btn btn-primary" href="#" style="font-size: 16px;">Hire Us</a>
+                            <a class="btn btn-primary" href="{{ route('contact-us') }}" style="font-size: 16px;">Hire Us</a>
+
                         </div>
                     </div><!-- col end -->
                 </div><!-- row end -->

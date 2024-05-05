@@ -95,3 +95,5 @@ Route::get('/sealing-services/concrete-sealing', function () {
 Route::view('/sealing-services/roof-sealing', 'sealing-services.roof-sealing')->name('roof-sealing');
 Route::view('/sealing-services/sealing-patios', 'sealing-services.sealing-patios')->name('sealing-patios');
 Route::view('/sealing-services/driveways', 'sealing-services.sealing-driveways')->name('sealing-driveways');
+Route::view('/sealing-services/brick-sealing', 'sealing-services.brick-sealing')->name('brick-sealing');
+Route::view('/sealing-services/wood-sealing', 'sealing-services.wood-sealing')->name('wood-sealing');

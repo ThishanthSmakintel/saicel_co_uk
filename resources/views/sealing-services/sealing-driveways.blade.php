@@ -10,7 +10,7 @@
                 <div class="col-lg-6">
                     <div class="card shadow">
                         <div class="card-body">
-                            <h3 class="column-title"><strong>Driveways</strong></h3>
+                            <h3 class="column-title"><strong>Driveways Sealing</strong></h3>
                             <p>Transform your driveway with our professional services. We specialize in revitalizing
                                 worn-out driveways, bringing them back to life with expert techniques and high-quality
                                 sealants.</p>
@@ -55,7 +55,7 @@
                                     </div><!-- Col end -->
                                     <div class="col-md-4 text-center text-md-right mt-3 mt-md-0">
                                         <div class="call-to-action-btn">
-                                            <a class="btn btn-primary" href="#">Contact Us</a>
+                                            <a class="btn btn-primary" href="{{ route('contact-us') }}">Contact Us</a>
                                         </div>
                                     </div><!-- col end -->
                                 </div><!-- row end -->

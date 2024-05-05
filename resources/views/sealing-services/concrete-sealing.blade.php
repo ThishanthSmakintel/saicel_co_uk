@@ -26,27 +26,13 @@
                 <!-- Right Page Content -->
                 <div class="col-lg-6">
                     <div class="card mb-4">
-                        <img src="{{ asset('images/sealing-services/sealing-area-types/img-concreate.jpg') }}"
+                        <img src="{{ asset('images/sealing-services/sealing-area-types/img-concrete.jpg') }}"
                             alt="Concrete Floor 1" class="card-img-top img-fluid rounded">
                     </div>
                 </div><!-- Right Page Content End -->
             </div><!-- Content row end -->
 
-            <!-- Image Row -->
-            <div class="row mt-4">
-                <div class="col-lg-6">
-                    <div class="card mb-4">
-                        <img src="{{ asset('images/sealing-services/sealing-area-types/img-concreate.jpg') }}"
-                            alt="Concrete Floor 2" class="card-img-top img-fluid rounded">
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="card mb-4">
-                        <img src="{{ asset('images/sealing-services/sealing-area-types/img-concreate.jpg') }}"
-                            alt="Concrete Floor 3" class="card-img-top img-fluid rounded">
-                    </div>
-                </div>
-            </div><!-- Image Row end -->
+
             <div class="card mb-4">
                 <div class="card-body">
                     <h4 class="card-title">Choose from our selection of sealants and finishes:</h4>
@@ -74,7 +60,7 @@
                     </div><!-- Col end -->
                     <div class="col-md-4 text-center text-md-right mt-3 mt-md-0">
                         <div class="call-to-action-btn">
-                            <a class="btn btn-primary" href="#" style="font-size: 16px;">Hire Us</a>
+                            <a class="btn btn-primary" href="{{ route('contact-us') }}" style="font-size: 16px;">Hire Us</a>
                         </div>
                     </div><!-- col end -->
                 </div><!-- row end -->

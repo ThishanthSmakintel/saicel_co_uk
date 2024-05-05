@@ -60,7 +60,7 @@
                         <img src="{{ asset('images/sealing-services/sealing-area-types/img-wood-and-decking.jpg') }}"
                             class="card-img-top" style="height: 255px;" alt="Card Image">
                         <div class="card-body d-flex flex-column">
-                            <a href="https://www.saicel.co.uk/smart-sealing-solutions" class="btn btn-primary mt-auto">Wood
+                            <a href="{{ route('wood-sealing') }}" class="btn btn-primary mt-auto">Wood
                                 and Decking Sealing</a>
                         </div>
                     </div>
@@ -72,8 +72,7 @@
                         <img src="{{ asset('images/sealing-services/sealing-area-types/img-bricks.jpg') }}"
                             class="card-img-top" style="height: 255px;" alt="Card Image">
                         <div class="card-body d-flex flex-column">
-                            <a href="https://www.saicel.co.uk/cavity-wall-loft-insulation"
-                                class="btn btn-primary mt-auto">Brick Sealing</a>
+                            <a href="{{ route('brick-sealing') }}" class="btn btn-primary mt-auto">Brick Sealing</a>
                         </div>
                     </div>
                 </div>
