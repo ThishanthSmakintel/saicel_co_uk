@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 
 use App\Http\Controllers\TrainingCoursesController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\RegisterController;
 // Home Page
 Route::get('/', function () {
     return view('index');
@@ -97,3 +99,13 @@ Route::view('/sealing-services/sealing-patios', 'sealing-services.sealing-patios
 Route::view('/sealing-services/driveways', 'sealing-services.sealing-driveways')->name('sealing-driveways');
 Route::view('/sealing-services/brick-sealing', 'sealing-services.brick-sealing')->name('brick-sealing');
 Route::view('/sealing-services/wood-sealing', 'sealing-services.wood-sealing')->name('wood-sealing');
+
+
+
+Route::view('register', 'auth.register')->middleware('guest');
+Route::post('store', [RegisterController::class, 'store']);
+Route::view('home', 'home')->middleware('auth');
+
+Route::view('login', 'auth.login')->middleware('guest')->name('login');
+Route::post('authenticate', [LoginController::class, 'authenticate']);
+Route::get('logout', [LoginController::class, 'logout']);
